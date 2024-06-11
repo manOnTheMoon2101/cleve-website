@@ -6,3 +6,21 @@
   padding: 6rem;
   min-height: 100vh;
 }
+
+.popup {
+  text-align: center;
+}
+
+.icon {
+  padding: 10px;
+}
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}

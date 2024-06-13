@@ -6,10 +6,9 @@ import TechStack from "./components/techStack/TechStack";
 export default function Home() {
   return (
     <main className={styles.main}>
-  <div>
-<Header/>
-<TechStack/>
-    </div>
+      <div className={styles.mainHeaderDiv}>
+        <Header />
+      </div>
     </main>
   );
 }

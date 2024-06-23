@@ -1,19 +1,21 @@
 .main {
-
 }
-.mainHeaderDiv{
+.triangleDiv {
+  z-index: 99;
+}
+.mainHeaderDiv {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.descriptionInfo{
+.descriptionInfo {
   color: rgba(128, 128, 128, 0.5);
   /* text-decoration: underline 10px #FA7070; */
   font-weight: 200;
   font-size: 30px;
 }
-.descriptionInfo span{
+.descriptionInfo span {
   color: rgba(128, 128, 128, 0.24);
 }
 

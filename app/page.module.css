@@ -4,10 +4,6 @@
   z-index: 99;
 }
 .mainHeaderDiv {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .descriptionInfo {
   color: rgba(128, 128, 128, 0.5);
@@ -35,4 +31,18 @@
 .fadeOut {
   opacity: 0;
   transition: opacity 2s ease-in-out;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.arrowDown {
+  animation: bounce 2s infinite;
 }

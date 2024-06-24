@@ -4,7 +4,7 @@ import Spline from "@splinetool/react-spline/next";
 const Header = () => {
   return (
     <div>
-      <div
+      {/* <div
         style={{
           height: "300px",
           position: "absolute",
@@ -16,7 +16,7 @@ const Header = () => {
           className={styles.triangleDiv}
           scene="https://prod.spline.design/ecIuHhpQ4E2RUhp2/scene.splinecode"
         />
-      </div>
+      </div> */}
 
       <h1 style={{ lineHeight: "5px", fontSize: "60px" }}>Cleve Clayton</h1>
       <h3 className={styles.descriptionInfo}>

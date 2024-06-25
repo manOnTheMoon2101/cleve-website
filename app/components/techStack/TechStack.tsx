@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import react from "../../../public/stack_icons/react-svgrepo-com.svg";
@@ -12,21 +12,17 @@ import vuejs from "../../../public/stack_icons/vue-9-logo-svgrepo-com.svg";
 import typescript from "../../../public/stack_icons/typescript-svgrepo-com.svg";
 import Image from "next/image";
 import styles from "../../page.module.css";
-import { useEffect , useState } from "react";
+import { useEffect, useState } from "react";
 const TechStack = () => {
-
   const [isJavaScriptVisible, setIsJavaScriptVisible] = useState(true);
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setIsJavaScriptVisible(prev => !prev);
+      setIsJavaScriptVisible((prev) => !prev);
     }, 2000);
 
     return () => clearInterval(interval);
   }, []);
-
-
-
 
   const stack: any = {
     react: {
@@ -43,11 +39,27 @@ const TechStack = () => {
     },
     javascript: {
       name: "Javascript",
-      icon: <Image alt="Javascript" src={javascript} height={100} width={100}  className={isJavaScriptVisible ? styles.fadeIn : styles.fadeOut} /> 
+      icon: (
+        <Image
+          alt="Javascript"
+          src={javascript}
+          height={100}
+          width={100}
+          className={isJavaScriptVisible ? styles.fadeIn : styles.fadeOut}
+        />
+      ),
     },
     typescript: {
       name: "TypeScript",
-      icon: <Image alt="Typescript" src={typescript} height={100} width={100}  className={!isJavaScriptVisible ? styles.fadeIn : styles.fadeOut} />,
+      icon: (
+        <Image
+          alt="Typescript"
+          src={typescript}
+          height={100}
+          width={100}
+          className={!isJavaScriptVisible ? styles.fadeIn : styles.fadeOut}
+        />
+      ),
     },
     flutter: {
       name: "Flutter",
@@ -67,14 +79,7 @@ const TechStack = () => {
     },
   };
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-around",
-        alignItems: "center",
-      }}
-    >
+    <div>
       <h2>Stack</h2>
       {Object.values(stack).map((tech: any) => (
         <div key={tech.name}>

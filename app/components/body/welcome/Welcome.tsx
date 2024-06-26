@@ -20,7 +20,7 @@ const Welcome = () => {
             (apps that look good btw)
           </p>
           <p>
-            checkout my personal projects that i've worked on{" "}
+            checkout personal projects that i've worked on{" "}
             <FaArrowDown className="animate-bounce" />
           </p>
         </div>

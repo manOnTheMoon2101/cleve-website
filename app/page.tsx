@@ -7,15 +7,15 @@ import Projects from "./components/body/projects/Projects";
 
 export default function Home() {
   return (
-    <main className="m-1" >
+    <main className="m-1">
       <div className="m-1 flex flex-col items-center justify-center min-h-screen">
         <Header />
       </div>
-      <div>
+      <div style={{position:'relative',top:'200px'}}>
         <Welcome />
       </div>
-      <div>
-        <Projects/>
+      <div  style={{position:'relative',top:'400px'}}>
+        <Projects />
       </div>
     </main>
   );

@@ -109,7 +109,7 @@ export const GET = async (
               </div>
             </div>
           </DialogTrigger>
-          <DialogContent className="sm:max-w-md">
+          <DialogContent className="max-w-fit overflow-y-scroll max-h-screen">
             <DialogHeader>
               <DialogTitle className="text-center">{x.title}</DialogTitle>
               <DialogDescription>Tech Stack:</DialogDescription>
@@ -120,15 +120,15 @@ export const GET = async (
               </DialogDescription>
             </DialogHeader>
             <DialogDescription>
-              <div className="w-6/12 float-left">{x.imageFirst}</div>
+              <div>{x.imageFirst}</div>
 
-              <div className="w-6/12 float-right">{x.descriptionFirst}</div>
+              <div>{x.descriptionFirst}</div>
             </DialogDescription>
 
             <DialogDescription>
-              <div className="w-6/12 float-left">{x.descriptionSecond}</div>
+              <div>{x.descriptionSecond}</div>
 
-              <div className="w-6/12 float-right">{x.code}</div>
+              <div>{x.code}</div>
             </DialogDescription>
             <DialogFooter className="sm:justify-end">
               <DialogClose asChild>

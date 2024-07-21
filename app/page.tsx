@@ -14,17 +14,14 @@ export default function Home() {
       </div>
       <div className="relative top-32">
         {" "}
-        {/* 200px */}
         <Welcome />
       </div>
       <div className="relative top-64">
         {" "}
-        {/* 400px */}
         <Projects />
       </div>
       <div className="relative top-64">
         {" "}
-        {/* 400px */}
         <Footer />
       </div>
     </main>

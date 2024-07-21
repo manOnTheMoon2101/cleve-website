@@ -18,7 +18,6 @@ import {
 const Projects = () => {
   const data: any = {
     weather: {
-      stack: "weather",
       title: "Weather App⛅",
       image: (
         <Image
@@ -79,8 +78,7 @@ export const GET = async (
       ),
       info: "Basic Weather API",
       misc: "API-WEB-2024",
-      techStack: "",
-      github: "",
+      techStack: "NextJS,OpenWeatherAPI,cheerio,Shadcn,TailwindCSS",
       link: "https://weather-app-next-js-pi.vercel.app/",
       descriptionFirst:
         "made this project purelly because i wanted to test my 3d assets i've created using spline.",
@@ -88,11 +86,11 @@ export const GET = async (
         "used openweather api and scraping from other websites to get weather data.",
     },
     weight: {
-      stack: "weight",
       title: "Weight Management App🥩",
-      techStack: "",
-      github: "",
-      link: "",
+      techStack: "NextJS,Prisma,MongoDB,Cheerio,NextAuth,Shadcn,TailwindCSS",
+      link: "https://weight-management.vercel.app/",
+      info: "Weight/Nutrion tracker",
+      misc: "DASHBOARD-WEB-2024",
     },
   };
   return (
@@ -112,11 +110,15 @@ export const GET = async (
           <DialogContent className="max-w-fit overflow-y-scroll max-h-screen">
             <DialogHeader>
               <DialogTitle className="text-center">{x.title}</DialogTitle>
-              <DialogDescription>Tech Stack:</DialogDescription>
-              <DialogDescription>Github:</DialogDescription>
+              <DialogDescription>Tech Stack:{x.techStack}</DialogDescription>
               <DialogDescription>
                 Live Web:
-                <Link href={x.link ? x.link : ""}>{x.link ? x.link : ""}</Link>
+                <Link
+                  className="underline text-sky-600"
+                  href={x.link ? x.link : ""}
+                >
+                  {x.link ? x.link : ""}
+                </Link>
               </DialogDescription>
             </DialogHeader>
             <DialogDescription>

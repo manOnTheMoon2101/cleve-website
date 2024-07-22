@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
+import { ModeToggle } from "../../header/provider/Button";
 
 const Navbar = () => {
   return (
-    <div className='border-t-2 border-black'>
-      <div className='flex flex-col justify-center items-center '>
-<h3>made with nextjs14,deployed on vercel</h3>
-<h4>link to figma file</h4>
+    <div className="border-t-2 border-black">
+      <div className="flex flex-row justify-end">
+        <ModeToggle/>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

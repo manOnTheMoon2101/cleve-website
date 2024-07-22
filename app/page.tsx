@@ -8,6 +8,7 @@ import Projects from "./components/body/projects/Projects";
 import Footer from "./components/layout/footer/Footer";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import Navbar from "./components/layout/navbar/Navbar";
 
 interface SectionProps {
   children: React.ReactNode;
@@ -35,6 +36,7 @@ const Section: React.FC<SectionProps> = ({ children }) => {
 export default function Home() {
   return (
     <main className="m-1">
+      <Navbar/>
       <div className="m-1 flex flex-col items-center justify-center min-h-screen">
         <Section>
           {" "}

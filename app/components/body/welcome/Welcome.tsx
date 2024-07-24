@@ -1,6 +1,5 @@
 import React from "react";
 import cleve from "../../../../public/images/Cleve.png";
-import styles from "../../../page.module.css";
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import { FaArrowDown } from "react-icons/fa";
@@ -11,17 +10,17 @@ const Welcome = () => {
         <Image alt="Cleve" height={500} width={500} src={cleve} />
       </div>
 
-      <div className="bg-green-100 flex-1 flex flex-col justify-between">
+      <div className="border-4 flex-1 flex flex-col justify-between rounded">
         <div className="p-4">
-          <h2 className="text-5xl font-bold">npm init?</h2>
-          <p className="text-slate-800 text-xl">
+          <h2 className="text-5xl font-bold text-center">npm init?</h2>
+          <p className="text-xl">
             i make apps
             <br />
-            (apps that look good btw)
+            that uses all kinds of javascript tech
           </p>
           <p>
             checkout personal projects that i've worked on{" "}
-            <FaArrowDown className="animate-bounce" />
+            <FaArrowDown className="animate-bounce " size={60}/>
           </p>
         </div>
 

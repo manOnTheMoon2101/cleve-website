@@ -3,9 +3,9 @@ import { ModeToggle } from "../../header/provider/Button";
 
 const Navbar = () => {
   return (
-    <div className="border-t-2 border-black">
+    <div className="sticky top-0 z-10">
       <div className="flex flex-row justify-end">
-        <ModeToggle/>
+        <ModeToggle />
       </div>
     </div>
   );

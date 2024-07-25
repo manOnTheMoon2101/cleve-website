@@ -5,6 +5,7 @@ import bosch from "../../../../public/images/stellenbosch.png";
 import spline from "../../../../public/images/spline_sun.png";
 import { CopyBlock, dracula } from "react-code-blocks";
 import Image from "next/image";
+import Spline from "@splinetool/react-spline";
 import {
   Dialog,
   DialogClose,
@@ -20,13 +21,7 @@ const Projects = () => {
     weather: {
       title: "Weather App⛅",
       image: (
-        <Image
-          className="rounded-xl"
-          src={bosch}
-          height={600}
-          width={500}
-          alt="stellenbosch"
-        />
+        <Spline scene="https://draft.spline.design/6YVF9rFIh9M-O92I/scene.splinecode" />
       ),
       imageFirst: (
         <Image
@@ -86,6 +81,9 @@ export const GET = async (
         "used openweather api and scraping from other websites to get weather data.",
     },
     weight: {
+      image: (
+        <Spline scene="https://draft.spline.design/6YVF9rFIh9M-O92I/scene.splinecode" />
+      ),
       title: "Weight Management App🥩",
       techStack: "NextJS,Prisma,MongoDB,Cheerio,NextAuth,Shadcn,TailwindCSS",
       link: "https://weight-management.vercel.app/",
@@ -94,54 +92,62 @@ export const GET = async (
     },
   };
   return (
-    <div className="clear-both flex flex-row justify-around">
-      {Object.values(data).map((x: any) => (
-        <Dialog key={x.stack}>
-          <DialogTrigger asChild className="m-32 w-1/2 cursor-pointer">
-            <div>
+    <div className="clear-both">
+      <div>
+        <h2 className="text-8xl font-bold text-center">
+          some <span className="text-emerald-400"> projects</span> i worked
+          on...
+        </h2>
+      </div>
+      <div className="flex flex-row justify-around">
+        {Object.values(data).map((x: any) => (
+          <Dialog key={x.stack}>
+            <DialogTrigger asChild className="m-32 w-1/2 cursor-pointer">
               <div>
-                <div>{x.image}</div>
-                <h3>{x.title}</h3>
-                <h4>{x.info}</h4>
-                <h4>{x.misc}</h4>
+                <div>
+                  <div>{x.image}</div>
+                  <h3>{x.title}</h3>
+                  <h4>{x.info}</h4>
+                  <h4>{x.misc}</h4>
+                </div>
               </div>
-            </div>
-          </DialogTrigger>
-          <DialogContent className="max-w-fit overflow-y-scroll max-h-screen">
-            <DialogHeader>
-              <DialogTitle className="text-center">{x.title}</DialogTitle>
-              <DialogDescription>Tech Stack:{x.techStack}</DialogDescription>
+            </DialogTrigger>
+            <DialogContent className="max-w-fit overflow-y-scroll max-h-screen">
+              <DialogHeader>
+                <DialogTitle className="text-center">{x.title}</DialogTitle>
+                <DialogDescription>Tech Stack:{x.techStack}</DialogDescription>
+                <DialogDescription>
+                  Live Web:
+                  <Link
+                    className="underline text-sky-600"
+                    href={x.link ? x.link : ""}
+                  >
+                    {x.link ? x.link : ""}
+                  </Link>
+                </DialogDescription>
+              </DialogHeader>
               <DialogDescription>
-                Live Web:
-                <Link
-                  className="underline text-sky-600"
-                  href={x.link ? x.link : ""}
-                >
-                  {x.link ? x.link : ""}
-                </Link>
+                <div>{x.imageFirst}</div>
+
+                <div>{x.descriptionFirst}</div>
               </DialogDescription>
-            </DialogHeader>
-            <DialogDescription>
-              <div>{x.imageFirst}</div>
 
-              <div>{x.descriptionFirst}</div>
-            </DialogDescription>
+              <DialogDescription>
+                <div>{x.descriptionSecond}</div>
 
-            <DialogDescription>
-              <div>{x.descriptionSecond}</div>
-
-              <div>{x.code}</div>
-            </DialogDescription>
-            <DialogFooter className="sm:justify-end">
-              <DialogClose asChild>
-                <Button type="button" variant="secondary">
-                  Close
-                </Button>
-              </DialogClose>
-            </DialogFooter>
-          </DialogContent>
-        </Dialog>
-      ))}
+                <div>{x.code}</div>
+              </DialogDescription>
+              <DialogFooter className="sm:justify-end">
+                <DialogClose asChild>
+                  <Button type="button" variant="secondary">
+                    Close
+                  </Button>
+                </DialogClose>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
+        ))}
+      </div>
     </div>
   );
 };

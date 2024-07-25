@@ -36,7 +36,7 @@ const Section: React.FC<SectionProps> = ({ children }) => {
 export default function Home() {
   return (
     <main className="m-1">
-      <Navbar/>
+      <Navbar />
       <div className="m-1 flex flex-col items-center justify-center min-h-screen">
         <Section>
           {" "}

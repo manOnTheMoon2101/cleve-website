@@ -21,7 +21,12 @@ const Welcome = () => {
         </div>
 
         <div className="flex flex-row justify-center">
-          <Button>Download CV</Button>
+          <Button>
+            {" "}
+            <a href="assets/cv/Cleve_Clayton.pdf" target="_blank" rel="noopener noreferrer" download>
+              Download CV
+            </a>
+          </Button>
         </div>
         <div className="p-4 self-start"></div>
       </div>

@@ -74,7 +74,7 @@ export const GET = async (
       ),
       info: "Basic Weather API",
       misc: "API-WEB-2024",
-      techStack: "NextJS | OpenWeatherAPI | cheerio | Shadcn | TailwindCSS",
+      techStack: "NextJS | OpenWeatherAPI | cheerio | shadcn/ui | TailwindCSS",
       link: "https://weather-app-next-js-pi.vercel.app/",
       descriptionFirst: "Simple Weather App that displays current weather data",
       descriptionSecond:
@@ -86,7 +86,7 @@ export const GET = async (
       ),
       title: "Weight Management App🥩",
       techStack:
-        "NextJS | Prisma | MongoDB | cheerio | NextAuth | Shadcn | TailwindCSS",
+        "NextJS | Prisma | MongoDB | cheerio | NextAuth | shadcn/ui | TailwindCSS",
       link: "https://weight-management.vercel.app/",
       info: "Weight/Nutrion tracker",
       descriptionFirst:

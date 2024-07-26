@@ -1,14 +1,12 @@
 "use client";
-import Image from "next/image";
-import styles from "./page.module.css";
 import Header from "./components/header/Header";
-import TechStack from "./components/techStack/TechStack";
 import Welcome from "./components/body/welcome/Welcome";
 import Projects from "./components/body/projects/Projects";
 import Footer from "./components/layout/footer/Footer";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Navbar from "./components/layout/navbar/Navbar";
+import Badge from "./components/body/CarbonBadge/Badge";
 
 interface SectionProps {
   children: React.ReactNode;
@@ -55,6 +53,13 @@ export default function Home() {
         <Section>
           {" "}
           <Projects />
+        </Section>
+      </div>
+      <div className="relative top-64">
+        {" "}
+        <Section>
+          {" "}
+          <Badge />
         </Section>
       </div>
       <div className="relative top-64">

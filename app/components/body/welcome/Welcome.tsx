@@ -2,6 +2,7 @@ import React from "react";
 import cleve from "../../../../public/images/Cleve.png";
 import Image from "next/image";
 import { FaArrowDown } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
 const Welcome = () => {
   return (
     <div className="flex">
@@ -17,6 +18,10 @@ const Welcome = () => {
         </div>
         <div className="flex flex-row justify-center">
           <FaArrowDown className="animate-bounce " size={60} />
+        </div>
+
+        <div className="flex flex-row justify-center">
+          <Button>Download CV</Button>
         </div>
         <div className="p-4 self-start"></div>
       </div>

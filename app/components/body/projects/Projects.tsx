@@ -103,16 +103,16 @@ export const GET = async (
         {Object.values(data).map((x: any) => (
           <Dialog key={x.stack}>
             <DialogTrigger asChild className="m-32 w-1/2 cursor-pointer">
-              <div>
+              <div className="flex flex-row justify-center">
                 <div>
                   <div>{x.image}</div>
-                  <h3>{x.title}</h3>
+                  <h3 className="text-4xl font-bold">{x.title}</h3>
                   <h4>{x.info}</h4>
                   <h4>{x.misc}</h4>
                 </div>
               </div>
             </DialogTrigger>
-            <DialogContent className="max-w-fit overflow-y-scroll max-h-screen">
+            <DialogContent className="max-w-fit overflow-y-scroll max-h-screen bg-slate-900">
               <DialogHeader>
                 <DialogTitle className="text-center">{x.title}</DialogTitle>
                 <DialogDescription>Tech Stack:{x.techStack}</DialogDescription>

@@ -62,7 +62,7 @@ export default function Home() {
           <Badge />
         </Section>
       </div>
-      <div className="relative top-64">
+      <div className="relative top-96">
         {" "}
         <Section>
           {" "}

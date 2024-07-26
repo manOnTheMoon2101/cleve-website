@@ -118,12 +118,14 @@ export const GET = async (
                 <DialogDescription>Tech Stack:{x.techStack}</DialogDescription>
                 <DialogDescription>
                   Live Web:
-                  <Link
+                  <a
                     className="underline text-sky-600"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     href={x.link ? x.link : ""}
                   >
                     {x.link ? x.link : ""}
-                  </Link>
+                  </a>
                 </DialogDescription>
               </DialogHeader>
               <DialogDescription>

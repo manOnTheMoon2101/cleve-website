@@ -23,7 +23,12 @@ const Welcome = () => {
         <div className="flex flex-row justify-center">
           <Button>
             {" "}
-            <a href="assets/cv/Cleve_Clayton.pdf" target="_blank" rel="noopener noreferrer" download>
+            <a
+              href="assets/cv/Cleve_Clayton.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
               Download CV
             </a>
           </Button>

@@ -5,6 +5,7 @@ import bosch from "../../../../public/images/stellenbosch.png";
 import spline from "../../../../public/images/spline_sun.png";
 import { CopyBlock, dracula } from "react-code-blocks";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 import Spline from "@splinetool/react-spline";
 import {
   Dialog,
@@ -73,22 +74,73 @@ export const GET = async (
       ),
       info: "Basic Weather API",
       misc: "API-WEB-2024",
-      techStack: "NextJS,OpenWeatherAPI,cheerio,Shadcn,TailwindCSS",
+      techStack: "NextJS | OpenWeatherAPI | cheerio | Shadcn | TailwindCSS",
       link: "https://weather-app-next-js-pi.vercel.app/",
-      descriptionFirst:
-        "made this project purelly because i wanted to test my 3d assets i've created using spline.",
+      descriptionFirst: "Simple Weather App that displays current weather data",
       descriptionSecond:
-        "used openweather api and scraping from other websites to get weather data.",
+        "Used Openweather API and scraping from other websites to get weather data.",
     },
     weight: {
       image: (
         <Spline scene="https://draft.spline.design/6YVF9rFIh9M-O92I/scene.splinecode" />
       ),
       title: "Weight Management App🥩",
-      techStack: "NextJS,Prisma,MongoDB,Cheerio,NextAuth,Shadcn,TailwindCSS",
+      techStack:
+        "NextJS | Prisma | MongoDB | cheerio | NextAuth | Shadcn | TailwindCSS",
       link: "https://weight-management.vercel.app/",
       info: "Weight/Nutrion tracker",
+      descriptionFirst:
+        "Weight Management app with Dashboard that displays relevant data.",
+      descriptionSecond: "Used Prisma as the ORM for the REST APIs",
       misc: "DASHBOARD-WEB-2024",
+      code: (
+        <CopyBlock
+          text={`
+export const GET = async (
+  req: any,
+  { params }: { params: { month: string } }
+) => {
+  try {
+    const { month } = params;
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    let session: any;
+    session = await getServerSession(authOptions);
+
+    let user: any;
+    user = await prisma.user.findUnique({
+      where: {
+        email: session?.user?.email,
+      },
+    });
+    const data = await prisma.data.findMany({
+      where: {
+        userId: user.id,
+        createdAt: {
+          gte: new Date({currentYear}-{month}-01T01:00:00.459+00:00),
+          lte: new Date({currentYear}-{month}-31T01:00:00.459+00:00),
+        },
+      },
+    });
+
+    data.map((x: any) => (x.createdAt = x.createdAt.toDateString()));
+
+    return NextResponse.json(data);
+  } catch (err) {
+    return NextResponse.json(
+      {
+        message: "GET filter month Error",
+        err,
+      },
+      { status: 500 }
+    );
+  }
+};
+  `}
+          language={"typescript"}
+          theme={dracula}
+        />
+      ),
     },
   };
   return (
@@ -114,12 +166,17 @@ export const GET = async (
             </DialogTrigger>
             <DialogContent className="max-w-fit overflow-y-scroll max-h-screen bg-slate-900">
               <DialogHeader>
-                <DialogTitle className="text-center">{x.title}</DialogTitle>
-                <DialogDescription>Tech Stack:{x.techStack}</DialogDescription>
+                <DialogTitle className="text-center text-4xl font-bold">
+                  {x.title}
+                </DialogTitle>
+                <div className="flex flex-row justify-between">
+                  <DialogDescription>{x.techStack}</DialogDescription>
+                  <DialogDescription>@2024</DialogDescription>
+                </div>
+                <Separator className="my-4" />
                 <DialogDescription>
-                  Live Web:
                   <a
-                    className="underline text-sky-600"
+                    className="underline text-cyan-400 flex flex-row justify-center"
                     target="_blank"
                     rel="noopener noreferrer"
                     href={x.link ? x.link : ""}
@@ -129,13 +186,17 @@ export const GET = async (
                 </DialogDescription>
               </DialogHeader>
               <DialogDescription>
-                <div>{x.imageFirst}</div>
+                {/* <div className="flex flex-row justify-center">
+                  {x.imageFirst}
+                </div> */}
 
-                <div>{x.descriptionFirst}</div>
+                <div className="text-center text-2xl">{x.descriptionFirst}</div>
               </DialogDescription>
 
               <DialogDescription>
-                <div>{x.descriptionSecond}</div>
+                <div className="text-center text-2xl">
+                  {x.descriptionSecond}
+                </div>
 
                 <div>{x.code}</div>
               </DialogDescription>

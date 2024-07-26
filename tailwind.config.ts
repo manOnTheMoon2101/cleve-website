@@ -19,6 +19,8 @@ const config = {
     },
     extend: {
       colors: {
+        linkedin:"hsl(200.55,100%,35.49%)",
+        github:"hsl(9.18,85.92%,58.24%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,11 +1,12 @@
 import React from "react";
-
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="flex flex-col ">
       <div className="flex flex-row justify-center">
-        <h3>Linkedin</h3>
-        <h3>Github</h3>
+        <FaLinkedin className="m-1 text-linkedin" size={25} />
+        <FaGithub className="m-1 text-github" size={25} />
       </div>
 
       <div className="flex row justify-between">

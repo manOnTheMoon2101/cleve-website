@@ -82,15 +82,14 @@ export const GET = async (
     },
     weight: {
       image: (
-        <Spline scene="https://draft.spline.design/6YVF9rFIh9M-O92I/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/JfqER1MP23EKSc3N/scene.splinecode" />
       ),
       title: "Weight Management App🥩",
       techStack:
         "NextJS | Prisma | MongoDB | cheerio | NextAuth | shadcn/ui | TailwindCSS",
       link: "https://weight-management.vercel.app/",
       info: "Weight/Nutrion tracker",
-      descriptionFirst:
-        "Weight Management app with Dashboard that displays relevant data.",
+      descriptionFirst: "Weight Management App displays relevant data.",
       descriptionSecond: "Used Prisma as the ORM for the REST APIs",
       misc: "DASHBOARD-WEB-2024",
       code: (
@@ -190,13 +189,15 @@ export const GET = async (
                   {x.imageFirst}
                 </div> */}
 
-                <div className="text-center text-2xl">{x.descriptionFirst}</div>
+                <div className="text-center text-2xl">
+                  <h3>{x.descriptionFirst}</h3>
+                </div>
               </DialogDescription>
 
               <DialogDescription>
-                <div className="text-center text-2xl">
+                {/* <div className="text-left text-2xl">
                   {x.descriptionSecond}
-                </div>
+                </div> */}
 
                 <div>{x.code}</div>
               </DialogDescription>

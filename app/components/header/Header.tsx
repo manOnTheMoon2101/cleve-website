@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen relative ">
       <div className="absolute top-0 left-20 right-0 bottom-0 z-10">
-        <Spline scene="https://prod.spline.design/ecIuHhpQ4E2RUhp2/scene.splinecode" />
+        <Spline scene="https://prod.spline.design/nkb8KaO45fGxJZ-M/scene.splinecode" />
       </div>
 
       <h1 className="text-6xl font-bold  relative">Cleve Clayton</h1>

@@ -81,7 +81,7 @@ export const GET = async (
     },
     weight: {
       image: (
-        <Spline scene="https://prod.spline.design/JfqER1MP23EKSc3N/scene.splinecode" />
+        <Spline scene="https://draft.spline.design/nQEbWnq3P6ToJBWI/scene.splinecode" />
       ),
       title: "Weight Management App🥩",
       techStack:
@@ -155,7 +155,7 @@ export const GET = async (
             <DialogTrigger asChild className="m-32 w-1/2 cursor-pointer">
               <div className="flex flex-row justify-center">
                 <div>
-                  <div>{x.image}</div>
+                  <div style={{ minHeight: "300px" }}>{x.image}</div>
                   <h3 className="text-4xl font-bold">{x.title}</h3>
                   <h4>{x.info}</h4>
                   <h4>{x.misc}</h4>

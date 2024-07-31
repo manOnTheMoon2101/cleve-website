@@ -5,7 +5,7 @@ import { FaArrowDown } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 const Welcome = () => {
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
       <div className="flex-1">
         <Image alt="Cleve" height={500} width={500} src={cleve} />
       </div>

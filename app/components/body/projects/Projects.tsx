@@ -21,7 +21,14 @@ const Projects = () => {
     weather: {
       title: "Weather App⛅",
       image: (
-        <Spline scene="https://draft.spline.design/6YVF9rFIh9M-O92I/scene.splinecode" />
+        <Spline
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+          scene="https://draft.spline.design/6YVF9rFIh9M-O92I/scene.splinecode"
+        />
       ),
       imageFirst: (
         <Image
@@ -81,7 +88,14 @@ export const GET = async (
     },
     weight: {
       image: (
-        <Spline scene="https://draft.spline.design/nQEbWnq3P6ToJBWI/scene.splinecode" />
+        <Spline
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+          scene="https://draft.spline.design/CaV8DHEV-RdWjjEE/scene.splinecode"
+        />
       ),
       title: "Weight Management App🥩",
       techStack:
@@ -149,17 +163,20 @@ export const GET = async (
           on...
         </h2>
       </div>
-      <div className="flex flex-row justify-around">
+      <div className="">
         {Object.values(data).map((x: any) => (
           <Dialog key={x.stack}>
-            <DialogTrigger asChild className="m-32 w-1/2 cursor-pointer">
-              <div className="flex flex-row justify-center">
-                <div>
-                  <div style={{ minHeight: "300px" }}>{x.image}</div>
-                  <h3 className="text-4xl font-bold">{x.title}</h3>
-                  <h4>{x.info}</h4>
-                  <h4>{x.misc}</h4>
+            <DialogTrigger
+              asChild
+              className="cursor-pointer flex flex-col md:flex-row justify-around"
+            >
+              <div className="grid gap-4 grid-rows-auto">
+                <div className="flex-row justify-center items-center">
+                  <div className="max-w-full h-96">{x.image}</div>
                 </div>
+                <h3 className="text-xl font-semibold text-center">{x.title}</h3>
+                <h4 className="text-lg text-center">{x.info}</h4>
+                <h4 className="text-lg text-center">{x.misc}</h4>
               </div>
             </DialogTrigger>
             <DialogContent className="max-w-fit overflow-y-scroll max-h-screen bg-slate-900">

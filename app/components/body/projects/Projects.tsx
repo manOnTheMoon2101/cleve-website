@@ -193,7 +193,6 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={x.link ? x.link : ""}
-                
                 >
                   {x.link ? x.link : ""}
                 </a>

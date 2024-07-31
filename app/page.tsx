@@ -37,35 +37,26 @@ export default function Home() {
       <Navbar />
       <div>
         <Section>
-          {" "}
           <Header />
         </Section>
       </div>
-      <div className="relative top-32">
-        {" "}
+      <div className="mt-96 ">
         <Section>
-          {" "}
           <Welcome />
         </Section>
       </div>
-      <div className="relative top-64">
-        {" "}
+      <div className="mt-96 bg">
         <Section>
-          {" "}
           <Projects />
         </Section>
       </div>
-      <div className="relative top-64">
-        {" "}
+      <div className="mt-96  ">
         <Section>
-          {" "}
           <Badge />
         </Section>
       </div>
-      <div className="relative top-96">
-        {" "}
+      <div className="mt-96  ">
         <Section>
-          {" "}
           <Footer />
         </Section>
       </div>

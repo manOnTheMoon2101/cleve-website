@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import bosch from "../../../../public/images/stellenbosch.png";
 import spline from "../../../../public/images/spline_sun.png";
+import { Poppins } from "next/font/google";
+import { Suez_One } from "next/font/google";
 import { CopyBlock, dracula } from "react-code-blocks";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
@@ -16,6 +18,14 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "100",
+});
+const suez = Suez_One({
+  subsets: ["latin"],
+  weight: "400"
+});
 const Projects = () => {
   const data: any = {
     weather: {
@@ -158,7 +168,7 @@ const Projects = () => {
   return (
     <div className="clear-both">
       <div>
-        <h2 className="text-8xl font-bold text-center">
+      <h2 className={`text-8xl font-bold text-center ${suez.className}`}>
           some <span className="text-emerald-400"> projects</span> i worked
           on...
         </h2>
@@ -175,8 +185,8 @@ const Projects = () => {
                   <div className="max-w-full h-96">{x.image}</div>
                 </div>
                 <h3 className="text-xl font-semibold text-center">{x.title}</h3>
-                <h4 className="text-lg text-center">{x.info}</h4>
-                <h4 className="text-lg text-center">{x.misc}</h4>
+                <h4 className={`text-lg text-center  ${poppins.className}`}>{x.info}</h4>
+                <h4 className={`text-lg text-center  ${poppins.className}`}>{x.misc}</h4>
               </div>
             </DialogTrigger>
             <DialogContent className="max-w-fit overflow-y-scroll max-h-screen">

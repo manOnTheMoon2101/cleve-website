@@ -2,7 +2,12 @@ import React from "react";
 import cleve from "../../../../public/images/Cleve.png";
 import Image from "next/image";
 import { FaArrowDown } from "react-icons/fa";
+import { Suez_One } from "next/font/google";
 import { Button } from "@/components/ui/button";
+const suez = Suez_One({
+  subsets: ["latin"],
+  weight: "400"
+});
 const Welcome = () => {
   return (
     <div className="flex flex-col md:flex-row">
@@ -12,7 +17,7 @@ const Welcome = () => {
 
       <div className="flex-1 flex flex-col justify-between">
         <div className="p-4">
-          <h2 className="text-8xl font-bold text-center">
+          <h2 className={`text-8xl font-bold text-center ${suez.className}`}>
             npm <span className="text-emerald-400">init</span>?
           </h2>
         </div>

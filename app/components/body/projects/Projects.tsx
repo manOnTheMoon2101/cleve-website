@@ -179,7 +179,7 @@ export const GET = async (
                 <h4 className="text-lg text-center">{x.misc}</h4>
               </div>
             </DialogTrigger>
-            <DialogContent className="max-w-fit overflow-y-scroll max-h-screen bg-slate-900">
+            <DialogContent className="max-w-fit overflow-y-scroll max-h-screen">
               <DialogHeader>
                 <DialogTitle className="text-center text-4xl font-bold">
                   {x.title}

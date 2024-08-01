@@ -18,7 +18,12 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52,211,153,1) 71%)',
+      },
       colors: {
+        linkedin:"hsl(200.55,100%,35.49%)",
+        github:"hsl(9.18,85.92%,58.24%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

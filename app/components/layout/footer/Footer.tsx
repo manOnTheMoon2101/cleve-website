@@ -20,7 +20,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin className="m-1 text-linkedin" size={35} />
+                <FaLinkedin className="m-1 text-linkedin mx-4" size={50} />
               </a>
             </TooltipTrigger>
             <TooltipContent>
@@ -37,7 +37,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub className="m-1 text-github" size={35} />
+                <FaGithub className="m-1 text-github mx-4" size={50} />
               </a>
             </TooltipTrigger>
             <TooltipContent>
@@ -47,9 +47,9 @@ const Footer = () => {
         </TooltipProvider>
       </div>
 
-      <div className="flex row justify-between">
+      <div className="text-center">
         <div>@2024 </div>
-        <div>made by @cleveclayton</div>
+        <div>Designed by @cleveclayton</div>
       </div>
     </div>
   );

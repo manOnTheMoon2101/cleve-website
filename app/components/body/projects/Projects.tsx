@@ -24,7 +24,7 @@ const poppins = Poppins({
 });
 const suez = Suez_One({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 const Projects = () => {
   const data: any = {
@@ -89,7 +89,7 @@ const Projects = () => {
       //         />
       //       ),
       info: "Basic Weather API",
-      misc: "API-WEB-2024",
+      misc: "NextJS",
       techStack: "NextJS | OpenWeatherAPI | cheerio | shadcn/ui | TailwindCSS",
       link: "https://weather-app-next-js-pi.vercel.app/",
       descriptionFirst: "Simple Weather App that displays current weather data",
@@ -114,7 +114,7 @@ const Projects = () => {
       info: "Weight/Nutrion tracker",
       descriptionFirst: "Weight Management App displays relevant data.",
       descriptionSecond: "Used Prisma as the ORM for the REST APIs",
-      misc: "DASHBOARD-WEB-2024",
+      misc: "NextJS",
       //       code: (
       //         <CopyBlock
       //           text={`
@@ -168,7 +168,7 @@ const Projects = () => {
   return (
     <div className="clear-both">
       <div>
-      <h2 className={`text-8xl font-bold text-center ${suez.className}`}>
+        <h2 className={`text-8xl font-bold text-center ${suez.className}`}>
           some <span className="text-emerald-400"> projects</span> i worked
           on...
         </h2>
@@ -185,8 +185,10 @@ const Projects = () => {
                   <div className="max-w-full h-96">{x.image}</div>
                 </div>
                 <h3 className="text-xl font-semibold text-center">{x.title}</h3>
-                <h4 className={`text-lg text-center  ${poppins.className}`}>{x.info}</h4>
-                <h4 className={`text-lg text-center  ${poppins.className}`}>{x.misc}</h4>
+                <h4 className={`text-lg text-center  ${poppins.className}`}>
+                  {x.info}
+                </h4>
+                <h4 className={`text-lg text-center`}>{x.misc}</h4>
               </div>
             </DialogTrigger>
             <DialogContent className="max-w-fit overflow-y-scroll max-h-screen">

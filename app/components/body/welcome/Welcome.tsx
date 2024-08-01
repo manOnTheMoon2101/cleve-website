@@ -6,13 +6,17 @@ import { Suez_One } from "next/font/google";
 import { Button } from "@/components/ui/button";
 const suez = Suez_One({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 const Welcome = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="flex-1">
-        <Image alt="Cleve" height={500} width={500} src={cleve} />
+        <Image
+          alt="Cleve"
+          className="w-22 h-200 md:w-500 md:h-500"
+          src={cleve}
+        />
       </div>
 
       <div className="flex-1 flex flex-col justify-between">

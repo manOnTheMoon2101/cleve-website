@@ -3,8 +3,18 @@ import cleve from "../../../../public/images/Cleve.png";
 import Image from "next/image";
 import { FaArrowDown } from "react-icons/fa";
 import { Suez_One } from "next/font/google";
+import { Nova_Mono } from "next/font/google";
 import { Button } from "@/components/ui/button";
+import { Ramabhadra } from "next/font/google";
 const suez = Suez_One({
+  subsets: ["latin"],
+  weight: "400",
+});
+const ram = Ramabhadra({
+  subsets: ["latin"],
+  weight: "400",
+});
+const mono = Nova_Mono({
   subsets: ["latin"],
   weight: "400",
 });
@@ -21,7 +31,7 @@ const Welcome = () => {
 
       <div className="flex-1 flex flex-col justify-between">
         <div className="p-4">
-          <h2 className={`text-8xl font-bold text-center ${suez.className}`}>
+          <h2 className={`text-8xl font-bold text-center ${ram.className}`}>
             npm <span className="text-emerald-400">init</span>?
           </h2>
         </div>
@@ -36,6 +46,7 @@ const Welcome = () => {
               href="assets/cv/Cleve_Clayton.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              className={`${ram.className}`}
               download
             >
               Download CV

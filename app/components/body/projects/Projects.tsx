@@ -18,11 +18,16 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { Ramabhadra } from "next/font/google";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "100",
 });
 const suez = Suez_One({
+  subsets: ["latin"],
+  weight: "400",
+});
+const ram = Ramabhadra({
   subsets: ["latin"],
   weight: "400",
 });
@@ -168,7 +173,7 @@ const Projects = () => {
   return (
     <div className="clear-both">
       <div>
-        <h2 className={`text-8xl font-bold text-center ${suez.className}`}>
+        <h2 className={`text-8xl font-bold text-center ${ram.className}`}>
           some <span className="text-emerald-400"> projects</span> i worked
           on...
         </h2>
@@ -188,7 +193,7 @@ const Projects = () => {
                 <h4 className={`text-lg text-center  ${poppins.className}`}>
                   {x.info}
                 </h4>
-                <h4 className={`text-lg text-center`}>{x.misc}</h4>
+                {/* <h4 className={`text-lg text-center`}>{x.misc}</h4> */}
               </div>
             </DialogTrigger>
             <DialogContent className="max-w-fit overflow-y-scroll max-h-screen">

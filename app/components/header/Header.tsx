@@ -3,10 +3,20 @@
 import React from "react";
 import { Poppins } from "next/font/google";
 import { Suez_One } from "next/font/google";
+import { Nova_Mono } from "next/font/google";
+import { Ramabhadra } from "next/font/google";
 import Spline from "@splinetool/react-spline/next";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: "100",
+});
+const mono = Nova_Mono({
+  subsets: ["latin"],
+  weight: "400",
+});
+const ram = Ramabhadra({
+  subsets: ["latin"],
+  weight: "400",
 });
 const suez = Suez_One({
   subsets: ["latin"],

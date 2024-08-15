@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import cleve from "../../../../public/images/Cleve.png";
 import Image from "next/image";
@@ -46,15 +46,16 @@ const Welcome = () => {
           <p className={`text-4xl  ${poppins.className}`}>
             my name' cleve
             <br />i make apps for <br />a <br />
-            <code className="text-red-400">
+            <code className="text-red-400 text-2xl">
               {" "}
               const x : string = 'living...'{" "}
             </code>
           </p>
           <p className={`text-4xl text-left  ${poppins.className}`}>
-            <br /> i love the outdoors(🌻)... <br /> putting smiles(😁) on
-            peoples faces!... <br />
+            <br /> i love the outdoors(🌻) <br /> putting smiles(😁) on peoples
+            faces! <br />
             and coding of course
+            <br />
             <span className="text-xs">
               (mr hacker go go go•
               <span className="text-lime-400"> ılıılıılılıılıılı</span>
@@ -64,11 +65,12 @@ const Welcome = () => {
             <br />
           </p>
           <div className="mt-20">
-            <p className={`text-4xl text-center    ${ram.className}`}>
+            <p className={`text-4xl text-center`}>
               {" "}
-              View some of my Personal Projects i worked on
               <br />
-              or say "heyyyyyy" via{" "}
+              say
+              <br />
+              "heyyyyyy"{" "}
             </p>
             <div className="flex flex-row justify-around">
               (

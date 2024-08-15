@@ -35,11 +35,23 @@ const Welcome = () => {
             npm <span className="text-emerald-400">init</span>?
           </h2>
         </div>
+        <div className="p-4 text-center">
+          <p>
+            my name' cleve,i make apps for a <code> const x : string = 'living...' </code>
+            <br /> i love the outdoors(🌻)...  <br /> putting smiles(😁)  on
+            peoples faces!... <br />and coding of course<br/>(mr hackerman go go go!!!)
+          </p>
+          <p>
+            {" "}
+            view some of my personal projects i worked on,or say hi via
+            linkedin,github
+          </p>
+        </div>
         <div className="flex flex-row justify-center">
           <FaArrowDown className="animate-bounce " size={60} />
         </div>
 
-        <div className="flex flex-row justify-center">
+        {/* <div className="flex flex-row justify-center">
           <Button>
             {" "}
             <a
@@ -52,7 +64,7 @@ const Welcome = () => {
               Download CV
             </a>
           </Button>
-        </div>
+        </div> */}
         <div className="p-4 self-start"></div>
       </div>
     </div>

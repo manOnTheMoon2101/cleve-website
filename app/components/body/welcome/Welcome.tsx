@@ -4,7 +4,6 @@ import Image from "next/image";
 import { FaArrowDown } from "react-icons/fa";
 import { Suez_One } from "next/font/google";
 import { Nova_Mono } from "next/font/google";
-import { Button } from "@/components/ui/button";
 import { Ramabhadra } from "next/font/google";
 const suez = Suez_One({
   subsets: ["latin"],

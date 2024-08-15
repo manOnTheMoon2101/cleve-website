@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { Poppins } from "next/font/google";
 import { Suez_One } from "next/font/google";
@@ -20,7 +19,7 @@ const ram = Ramabhadra({
 });
 const suez = Suez_One({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 const Header = () => {
   return (
@@ -29,10 +28,15 @@ const Header = () => {
         <Spline scene="https://prod.spline.design/nkb8KaO45fGxJZ-M/scene.splinecode" />
       </div>
 
-      <h1 className={`text-8xl font-bold relative  ${suez.className}`}>Cleve Clayton</h1>
+      <h1 className={`text-8xl font-bold relative  ${suez.className}`}>
+        Cleve Clayton
+      </h1>
       <h3 className={`text-sm relative mt-2  ${poppins.className}`}>
-        web designer <span className="text-neutral-600">x</span> full stack
-        developer <span className="text-neutral-600">x</span> ux designer
+        web <span className="text-red-400">designer</span>{" "}
+        <span className="text-neutral-600">x</span> full stack
+        <span className="text-red-400"> developer</span>{" "}
+        <span className="text-neutral-600">x</span> ux{" "}
+        <span className="text-red-400">designer</span>
       </h3>
     </div>
   );

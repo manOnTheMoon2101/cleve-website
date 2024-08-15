@@ -1,13 +1,21 @@
+'use client'
 import React from "react";
 import cleve from "../../../../public/images/Cleve.png";
 import Image from "next/image";
 import { FaArrowDown } from "react-icons/fa";
 import { Suez_One } from "next/font/google";
 import { Nova_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
+import { FaLinkedin } from "react-icons/fa";
 import { Ramabhadra } from "next/font/google";
+import { FaGithub } from "react-icons/fa";
 const suez = Suez_One({
   subsets: ["latin"],
   weight: "400",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "100",
 });
 const ram = Ramabhadra({
   subsets: ["latin"],
@@ -35,16 +43,52 @@ const Welcome = () => {
           </h2>
         </div>
         <div className="p-4 text-center">
-          <p>
-            my name' cleve,i make apps for a <code> const x : string = 'living...' </code>
-            <br /> i love the outdoors(🌻)...  <br /> putting smiles(😁)  on
-            peoples faces!... <br />and coding of course<br/>(mr hackerman go go go!!!)
+          <p className={`text-4xl  ${poppins.className}`}>
+            my name' cleve
+            <br />i make apps for <br />a <br />
+            <code className="text-red-400">
+              {" "}
+              const x : string = 'living...'{" "}
+            </code>
           </p>
-          <p>
-            {" "}
-            view some of my personal projects i worked on,or say hi via
-            linkedin,github
+          <p className={`text-4xl text-left  ${poppins.className}`}>
+            <br /> i love the outdoors(🌻)... <br /> putting smiles(😁) on
+            peoples faces!... <br />
+            and coding of course
+            <span className="text-xs">
+              (mr hacker go go go•
+              <span className="text-lime-400"> ılıılıılılıılıılı</span>
+              <span className="text-lg">👨🏻‍💻</span>•{" "}
+              <span className="text-lime-400"> ılıılıılılıılıılı</span>)
+            </span>
+            <br />
           </p>
+          <div className="mt-20">
+            <p className={`text-4xl text-center    ${ram.className}`}>
+              {" "}
+              View some of my Personal Projects i worked on
+              <br />
+              or say "heyyyyyy" via{" "}
+            </p>
+            <div className="flex flex-row justify-around">
+              (
+              <a
+                href="https://www.linkedin.com/in/cleve-clayton/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="text-linkedin" size={40} />
+              </a>{" "}
+              <a
+                href="https://github.com/manOnTheMoon2101"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="text-github" size={40} />
+              </a>
+              )
+            </div>
+          </div>
         </div>
         <div className="flex flex-row justify-center">
           <FaArrowDown className="animate-bounce " size={60} />

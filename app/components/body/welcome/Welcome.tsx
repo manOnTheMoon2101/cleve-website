@@ -1,14 +1,21 @@
+"use client";
 import React from "react";
 import cleve from "../../../../public/images/Cleve.png";
 import Image from "next/image";
 import { FaArrowDown } from "react-icons/fa";
 import { Suez_One } from "next/font/google";
 import { Nova_Mono } from "next/font/google";
-import { Button } from "@/components/ui/button";
+import { Poppins } from "next/font/google";
+import { FaLinkedin } from "react-icons/fa";
 import { Ramabhadra } from "next/font/google";
+import { FaGithub } from "react-icons/fa";
 const suez = Suez_One({
   subsets: ["latin"],
   weight: "400",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "100",
 });
 const ram = Ramabhadra({
   subsets: ["latin"],
@@ -35,11 +42,53 @@ const Welcome = () => {
             npm <span className="text-emerald-400">init</span>?
           </h2>
         </div>
+        <div className="p-4 text-center">
+          <p className={`text-4xl  ${poppins.className}`}>
+            my name' cleve
+            <br />i make apps for <br />a <br />
+            <code className="text-red-400 text-2xl">
+              {" "}
+              const x : string = 'living...'{" "}
+            </code>
+          </p>
+          <p className={`text-4xl text-center  ${poppins.className}`}>
+            <br /> i love the outdoors(🌻) <br /> putting smiles(😁) on peoples
+            faces! <br />
+            and coding of course
+            <br />
+            <span className="text-xs">
+              (mr hacker go go go•
+              <span className="text-lime-400"> ılıılıılılıılıılı</span>
+              <span className="text-lg">👨🏻‍💻</span>•{" "}
+              <span className="text-lime-400"> ılıılıılılıılıılı</span>)
+            </span>
+            <br />
+          </p>
+          <div className="mt-20">
+            <p className={`text-4xl text-center`}> </p>
+            <div className="flex flex-row justify-around">
+              <a
+                href="https://www.linkedin.com/in/cleve-clayton/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="text-linkedin" size={40} />
+              </a>{" "}
+              <a
+                href="https://github.com/manOnTheMoon2101"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="text-github" size={40} />
+              </a>
+            </div>
+          </div>
+        </div>
         <div className="flex flex-row justify-center">
           <FaArrowDown className="animate-bounce " size={60} />
         </div>
 
-        <div className="flex flex-row justify-center">
+        {/* <div className="flex flex-row justify-center">
           <Button>
             {" "}
             <a
@@ -52,7 +101,7 @@ const Welcome = () => {
               Download CV
             </a>
           </Button>
-        </div>
+        </div> */}
         <div className="p-4 self-start"></div>
       </div>
     </div>

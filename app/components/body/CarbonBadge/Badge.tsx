@@ -1,3 +1,4 @@
+'use client'
 import { WebsiteCarbonBadge } from 'react-websitecarbon-badge';
 const Badge = () => {
   return (

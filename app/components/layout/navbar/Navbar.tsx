@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { ModeToggle } from "../../header/provider/Button";
 

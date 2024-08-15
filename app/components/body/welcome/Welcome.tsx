@@ -51,7 +51,7 @@ const Welcome = () => {
               const x : string = 'living...'{" "}
             </code>
           </p>
-          <p className={`text-4xl text-left  ${poppins.className}`}>
+          <p className={`text-4xl text-center  ${poppins.className}`}>
             <br /> i love the outdoors(🌻) <br /> putting smiles(😁) on peoples
             faces! <br />
             and coding of course

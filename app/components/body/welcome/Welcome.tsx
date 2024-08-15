@@ -65,15 +65,8 @@ const Welcome = () => {
             <br />
           </p>
           <div className="mt-20">
-            <p className={`text-4xl text-center`}>
-              {" "}
-              <br />
-              say
-              <br />
-              "heyyyyyy"{" "}
-            </p>
+            <p className={`text-4xl text-center`}> </p>
             <div className="flex flex-row justify-around">
-              (
               <a
                 href="https://www.linkedin.com/in/cleve-clayton/"
                 target="_blank"
@@ -88,7 +81,6 @@ const Welcome = () => {
               >
                 <FaGithub className="text-github" size={40} />
               </a>
-              )
             </div>
           </div>
         </div>

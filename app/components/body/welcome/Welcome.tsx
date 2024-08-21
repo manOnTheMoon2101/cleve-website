@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import cleve from "../../../../public/images/Cleve.png";
+import cleve from "../../../../public/images/Cleve (3).png";
 import Image from "next/image";
 import { FaArrowDown } from "react-icons/fa";
 import { Suez_One } from "next/font/google";
@@ -31,8 +31,10 @@ const Welcome = () => {
       <div className="flex-1">
         <Image
           alt="Cleve"
-          className="w-22 h-200 md:w-500 md:h-500"
+          className="w-22 h-200  md:w-500 md:h-500 "
           src={cleve}
+          quality={100}
+          priority
         />
       </div>
 
@@ -42,28 +44,35 @@ const Welcome = () => {
             npm <span className="text-emerald-400">init</span>?
           </h2>
         </div>
-        <div className="p-4 text-center">
+        <div className="w-full p-10">
           <p className={`text-4xl  ${poppins.className}`}>
             my name' cleve
-            <br />i make apps for <br />a <br />
-            <code className="text-red-400 text-2xl">
+            <br />i make apps for a <br />
+            <code className="text-emerald-400 text-2xl">
               {" "}
-              const x : string = 'living...'{" "}
+              <span className="text-slate-600"> const x : string =</span>{" "}
+              'living...'{" "}
             </code>
           </p>
-          <p className={`text-4xl text-center  ${poppins.className}`}>
-            <br /> i love the outdoors(🌻) <br /> putting smiles(😁) on peoples
-            faces! <br />
-            and coding of course
-            <br />
-            <span className="text-xs">
-              (mr hacker go go go•
-              <span className="text-lime-400"> ılıılıılılıılıılı</span>
-              <span className="text-lg">👨🏻‍💻</span>•{" "}
-              <span className="text-lime-400"> ılıılıılılıılıılı</span>)
-            </span>
-            <br />
-          </p>
+          <div className="w-full">
+            {" "}
+            {/* Full-width container with padding for left alignment */}
+            <p className={`text-4xl text-left ${poppins.className}`}>
+              <br /> i love the outdoors (🌻) <br /> putting smiles (😁) on
+              people's faces! <br />
+              and coding, of course
+              <br />
+              {/* 
+    <span className="text-xs">
+      (mr hacker go go go•
+      <span className="text-lime-400"> ılıılıılılıılıılı</span>
+      <span className="text-lg">👨🏻‍💻</span>•{" "}
+      <span className="text-lime-400"> ılıılıılılıılıılı</span>)
+    </span> 
+    */}
+              <br />
+            </p>
+          </div>
           <div className="mt-20">
             <p className={`text-4xl text-center`}> </p>
             <div className="flex flex-row justify-around">

@@ -32,11 +32,11 @@ const Header = () => {
         Cleve Clayton
       </h1>
       <h3 className={`text-sm relative mt-2  ${poppins.className}`}>
-        web <span className="text-red-400">designer</span>{" "}
+        web <span className="text-emerald-400">designer</span>{" "}
         <span className="text-neutral-600">x</span> full stack
-        <span className="text-red-400"> developer</span>{" "}
+        <span className="text-emerald-400"> developer</span>{" "}
         <span className="text-neutral-600">x</span> ux{" "}
-        <span className="text-red-400">designer</span>
+        <span className="text-emerald-400">designer</span>
       </h3>
     </div>
   );

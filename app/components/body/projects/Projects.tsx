@@ -39,7 +39,7 @@ const Projects = () => {
     <div className="clear-both">
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (
-          <div className="flex flex-col border border-8">
+          <div className="flex flex-col border border-4 m-10">
             <div className="max-w-full h-96 flex flex-row justify-center bg-red-400">
               {x.image}
             </div>

@@ -43,7 +43,7 @@ const Projects = () => {
       </h2>
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (
-          <div className="flex flex-col border border-4 m-10 rounded">
+          <div className="flex flex-col border border-4 m-10 rounded border-emerald-400">
             <div className="max-w-full h-96 flex flex-row justify-center ">
               {x.image}
             </div>

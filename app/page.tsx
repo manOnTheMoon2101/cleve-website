@@ -36,9 +36,9 @@ export default function Home() {
     <main className="m-5">
       <Navbar />
       <div>
-        <Section>
+
           <Header />
-        </Section>
+
       </div>
       <div className="mt-96 ">
         <Section>

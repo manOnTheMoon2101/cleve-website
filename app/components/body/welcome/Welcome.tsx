@@ -30,12 +30,12 @@ const Welcome = () => {
 
       <div className="flex-1 flex flex-col justify-between">
         <div className="p-10">
-        <h2 className={`text-6xl text-center md:text-8xl font-bold text-center ${prompt.className}`}>
+        <h2 className={`text-6xl text-center md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}>
             npm <span className="text-emerald-400 italic underline">init</span>?
           </h2>
         </div>
         <div className="w-full p-10">
-          <p className={`text-4xl italic`}>
+          <p className={`text-4xl italic tracking-tight`}>
             my name' cleve
             <br />i make apps for a <br />
             <code className="text-emerald-400 text-xl">
@@ -47,7 +47,7 @@ const Welcome = () => {
           <div className="w-full">
             {" "}
             {/* Full-width container with padding for left alignment */}
-            <p className={`text-4xl text-left italic`}>
+            <p className={`text-4xl text-left italic tracking-tight`}>
               <br /> i love the outdoors (🌻) <br /> and putting a (😁) on
               faces! <br />
               and coding, of course

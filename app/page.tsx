@@ -33,19 +33,19 @@ const Section: React.FC<SectionProps> = ({ children }) => {
 
 export default function Home() {
   return (
-    <main className="m-1">
+    <main className="m-5">
       <Navbar />
       <div>
-        <Section>
+
           <Header />
-        </Section>
+
       </div>
       <div className="mt-96 ">
         <Section>
           <Welcome />
         </Section>
       </div>
-      <div className="mt-96 bg">
+      <div className="mt-96">
         <Section>
           <Projects />
         </Section>

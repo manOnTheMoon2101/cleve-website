@@ -45,7 +45,7 @@ export default function Home() {
           <Welcome />
         </Section>
       </div>
-      <div className="mt-96 bg">
+      <div className="mt-96">
         <Section>
           <Projects />
         </Section>

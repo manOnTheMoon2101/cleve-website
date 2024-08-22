@@ -1,9 +1,6 @@
 "use client";
-import { Poppins } from "next/font/google";
-import { Suez_One } from "next/font/google";
 import { IoOpenOutline } from "react-icons/io5";
 import Spline from "@splinetool/react-spline";
-import { Ramabhadra } from "next/font/google";
 import { Prompt } from "next/font/google";
 const prompt = Prompt({
   subsets: ["latin"],

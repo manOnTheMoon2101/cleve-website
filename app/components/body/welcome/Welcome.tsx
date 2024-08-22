@@ -2,8 +2,6 @@
 import React from "react";
 import cleve from "../../../../public/images/Cleve (3).png";
 import Image from "next/image";
-import { FaArrowDown } from "react-icons/fa";
-import { Suez_One } from "next/font/google";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import {

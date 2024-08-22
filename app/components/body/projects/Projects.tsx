@@ -32,21 +32,31 @@ const Projects = () => {
   };
   return (
     <div className="clear-both">
-      <h2 className={`text-6xl md:text-8xl font-bold text-center ${prompt.className}`}>
+      <h2
+        className={`text-6xl md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}
+      >
         some <span className="text-emerald-400 italic underline">projects</span>{" "}
         i've worked on
       </h2>
+      <p className="block md:hidden border rounded text-center bg-emerald-400 text-black">
+        Mobile Users
+        <br />
+        Use Two Fingers to play around with the assets
+      </p>
+
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (
           <div className="flex flex-col border border-4 my-5 rounded border-emerald-400">
             <div className="max-w-full h-96 flex flex-row justify-center ">
               {x.image}
             </div>
-            <h3 className="text-xl font-semibold text-center">{x.title}</h3>
+            <h3 className="text-xl font-semibold text-center tracking-tight">
+              {x.title}
+            </h3>
 
             <div className="flex flex-row justify-center">
               <a
-                className={`text-lg text-center`}
+                className={`text-lg text-center hover:text-emerald-400`}
                 target="_blank"
                 rel="noopener noreferrer"
                 href={x.link ? x.link : ""}

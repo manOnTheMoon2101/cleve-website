@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { Poppins } from "next/font/google";
 import { Suez_One } from "next/font/google";
 import { IoOpenOutline } from "react-icons/io5";

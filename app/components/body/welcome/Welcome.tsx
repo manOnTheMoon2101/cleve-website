@@ -12,9 +12,10 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-const suez = Suez_One({
+import { Prompt } from "next/font/google";
+const prompt = Prompt({
   subsets: ["latin"],
-  weight: "400",
+  weight: "800",
 });
 const Welcome = () => {
   return (
@@ -31,7 +32,7 @@ const Welcome = () => {
 
       <div className="flex-1 flex flex-col justify-between">
         <div className="p-10">
-          <h2 className={`text-8xl font-bold text-left`}>
+        <h2 className={`text-6xl text-center md:text-8xl font-bold text-center ${prompt.className}`}>
             npm <span className="text-emerald-400 italic underline">init</span>?
           </h2>
         </div>

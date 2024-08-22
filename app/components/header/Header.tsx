@@ -2,9 +2,10 @@
 import React from "react";
 import { Poppins } from "next/font/google";
 import Spline from "@splinetool/react-spline/next";
-const poppins = Poppins({
+import { Prompt } from "next/font/google";
+const prompt = Prompt({
   subsets: ["latin"],
-  weight: "100",
+  weight: "800",
 });
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
         <Spline scene="https://prod.spline.design/nkb8KaO45fGxJZ-M/scene.splinecode" />
       </div>
 
-      <h1 className={`text-8xl font-bold relative`}>
+      <h1 className={`text-8xl font-bold relative  ${prompt.className}`}>
         Cleve Clayton
       </h1>
       <h3 className={`text-xl relative mt-6`}>

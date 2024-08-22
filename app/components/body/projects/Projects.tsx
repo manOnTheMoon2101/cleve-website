@@ -37,24 +37,28 @@ const Projects = () => {
   };
   return (
     <div className="clear-both">
+      <h2 className={`text-8xl font-bold text-center`}>
+        some <span className="text-emerald-400 italic underline">projects</span>{" "}
+        i've worked on
+      </h2>
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (
-          <div className="flex flex-col border border-4 m-10">
-            <div className="max-w-full h-96 flex flex-row justify-center bg-red-400">
+          <div className="flex flex-col border border-4 m-10 rounded">
+            <div className="max-w-full h-96 flex flex-row justify-center ">
               {x.image}
             </div>
             <h3 className="text-xl font-semibold text-center">{x.title}</h3>
 
             <div className="flex flex-row justify-center">
-              <IoOpenOutline />
               <a
-                className={`text-lg text-center  ${poppins.className}`}
+                className={`text-lg text-center`}
                 target="_blank"
                 rel="noopener noreferrer"
                 href={x.link ? x.link : ""}
               >
                 {x.link ? x.link : ""}
               </a>
+              <IoOpenOutline />
             </div>
           </div>
         ))}

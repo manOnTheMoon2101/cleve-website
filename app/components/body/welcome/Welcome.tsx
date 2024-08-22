@@ -20,26 +20,26 @@ const Welcome = () => {
   return (
     <div className="flex flex-col md:flex-row">
       <div className="flex-1">
-        {/* <Image
+        <Image
           alt="Cleve"
           className="w-22 h-200  md:w-500 md:h-500 "
           src={cleve}
           quality={100}
           priority
-        /> */}
+        />
       </div>
 
       <div className="flex-1 flex flex-col justify-between">
         <div className="p-10">
           <h2 className={`text-8xl font-bold text-left`}>
-            npm <span className="text-emerald-400">init</span>?
+            npm <span className="text-emerald-400 italic underline">init</span>?
           </h2>
         </div>
         <div className="w-full p-10">
-          <p className={`text-4xl`}>
+          <p className={`text-4xl italic`}>
             my name' cleve
             <br />i make apps for a <br />
-            <code className="text-emerald-400 text-2xl">
+            <code className="text-emerald-400 text-xl">
               {" "}
               <span className="text-slate-600"> const x : string =</span>{" "}
               'living...'{" "}
@@ -48,9 +48,9 @@ const Welcome = () => {
           <div className="w-full">
             {" "}
             {/* Full-width container with padding for left alignment */}
-            <p className={`text-4xl text-left`}>
-              <br /> i love the outdoors (🌻) <br /> putting smiles (😁) on
-              people's faces! <br />
+            <p className={`text-4xl text-left italic`}>
+              <br /> i love the outdoors (🌻) <br /> and putting a (😁) on
+              faces! <br />
               and coding, of course
               <br />
               {/* 
@@ -65,7 +65,6 @@ const Welcome = () => {
             </p>
           </div>
           <div className="mt-20">
-            <p className={`text-4xl text-center`}> </p>
             <div className="flex flex-row">
               <TooltipProvider>
                 <Tooltip>
@@ -104,9 +103,9 @@ const Welcome = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-center">
+        {/* <div className="flex flex-row justify-center">
           <FaArrowDown className="animate-bounce " size={60} />
-        </div>
+        </div> */}
 
         {/* <div className="flex flex-row justify-center">
           <Button>

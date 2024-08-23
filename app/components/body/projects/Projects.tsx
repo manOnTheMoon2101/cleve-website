@@ -16,7 +16,7 @@ const Projects = () => {
           className="flex flex-row justify-center"
         />
       ),
-      link: "https://weather-app-next-js-pi.vercel.app/",
+      link: "https://weather-app-one-mu-88.vercel.app/",
     },
     weight: {
       title: "Weight Management App🥩",

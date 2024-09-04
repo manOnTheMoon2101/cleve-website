@@ -61,7 +61,7 @@ const Projects = () => {
             <div className="max-w-full h-96 flex flex-row justify-center ">
               {x.image}
             </div>
-            <h3 className="text-xl font-semibold text-center tracking-tight">
+            <h3 className="text-xl font-semibold text-center tracking-tight my-2">
               {x.title}
             </h3>
           </div>

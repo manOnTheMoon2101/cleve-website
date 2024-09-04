@@ -39,7 +39,7 @@ const Projects = () => {
         <span className="text-emerald-400 italic underline">Projects</span>{" "}
         <br /> I've worked on
       </h2>
-      <p className="block md:hidden border rounded text-center bg-emerald-400 text-black">
+      <p className="block md:hidden border rounded text-center bg-emerald-400 text-black my-5">
         Mobile Users
         <br />
         Use Two Fingers to play around with the assets

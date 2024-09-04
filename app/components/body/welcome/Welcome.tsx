@@ -47,7 +47,7 @@ const Welcome = () => {
               'living...'{" "}
             </code> */}
           </p>
-          <div className="w-full my-5 text-2xl">
+          <div className="w-full my-5 text-xl">
             <CodeBlock
               showLineNumbers={false}
               theme={dracula}

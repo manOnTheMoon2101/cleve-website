@@ -50,12 +50,12 @@ const Projects = () => {
           <div className="flex flex-col border border-4 my-5 rounded border-emerald-400">
             <div className="flex flex-row justify-end">
               <a
-                className={`text-4xl text-center hover:text-emerald-400 p-2`}
+                className={`text-4xl text-center hover:text-emerald-400 p-2 hover:scale-90`}
                 target="_blank"
                 rel="noopener noreferrer"
                 href={x.link ? x.link : ""}
               >
-                <IoOpenOutline />
+                <IoOpenOutline  />
               </a>
             </div>
             <div className="max-w-full h-96 flex flex-row justify-center ">

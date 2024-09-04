@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
 import cleve from "../../../../public/images/Cleve (3).png";
+import linkedin from "../../../../public/icons/linkedin.svg";
+import github from "../../../../public/icons/github.svg";
 import Image from "next/image";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { CodeBlock, dracula } from "react-code-blocks";
 import {
   Tooltip,
   TooltipContent,
@@ -30,7 +31,9 @@ const Welcome = () => {
 
       <div className="flex-1 flex flex-col justify-between">
         <div className="p-10">
-        <h2 className={`text-6xl text-center md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}>
+          <h2
+            className={`text-6xl text-center md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}
+          >
             npm <span className="text-emerald-400 italic underline">init</span>?
           </h2>
         </div>
@@ -38,29 +41,24 @@ const Welcome = () => {
           <p className={`text-4xl italic tracking-tight`}>
             my name' cleve
             <br />i make apps for a <br />
-            <code className="text-emerald-400 text-xl">
+            {/* <code className="text-emerald-400 text-xl">
               {" "}
               <span className="text-slate-600"> const x : string =</span>{" "}
               'living...'{" "}
-            </code>
+            </code> */}
           </p>
+          <div className="w-full my-5 text-xl">
+            <CodeBlock
+              showLineNumbers={false}
+              theme={dracula}
+              text={'const x : string = "living"'}
+              language={"typescript"}
+            />
+          </div>
           <div className="w-full">
-            {" "}
             {/* Full-width container with padding for left alignment */}
             <p className={`text-4xl text-left italic tracking-tight`}>
-              <br /> i love the outdoors (🌻) <br /> and putting a (😁) on
-              faces! <br />
-              and coding, of course
-              <br />
-              {/* 
-    <span className="text-xs">
-      (mr hacker go go go•
-      <span className="text-lime-400"> ılıılıılılıılıılı</span>
-      <span className="text-lg">👨🏻‍💻</span>•{" "}
-      <span className="text-lime-400"> ılıılıılılıılıılı</span>)
-    </span> 
-    */}
-              <br />
+              i love the outdoors (🌻) <br /> and putting a (😁) on faces!{" "}
             </p>
           </div>
           <div className="mt-20">
@@ -74,7 +72,14 @@ const Welcome = () => {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <FaLinkedin className="text-linkedin" size={40} />
+                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                        <Image
+                          src={linkedin}
+                          alt={"Linkedin"}
+                          height={60}
+                          width={60}
+                        />
+                      </div>
                     </a>
                   </TooltipTrigger>
                   <TooltipContent>
@@ -82,6 +87,7 @@ const Welcome = () => {
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
+
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -91,7 +97,14 @@ const Welcome = () => {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <FaGithub className="text-github" size={40} />
+                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                        <Image
+                          src={github}
+                          alt={"Github"}
+                          height={60}
+                          width={60}
+                        />
+                      </div>
                     </a>
                   </TooltipTrigger>
                   <TooltipContent>

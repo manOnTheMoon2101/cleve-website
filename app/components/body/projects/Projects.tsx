@@ -35,8 +35,9 @@ const Projects = () => {
       <h2
         className={`text-6xl md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}
       >
-        some <span className="text-emerald-400 italic underline">projects</span>{" "}
-        i've worked on
+        Some personal <br />
+        <span className="text-emerald-400 italic underline">Projects</span>{" "}
+        <br /> I've worked on
       </h2>
       <p className="block md:hidden border rounded text-center bg-emerald-400 text-black">
         Mobile Users
@@ -47,24 +48,22 @@ const Projects = () => {
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (
           <div className="flex flex-col border border-4 my-5 rounded border-emerald-400">
+            <div className="flex flex-row justify-end">
+              <a
+                className={`text-4xl text-center hover:text-emerald-400 p-2`}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={x.link ? x.link : ""}
+              >
+                <IoOpenOutline />
+              </a>
+            </div>
             <div className="max-w-full h-96 flex flex-row justify-center ">
               {x.image}
             </div>
             <h3 className="text-xl font-semibold text-center tracking-tight">
               {x.title}
             </h3>
-
-            <div className="flex flex-row justify-center">
-              <a
-                className={`text-lg text-center hover:text-emerald-400`}
-                target="_blank"
-                rel="noopener noreferrer"
-                href={x.link ? x.link : ""}
-              >
-                {x.link ? x.link : ""}
-              </a>
-              <IoOpenOutline />
-            </div>
           </div>
         ))}
       </div>

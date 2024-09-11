@@ -52,7 +52,7 @@ const Welcome = () => {
             <CodeBlock
               showLineNumbers={false}
               theme={dracula}
-              text={'const x : string = "living"'}
+              text={'const x : string = "Living"'}
               language={"typescript"}
             />
           </div>
@@ -73,7 +73,7 @@ const Welcome = () => {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-xl shadow-emerald-900 transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                         <Image
                           src={linkedin}
                           alt={"Linkedin"}
@@ -98,7 +98,7 @@ const Welcome = () => {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg shadow-emerald-900 transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                         <Image
                           src={github}
                           alt={"Github"}
@@ -123,7 +123,7 @@ const Welcome = () => {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg shadow-emerald-900 transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                         <Image
                           src={email}
                           alt={"Email"}

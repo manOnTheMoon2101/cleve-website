@@ -35,9 +35,8 @@ const Projects = () => {
       <h2
         className={`text-6xl md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}
       >
-        Some personal <br />
-        <span className="text-emerald-400 italic underline">Projects</span>{" "}
-        <br /> I've worked on
+        Some<span className="text-emerald-400 italic underline mx-2">apps</span>
+        <br /> I've made
       </h2>
       <p className="block md:hidden border rounded text-center bg-emerald-400 text-black my-5">
         Mobile Users
@@ -55,7 +54,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 href={x.link ? x.link : ""}
               >
-                <IoOpenOutline  />
+                <IoOpenOutline />
               </a>
             </div>
             <div className="max-w-full h-96 flex flex-row justify-center ">

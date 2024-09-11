@@ -4,6 +4,7 @@ import cleve from "../../../../public/images/Cleve (3).png";
 import linkedin from "../../../../public/icons/linkedin.svg";
 import github from "../../../../public/icons/github.svg";
 import email from "../../../../public/icons/email.svg";
+import { FaArrowTurnDown } from "react-icons/fa6";
 import Image from "next/image";
 import { CodeBlock, dracula } from "react-code-blocks";
 import {
@@ -39,26 +40,36 @@ const Welcome = () => {
           </h2>
         </div>
         <div className="w-full p-10">
-          <p className={`text-4xl italic tracking-tight`}>
+          <p className={`text-4xl  tracking-tight`}>
             my name' cleve
-            <br />i make apps for a <br />
+            <br />
+            <span className="flex flex-row items-center">
+              i make apps for a <FaArrowTurnDown className="top-5 relative" />
+            </span>
+            <br />
+            <div className="shadow-xl shadow-emerald-900 border-2 rounded m-5 text-center">
+              <p className="text-slate-600 m-5 italic animate-pulse">
+                const x : string ={" "}
+                <span className="text-emerald-400 ">"Living"</span>
+              </p>
+            </div>
             {/* <code className="text-emerald-400 text-xl">
               {" "}
               <span className="text-slate-600"> const x : string =</span>{" "}
               'living...'{" "}
             </code> */}
           </p>
-          <div className="w-full my-5 text-xl">
+          {/* <div className="w-full my-5 text-xl">
             <CodeBlock
               showLineNumbers={false}
               theme={dracula}
               text={'const x : string = "Living"'}
               language={"typescript"}
             />
-          </div>
+          </div> */}
           <div className="w-full">
             {/* Full-width container with padding for left alignment */}
-            <p className={`text-4xl text-left italic tracking-tight`}>
+            <p className={`text-4xl text-left  tracking-tight`}>
               i love the outdoors (🌻) <br /> and putting a (😁) on faces!{" "}
             </p>
           </div>

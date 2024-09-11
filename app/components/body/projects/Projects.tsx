@@ -2,6 +2,7 @@
 import { IoOpenOutline } from "react-icons/io5";
 import Spline from "@splinetool/react-spline";
 import { Prompt } from "next/font/google";
+import { CiCircleInfo } from "react-icons/ci";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -35,14 +36,16 @@ const Projects = () => {
       <h2
         className={`text-6xl md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}
       >
-        Some personal <br />
-        <span className="text-emerald-400 italic underline">Projects</span>{" "}
-        <br /> I've worked on
+        some<span className="text-emerald-400 italic underline mx-2">apps</span>
+        <br /> I've made
       </h2>
-      <p className="block md:hidden border rounded text-center bg-emerald-400 text-black my-5">
+      <p className="block md:hidden border rounded text-center  text-emerald-400 my-5">
+        <div className="flex flex-row justify-end">
+          <CiCircleInfo className="text-4xl text-emerald-400" />
+        </div>
         Mobile Users
         <br />
-        Use Two Fingers to play around with the assets
+        Use Two Fingers to play around with the 3d assets
       </p>
 
       <div className="flex flex-col m-5 md:flex-row justify-around">
@@ -55,7 +58,7 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 href={x.link ? x.link : ""}
               >
-                <IoOpenOutline  />
+                <IoOpenOutline />
               </a>
             </div>
             <div className="max-w-full h-96 flex flex-row justify-center ">

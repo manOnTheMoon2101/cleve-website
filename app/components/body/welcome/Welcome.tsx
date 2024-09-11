@@ -3,6 +3,8 @@ import React from "react";
 import cleve from "../../../../public/images/Cleve (3).png";
 import linkedin from "../../../../public/icons/linkedin.svg";
 import github from "../../../../public/icons/github.svg";
+import email from "../../../../public/icons/email.svg";
+import { FaArrowTurnDown } from "react-icons/fa6";
 import Image from "next/image";
 import { CodeBlock, dracula } from "react-code-blocks";
 import {
@@ -38,26 +40,36 @@ const Welcome = () => {
           </h2>
         </div>
         <div className="w-full p-10">
-          <p className={`text-4xl italic tracking-tight`}>
+          <p className={`text-4xl  tracking-tight`}>
             my name' cleve
-            <br />i make apps for a <br />
+            <br />
+            <span className="flex flex-row items-center">
+              i make apps for a <FaArrowTurnDown className="top-5 relative" />
+            </span>
+            <br />
+            <div className="shadow-xl shadow-emerald-900 border-2 rounded m-5 text-center">
+              <p className="text-slate-600 m-5 italic animate-pulse">
+                const x : string ={" "}
+                <span className="text-emerald-400 ">"Living"</span>
+              </p>
+            </div>
             {/* <code className="text-emerald-400 text-xl">
               {" "}
               <span className="text-slate-600"> const x : string =</span>{" "}
               'living...'{" "}
             </code> */}
           </p>
-          <div className="w-full my-5 text-xl">
+          {/* <div className="w-full my-5 text-xl">
             <CodeBlock
               showLineNumbers={false}
               theme={dracula}
-              text={'const x : string = "living"'}
+              text={'const x : string = "Living"'}
               language={"typescript"}
             />
-          </div>
+          </div> */}
           <div className="w-full">
             {/* Full-width container with padding for left alignment */}
-            <p className={`text-4xl text-left italic tracking-tight`}>
+            <p className={`text-4xl text-left  tracking-tight`}>
               i love the outdoors (🌻) <br /> and putting a (😁) on faces!{" "}
             </p>
           </div>
@@ -72,7 +84,7 @@ const Welcome = () => {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-xl shadow-emerald-900 transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                         <Image
                           src={linkedin}
                           alt={"Linkedin"}
@@ -97,7 +109,7 @@ const Welcome = () => {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg shadow-emerald-900 transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                         <Image
                           src={github}
                           alt={"Github"}
@@ -109,6 +121,31 @@ const Welcome = () => {
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>Github</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a
+                      href="mailto:clevejohnclayton.2101@gmail.com"
+                      target="_blank"
+                      className="px-5"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg shadow-emerald-900 transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                        <Image
+                          src={email}
+                          alt={"Email"}
+                          height={60}
+                          width={60}
+                        />
+                      </div>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Email : clevejohnclayton.2101@gmail.com</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

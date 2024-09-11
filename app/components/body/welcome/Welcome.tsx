@@ -3,6 +3,7 @@ import React from "react";
 import cleve from "../../../../public/images/Cleve (3).png";
 import linkedin from "../../../../public/icons/linkedin.svg";
 import github from "../../../../public/icons/github.svg";
+import email from "../../../../public/icons/email.svg";
 import Image from "next/image";
 import { CodeBlock, dracula } from "react-code-blocks";
 import {
@@ -109,6 +110,31 @@ const Welcome = () => {
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>Github</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <a
+                      href="mailto:clevejohnclayton.2101@gmail.com"
+                      target="_blank"
+                      className="px-5"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                        <Image
+                          src={email}
+                          alt={"Email"}
+                          height={60}
+                          width={60}
+                        />
+                      </div>
+                    </a>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Email : clevejohnclayton.2101@gmail.com</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>

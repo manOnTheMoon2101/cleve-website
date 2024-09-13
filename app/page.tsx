@@ -8,7 +8,6 @@ import { useInView } from "framer-motion";
 import Navbar from "./components/layout/navbar/Navbar";
 import Badge from "./components/body/CarbonBadge/Badge";
 import { motion, useScroll } from "framer-motion";
-import "./styles.css";
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -37,7 +36,7 @@ export default function Home() {
   return (
     <>
       <motion.div
-        className="progress-bar"
+        className="fixed top-0 left-0 right-0 h-2.5 bg-emerald-400 rounded transform origin-left"
         style={{ scaleX: scrollYProgress }}
       />
       <main className="m-5">

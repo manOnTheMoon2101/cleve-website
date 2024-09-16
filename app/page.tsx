@@ -8,6 +8,7 @@ import { useInView } from "framer-motion";
 import Navbar from "./components/layout/navbar/Navbar";
 import Badge from "./components/body/CarbonBadge/Badge";
 import { motion, useScroll } from "framer-motion";
+import Stack from "./components/body/stack/Stack";
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -47,6 +48,11 @@ export default function Home() {
         <div className="mt-96 ">
           <Section>
             <Welcome />
+          </Section>
+        </div>
+        <div className="mt-96">
+          <Section>
+            <Stack/>
           </Section>
         </div>
         <div className="mt-96">

@@ -74,6 +74,7 @@ const Welcome = () => {
             </p>
           </div>
           <div className="mt-20">
+            <h2>say hey!</h2>
             <div className="flex flex-row">
               <TooltipProvider>
                 <Tooltip>

@@ -12,7 +12,7 @@ const Navbar = () => {
           <li className="mx-10 flex flex-row">
             {" "}
             <Link href="/">
-              <FaHome size={25} />
+              <FaHome className="text-emerald-400" size={25} />
             </Link>
           </li>
           <li className="mx-5">

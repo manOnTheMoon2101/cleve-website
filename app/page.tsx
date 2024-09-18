@@ -36,28 +36,13 @@ export default function Home() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-2.5 bg-emerald-400 rounded transform origin-left"
+        className="fixed top-0 left-0 right-0 h-2.5 bg-emerald-400 rounded transform origin-left z-50"
         style={{ scaleX: scrollYProgress }}
       />
       <main className="m-5">
         <Navbar />
         <div>
           <Header />
-        </div>
-        {/* <div className="mt-96 ">
-          <Section>
-            <Welcome />
-          </Section>
-        </div> */}
-        {/* <div className="mt-96">
-          <Section>
-            <Projects />
-          </Section>
-        </div> */}
-        <div className="mt-96  ">
-          <Section>
-            <Badge />
-          </Section>
         </div>
         <div className="mt-96  ">
           <Section>

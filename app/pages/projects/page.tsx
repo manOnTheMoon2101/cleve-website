@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Navbar from "../../components/layout/navbar/Navbar";
 import { motion, useScroll } from "framer-motion";
+import ProjectsContent from "./components/Projects";
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -32,11 +33,16 @@ export default function Projects() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-2.5 bg-emerald-400 rounded transform origin-left"
+        className="fixed top-0 left-0 right-0 h-2.5 bg-emerald-400 rounded transform origin-left z-50"
         style={{ scaleX: scrollYProgress }}
       />
       <main className="m-5">
         <Navbar />
+        <div className="mt-40">
+          <Section>
+            <ProjectsContent />
+          </Section>
+        </div>
         <div className="mt-96  ">
           <Section>
             <Footer />

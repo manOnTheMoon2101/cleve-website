@@ -31,25 +31,39 @@ const ProjectsContent = () => {
       link: "https://weight-management.vercel.app/",
     },
   };
+  const contributed: any = {
+    match: {
+      title: "Match Exchange",
+      image: (
+        <Spline
+          scene="https://prod.spline.design/vtIduBwoNJF6F78X/scene.splinecode"
+          className="flex flex-row justify-center"
+        />
+      ),
+      link: "https://matchmx.com/",
+    },
+    loglive: {
+      title: "Loglive",
+      image: (
+        <Spline
+          scene="https://prod.spline.design/SJ34J7ldVR52xZ-S/scene.splinecode"
+          className="flex flex-row justify-center"
+        />
+      ),
+
+      link: "https://loglive.ai/",
+    },
+  };
   return (
     <div className="clear-both">
       <h2
-        className={`text-6xl md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}
+        className={`text-6xl md:text-8xl font-bold text-left tracking-wide ${prompt.className}`}
       >
         <span className="text-emerald-400 italic underline mx-2">projects</span>
-        <br /> i've contributed to
+        <br /> i've contributed to...
       </h2>
-      <p className="block md:hidden border rounded text-center  text-emerald-400 my-5">
-        <div className="flex flex-row justify-end">
-          <CiCircleInfo className="text-4xl text-emerald-400" />
-        </div>
-        Mobile Users
-        <br />
-        Use Two Fingers to play around with the 3d assets
-      </p>
-
       <div className="flex flex-col m-5 md:flex-row justify-around">
-        {Object.values(data).map((x: any) => (
+        {Object.values(contributed).map((x: any) => (
           <div className="flex flex-col border border-4 my-5 rounded border-emerald-400">
             <div className="flex flex-row justify-end">
               <a
@@ -61,9 +75,9 @@ const ProjectsContent = () => {
                 <IoOpenOutline />
               </a>
             </div>
-            <div className="max-w-full h-96 flex flex-row justify-center ">
+            {/* <div className="max-w-full h-96 flex flex-row justify-center ">
               {x.image}
-            </div>
+            </div> */}
             <h3 className="text-xl font-semibold text-center tracking-tight my-2">
               {x.title}
             </h3>
@@ -71,10 +85,22 @@ const ProjectsContent = () => {
         ))}
       </div>
       <h2
-        className={`text-6xl md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}
+        className={`text-6xl md:text-8xl font-bold text-left tracking-wide ${prompt.className}`}
       >
-        personal projects
+        <span className="text-emerald-400 italic underline mx-2">
+          personal projects
+        </span>
+        <br /> i've contributed to...
       </h2>
+      <p className="block md:hidden border rounded text-center  text-emerald-400 my-5">
+        <div className="flex flex-row justify-end">
+          <CiCircleInfo className="text-4xl text-emerald-400" />
+        </div>
+        Mobile Users
+        <br />
+        Use Two Fingers to play around with the 3d assets
+      </p>
+
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (
           <div className="flex flex-col border border-4 my-5 rounded border-emerald-400">

@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../components/styles.module.css";
 import { Prompt } from "next/font/google";
+import sa from "../../../../public/icons/sa.svg";
+import Image from "next/image";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -32,10 +34,13 @@ const AboutContent = () => {
         </div>
       </div>
       <div className={`${prompt.className} m-5 text-4xl`}>
-        <p className="flex flex-row ijustify-start m-10">
+        <p className="flex flex-row justify-start m-10">
           my name's cleve,i make apps for a living
           <br />
           born and raised in the boland.
+          <span className="flex flex-col justify-end">
+            <Image alt="sa" height={30} width={30} src={sa} />
+          </span>
         </p>
         <p className=" flex flex-row justify-end m-10">
           started falling in love with tech at a young age

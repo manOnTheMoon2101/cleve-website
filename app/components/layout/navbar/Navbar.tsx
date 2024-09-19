@@ -6,7 +6,7 @@ import { FaHome } from "react-icons/fa";
 import { Socials } from "./components/socials/Socials";
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-10">
+    <div className="sticky top-5 z-10 ">
       <div className="flex flex-row justify-between">
         <ModeToggle />
         <ul className="flex flex-row items-baseline">

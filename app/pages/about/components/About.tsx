@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "../components/styles.module.css";
-import Image from "next/image";
+import { Prompt } from "next/font/google";
+const prompt = Prompt({
+  subsets: ["latin"],
+  weight: "800",
+});
 const AboutContent = () => {
   return (
     <>
@@ -19,19 +23,29 @@ const AboutContent = () => {
         </div>
       </div>
       <div className="flex flex-row justify-center">
-        <h2 className="text-6xl">npm init?</h2>
+        <div className="p-10">
+          <h2
+            className={`text-6xl text-center md:text-9xl font-bold text-center tracking-wide ${prompt.className}`}
+          >
+            npm <span className="text-emerald-400 italic underline">init</span>?
+          </h2>
+        </div>
       </div>
-      <div>
-        <p className="flex flex-row justify-start">
-          my name's cleve,i make apps for a living.
+      <div className={`${prompt.className} m-5 text-4xl`}>
+        <p className="flex flex-row ijustify-start m-10">
+          my name's cleve,i make apps for a living
+          <br />
+          born and raised in the boland.
         </p>
-        <p className=" flex flex-row justify-end">
-          born and raised in the boland,my love for tech started at a young
-          age(since i was chewing batteries as a baby).
+        <p className=" flex flex-row justify-end m-10">
+          started falling in love with tech at a young age
+          <br />
+          (since i was chewing batteries as a baby).
         </p>
-        <p className="flex flex-row justify-start">
-          "Plat op die aarde" christian dude,who enjoys the little things in
-          life,and always keen to learn new things in life.
+        <p className="flex flex-row ijustify-start m-10">
+          "Plat op die aarde" christian guy who enjoys the little things in life
+          <br />
+          always keen to learn new things in life...
         </p>
       </div>
     </>

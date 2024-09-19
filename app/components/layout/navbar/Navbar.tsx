@@ -3,6 +3,7 @@ import React from "react";
 import { ModeToggle } from "../../header/provider/Button";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
+import { Socials } from "./components/socials/Socials";
 const Navbar = () => {
   return (
     <div className="sticky top-0 z-10">
@@ -23,10 +24,7 @@ const Navbar = () => {
             {" "}
             <Link href="/pages/projects">projects</Link>
           </li>
-          <li className="mx-5">
-            {" "}
-            <Link href="/pages/socials">socials</Link>
-          </li>
+          <Socials />
         </ul>
       </div>
     </div>

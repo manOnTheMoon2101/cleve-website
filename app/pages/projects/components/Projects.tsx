@@ -36,7 +36,7 @@ const ProjectsContent = () => {
       <h2
         className={`text-6xl md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}
       >
-        <span className="text-emerald-400 italic underline mx-2">apps</span>
+        <span className="text-emerald-400 italic underline mx-2">projects</span>
         <br /> i've contributed to
       </h2>
       <p className="block md:hidden border rounded text-center  text-emerald-400 my-5">
@@ -73,7 +73,7 @@ const ProjectsContent = () => {
       <h2
         className={`text-6xl md:text-8xl font-bold text-center tracking-wide ${prompt.className}`}
       >
-        personall apps
+        personal projects
       </h2>
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (

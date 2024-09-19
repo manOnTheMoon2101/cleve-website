@@ -38,7 +38,7 @@ export default function About() {
       />
       <main className="m-5">
         <Navbar />
-        <div className="mt-40">
+        <div className="mt-20">
           <Section>
             <AboutContent />
           </Section>

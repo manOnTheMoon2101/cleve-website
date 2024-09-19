@@ -39,7 +39,7 @@ export function Socials() {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <p>socials</p>
+          <p className="mx-5 cursor-pointer">socials</p>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <div className="mt-20">

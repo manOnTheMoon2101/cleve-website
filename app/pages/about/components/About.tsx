@@ -42,7 +42,7 @@ const AboutContent = () => {
           <br />
           (since i was chewing batteries as a baby).
         </p>
-        <p className="flex flex-row ijustify-start m-10">
+        <p className="flex flex-row justify-start m-10">
           "Plat op die aarde" christian guy who enjoys the little things in life
           <br />
           always keen to learn new things in life...

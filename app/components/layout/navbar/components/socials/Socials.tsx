@@ -21,16 +21,18 @@ import {
   Drawer,
   DrawerClose,
   DrawerContent,
-  DrawerDescription,
   DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import Image from "next/image";
 import linkedin from "../../../../../../public/icons/linkedin.svg";
 import github from "../../../../../../public/icons/github.svg";
 import email from "../../../../../../public/icons/email.svg";
+import { Prompt } from "next/font/google";
+const prompt = Prompt({
+  subsets: ["latin"],
+  weight: "800",
+});
 export function Socials() {
   const [open, setOpen] = React.useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -42,7 +44,7 @@ export function Socials() {
           <p className="mx-5 cursor-pointer">socials</p>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
-          <div className="mt-20">
+          <div className="mt-10">
             <div className="flex flex-row justify-center">
               <TooltipProvider>
                 <Tooltip>

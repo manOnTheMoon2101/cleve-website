@@ -33,14 +33,11 @@ const AboutContent = () => {
           </h2>
         </div>
       </div>
-      <div className={`${prompt.className} m-5 text-4xl`}>
+      <div className={`${prompt.className} m-5 text-6xl`}>
         <p className="flex flex-row justify-start m-10">
           my name's cleve,i make apps for a living
           <br />
           born and raised in the boland.
-          <span className="flex flex-col justify-end">
-            <Image alt="sa" height={30} width={30} src={sa} />
-          </span>
         </p>
         <p className=" flex flex-row justify-end m-10">
           started falling in love with tech at a young age
@@ -48,9 +45,14 @@ const AboutContent = () => {
           (since i was chewing batteries as a baby).
         </p>
         <p className="flex flex-row justify-start m-10">
-          "Plat op die aarde" christian guy who enjoys the little things in life
+          "Plat op die aarde" christian guy
           <br />
-          always keen to learn new things in life...
+          who enjoys the little things in life
+        </p>
+        <p className=" flex flex-row justify-end m-10">
+          always keen to learn new stuff
+          <br />
+          on a daily basis
         </p>
       </div>
     </>

@@ -33,23 +33,23 @@ const AboutContent = () => {
           </h2>
         </div>
       </div>
-      <div className={`${prompt.className} m-5 text-6xl`}>
-        <p className="flex flex-row justify-start m-10">
+      <div className={`${prompt.className} m-5 text-6xl text-center`}>
+        <p>
           my name's cleve,i make apps for a living
           <br />
           born and raised in the boland.
         </p>
-        <p className=" flex flex-row justify-end m-10">
+        <p className="m-40">
           started falling in love with tech at a young age
           <br />
           (since i was chewing batteries as a baby).
         </p>
-        <p className="flex flex-row justify-start m-10">
+        <p>
           "Plat op die aarde" christian guy
           <br />
           who enjoys the little things in life
         </p>
-        <p className=" flex flex-row justify-end m-10">
+        <p className="m-40">
           always keen to learn new stuff
           <br />
           on a daily basis

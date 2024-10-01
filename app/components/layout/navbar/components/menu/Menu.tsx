@@ -37,7 +37,7 @@ export function NavMenu() {
         <DropdownMenuSeparator /> */}
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <Link href="/" className="flex flex-row w-full justify-evenly">
+            <Link href="/" className="flex flex-row w-full justify-evenly my-2">
               <FaHome
                 className={`white w-1/2 ${
                   isActive("/") ? "text-emerald-400" : ""
@@ -50,7 +50,7 @@ export function NavMenu() {
           <DropdownMenuItem>
             <Link
               href="/pages/about"
-              className="flex flex-row w-full justify-evenly"
+              className="flex flex-row w-full justify-evenly my-2"
             >
               <FaPersonRays
                 className={
@@ -65,7 +65,7 @@ export function NavMenu() {
           <DropdownMenuItem>
             <Link
               href="/pages/projects"
-              className="flex flex-row w-full justify-evenly"
+              className="flex flex-row w-full justify-evenly my-2"
             >
               <FaCode
                 className={

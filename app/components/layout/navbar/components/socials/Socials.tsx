@@ -42,8 +42,8 @@ export function Socials() {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <div className="flex flex-row w-full justify-evenly">
-            <IoShareSocialSharp className="w-1/2 " />
+          <div className="flex flex-row w-full justify-evenly my-2">
+            <IoShareSocialSharp className="w-1/2 " /> 
             <span className="w-1/2 ">Socials</span>
           </div>
         </DialogTrigger>

@@ -2,7 +2,8 @@
 import { IoOpenOutline } from "react-icons/io5";
 import Spline from "@splinetool/react-spline";
 import { Prompt } from "next/font/google";
-import { CiCircleInfo } from "react-icons/ci";
+import weight from "@/public/images/graph.png";
+import weather from "@/public/images/weather.png";
 import Card from "./Card/Card";
 import loglive from "@/public/images/loglive.png";
 import match from "@/public/images/match.png";
@@ -15,11 +16,27 @@ const ProjectsContent = () => {
   const data: any = {
     weather: {
       title: "Weather App⛅",
+      image: (
+        <Image
+          alt="image"
+          src={weather}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+      ),
       link: "https://weather-app-one-mu-88.vercel.app/",
+      body: "Simple Weather App",
     },
     weight: {
       title: "Weight Management App🥩",
+      image: (
+        <Image
+          alt="image"
+          src={weight}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+      ),
       link: "https://weight-management.vercel.app/",
+      body: "Weight Management App",
     },
   };
   const contributed: any = {
@@ -58,7 +75,7 @@ const ProjectsContent = () => {
       </h2>
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(contributed).map((x: any) => (
-          <div className="flex flex-col border border-4 my-5 rounded">
+          <div className="flex flex-col my-5">
             <Card title={x.title} link={x.link} image={x.image} body={x.body} />
           </div>
         ))}
@@ -66,16 +83,13 @@ const ProjectsContent = () => {
       <h2
         className={`text-6xl md:text-8xl font-bold text-left tracking-wide ${prompt.className}`}
       >
-        <span className="text-emerald-400 italic underline mx-2">
-        projects
-        </span>
+        <span className="text-emerald-400 italic underline mx-2">projects</span>
         <br /> i've made...
       </h2>
-
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (
-          <div className="flex flex-col border border-4 my-5 rounded">
-            <Card title={x.title} link={x.link} image={x.image} />
+          <div className="flex flex-col my-5">
+            <Card title={x.title} link={x.link} image={x.image}  body={x.body}/>
           </div>
         ))}
       </div>

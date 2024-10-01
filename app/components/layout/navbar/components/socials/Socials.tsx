@@ -140,7 +140,8 @@ export function Socials() {
         </div>
       </DrawerTrigger>
       <DrawerContent>
-        <div className="mt-20">
+        <div className="mt-10">
+          <h2 className="text-center text-4xl">Say hey!</h2>
           <div className="flex flex-row justify-center m-10">
             <TooltipProvider>
               <Tooltip>
@@ -151,7 +152,7 @@ export function Socials() {
                     className="px-5"
                     rel="noopener noreferrer"
                   >
-                    <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-xl shadow-emerald-900 transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                    <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                       <Image
                         src={linkedin}
                         alt={"Linkedin"}
@@ -176,7 +177,7 @@ export function Socials() {
                     className="px-5"
                     rel="noopener noreferrer"
                   >
-                    <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg shadow-emerald-900 transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                    <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                       <Image
                         src={github}
                         alt={"Github"}
@@ -201,7 +202,7 @@ export function Socials() {
                     className="px-5"
                     rel="noopener noreferrer"
                   >
-                    <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom shadow-lg shadow-emerald-900 transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                    <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                       <Image src={email} alt={"Email"} height={60} width={60} />
                     </div>
                   </a>

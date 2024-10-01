@@ -7,6 +7,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import sign from "@/public/images/sign.png";
+import Image from "next/image";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -65,6 +67,9 @@ const AboutContent = () => {
           plants, with such big branches that the birds can perch in its shade”-
           <span className="text-4xl text-slate-400">Mark 4-31</span>
         </p>
+        <div className="flex flex-row justify-center">
+          <Image src={sign} alt="singnature" />
+        </div>
       </div>
     </>
   );

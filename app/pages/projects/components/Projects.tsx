@@ -77,7 +77,7 @@ const ProjectsContent = () => {
       </h2>
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(contributed).map((x: any) => (
-          <div className="flex flex-col my-5">
+          <div className="flex flex-col my-48">
             <Card title={x.title} link={x.link} image={x.image} body={x.body} />
           </div>
         ))}
@@ -93,7 +93,7 @@ const ProjectsContent = () => {
       </h2>
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (
-          <div className="flex flex-col my-5">
+          <div className="flex flex-col my-48">
             <Card title={x.title} link={x.link} image={x.image} body={x.body} />
           </div>
         ))}

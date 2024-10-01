@@ -2,7 +2,7 @@
 import React from "react";
 const Card = (title: any) => {
   return (
-    <div className="relative w-96 h-96 overflow-hidden rounded-lg shadow-lg group">
+    <div className="relative w-48 h-48 overflow-hidden rounded-lg shadow-lg group sm:w-96 sm:h-96">
       <a target="_blank" rel="noopener noreferrer" href={title.link}>
         {title.image}
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">

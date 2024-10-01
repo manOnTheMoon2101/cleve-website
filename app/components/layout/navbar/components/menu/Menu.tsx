@@ -42,7 +42,6 @@ export function NavMenu() {
                 className={`white w-1/2 ${
                   isActive("/") ? "text-emerald-400" : ""
                 }`}
-                size={25}
               />
               <span className="w-1/2 ">Home</span>
             </Link>

@@ -134,9 +134,9 @@ export function Socials() {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <div className="flex flex-row w-full justify-evenly">
-          <IoShareSocialSharp />
-          <span className="mx-5 cursor-pointer">Socials</span>
+        <div className="flex flex-row w-full justify-evenly my-2">
+          <IoShareSocialSharp className="w-1/2"/>
+          <span className="w-1/2">Socials</span>
         </div>
       </DialogTrigger>
       <DrawerContent>

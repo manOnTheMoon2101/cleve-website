@@ -33,26 +33,27 @@ const AboutContent = () => {
           </h2>
         </div>
       </div>
-      <div className={`${prompt.className} m-5 text-6xl text-center`}>
-        <p>
-          my name's cleve,i make apps for a living
-          <br />
-          born and raised in the boland.
+      <div className={`${prompt.className} m-5 text-6xl`}>
+        <p className="text-left">
+          my name's cleve,
+          <br />i make apps for a living
         </p>
-        <p className="m-40">
-          started falling in love with tech at a young age
+        <p className="my-40 text-right">
+          falled in love with tech at a young age
           <br />
-          (since i was chewing batteries as a baby).
+          (since i was chewing batteries as a baby)
         </p>
-        <p>
+        <p className="text-left">
           "Plat op die aarde" christian guy
           <br />
           who enjoys the little things in life
         </p>
-        <p className="m-40">
-          always keen to learn new stuff
+        <p className="my-40 text-right">
+          "It is like a mustard seed, which is the smallest of all seeds on
+          earth.
           <br />
-          on a daily basis
+          Yet when planted, it grows and becomes the largest of all garden
+          plants, with such big branches that the birds can perch in its shade”
         </p>
       </div>
     </>

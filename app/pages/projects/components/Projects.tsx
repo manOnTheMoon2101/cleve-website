@@ -67,7 +67,7 @@ const ProjectsContent = () => {
         className={`text-6xl md:text-8xl font-bold text-left tracking-wide ${prompt.className}`}
       >
         <span className="text-emerald-400 italic underline mx-2">
-          personal projects
+        projects
         </span>
         <br /> i've made...
       </h2>

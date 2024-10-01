@@ -41,7 +41,7 @@ const ProjectsContent = () => {
   };
   const contributed: any = {
     match: {
-      title: "Match Exchange",
+      title: "Match Exchange🌾",
       image: (
         <Image
           alt="image"
@@ -53,7 +53,7 @@ const ProjectsContent = () => {
       body: "Grain Platform",
     },
     loglive: {
-      title: "Loglive",
+      title: "Loglive🍊",
       image: (
         <Image
           alt="image"
@@ -89,7 +89,7 @@ const ProjectsContent = () => {
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (
           <div className="flex flex-col my-5">
-            <Card title={x.title} link={x.link} image={x.image}  body={x.body}/>
+            <Card title={x.title} link={x.link} image={x.image} body={x.body} />
           </div>
         ))}
       </div>

@@ -1,12 +1,9 @@
 "use client";
 import Header from "./components/header/Header";
-import Welcome from "./components/body/welcome/Welcome";
-import Projects from "./components/body/projects/Projects";
 import Footer from "./components/layout/footer/Footer";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Navbar from "./components/layout/navbar/Navbar";
-import Badge from "./components/body/CarbonBadge/Badge";
 import { motion, useScroll } from "framer-motion";
 interface SectionProps {
   children: React.ReactNode;

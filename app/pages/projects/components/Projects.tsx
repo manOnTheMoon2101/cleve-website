@@ -69,31 +69,31 @@ const ProjectsContent = () => {
     <div className="clear-both">
       <h2 className="text-center md:text-left">
         <span
-          className={`text-emerald-400 italic text-8xl font-bold tracking-wide ${prompt.className}`}
+          className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${prompt.className}`}
         >
           projects
         </span>
         <br /> <span className="text-5xl">i've contributed to</span>
       </h2>
-      <div className="flex flex-col m-5 md:flex-row justify-around">
+      <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(contributed).map((x: any) => (
-          <div className="flex flex-col my-48">
+          <div className="my-48">
             <Card title={x.title} link={x.link} image={x.image} body={x.body} />
           </div>
         ))}
       </div>
       <h2 className="text-center md:text-left">
         <span
-          className={`text-emerald-400 italic text-8xl font-bold tracking-wide ${prompt.className}`}
+          className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${prompt.className}`}
         >
           projects
         </span>
         <br />
         <span className="text-5xl">i've made</span>
       </h2>
-      <div className="flex flex-col m-5 md:flex-row justify-around">
+      <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(data).map((x: any) => (
-          <div className="flex flex-col my-48">
+          <div className="my-48">
             <Card title={x.title} link={x.link} image={x.image} body={x.body} />
           </div>
         ))}

@@ -43,7 +43,7 @@ export function Socials() {
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
           <div className="flex flex-row w-full justify-evenly my-2">
-            <IoShareSocialSharp className="w-1/2 " /> 
+            <IoShareSocialSharp className="w-1/2 " />
             <span className="w-1/2 ">Socials</span>
           </div>
         </DialogTrigger>
@@ -133,12 +133,12 @@ export function Socials() {
 
   return (
     <Drawer open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
+      <DrawerTrigger asChild>
         <div className="flex flex-row w-full justify-evenly my-2">
-          <IoShareSocialSharp className="w-1/2"/>
+          <IoShareSocialSharp className="w-1/2" />
           <span className="w-1/2">Socials</span>
         </div>
-      </DialogTrigger>
+      </DrawerTrigger>
       <DrawerContent>
         <div className="mt-20">
           <div className="flex flex-row justify-center m-10">

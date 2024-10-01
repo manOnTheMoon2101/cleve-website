@@ -40,17 +40,20 @@ const AboutContent = () => {
             (since i was chewing batteries as a baby)
           </span>
         </p>
-        <p className="text-left">
-         <span><TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
+        <p className="text-left my-40 ">
+          <span>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger asChild>
                   <span>"Plat op die aarde"</span>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>down to earth</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider></span> christian guy
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>down to earth</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </span>{" "}
+          christian guy
           <br />
           who enjoys the little things in life
         </p>

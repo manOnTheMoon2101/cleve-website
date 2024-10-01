@@ -28,6 +28,7 @@ import Image from "next/image";
 import linkedin from "../../../../../../public/icons/linkedin.svg";
 import github from "../../../../../../public/icons/github.svg";
 import email from "../../../../../../public/icons/email.svg";
+import { IoShareSocialSharp } from "react-icons/io5";
 import { Prompt } from "next/font/google";
 const prompt = Prompt({
   subsets: ["latin"],
@@ -41,7 +42,10 @@ export function Socials() {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <p className="mx-5 cursor-pointer">socials</p>
+          <div className="flex flex-row w-full justify-evenly">
+            <IoShareSocialSharp className="w-1/2 " />
+            <span className="w-1/2 ">Socials</span>
+          </div>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <div className="mt-10">
@@ -129,9 +133,12 @@ export function Socials() {
 
   return (
     <Drawer open={open} onOpenChange={setOpen}>
-      <DrawerTrigger asChild>
-        <p>socials</p>
-      </DrawerTrigger>
+      <DialogTrigger asChild>
+        <div className="flex flex-row w-full justify-evenly">
+          <IoShareSocialSharp />
+          <span className="mx-5 cursor-pointer">Socials</span>
+        </div>
+      </DialogTrigger>
       <DrawerContent>
         <div className="mt-20">
           <div className="flex flex-row justify-center m-10">

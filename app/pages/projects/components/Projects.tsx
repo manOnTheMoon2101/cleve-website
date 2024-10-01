@@ -67,11 +67,13 @@ const ProjectsContent = () => {
   };
   return (
     <div className="clear-both">
-      <h2
-        className={`text-6xl md:text-8xl font-bold text-left tracking-wide ${prompt.className}`}
-      >
-        <span className="text-emerald-400 italic underline mx-2">projects</span>
-        <br /> i've contributed to...
+      <h2 className="text-center md:text-left">
+        <span
+          className={`text-emerald-400 italic text-8xl font-bold tracking-wide ${prompt.className}`}
+        >
+          projects
+        </span>
+        <br /> <span className="text-5xl">i've contributed to</span>
       </h2>
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(contributed).map((x: any) => (
@@ -80,11 +82,14 @@ const ProjectsContent = () => {
           </div>
         ))}
       </div>
-      <h2
-        className={`text-6xl md:text-8xl font-bold text-left tracking-wide ${prompt.className}`}
-      >
-        <span className="text-emerald-400 italic underline mx-2">projects</span>
-        <br /> i've made...
+      <h2 className="text-center md:text-left">
+        <span
+          className={`text-emerald-400 italic text-8xl font-bold tracking-wide ${prompt.className}`}
+        >
+          projects
+        </span>
+        <br />
+        <span className="text-5xl">i've made</span>
       </h2>
       <div className="flex flex-col m-5 md:flex-row justify-around">
         {Object.values(data).map((x: any) => (

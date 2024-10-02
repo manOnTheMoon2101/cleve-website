@@ -14,7 +14,7 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
-  background: #b0b0b0;
+  background: #34d399;
 }
 @layer base {
   :root {

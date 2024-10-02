@@ -1,10 +1,10 @@
 "use client";
-import Hero from "./components/body/Body";
 import Footer from "@/app/components/body/components/layout/footer/Footer";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Navbar from "@/app/components/body/components/layout/navbar/Navbar";
 import { motion, useScroll } from "framer-motion";
+import ProjectsContent from "./components/Projects";
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -28,7 +28,7 @@ const Section: React.FC<SectionProps> = ({ children }) => {
   );
 };
 
-export default function Home() {
+export default function Projects() {
   const { scrollYProgress } = useScroll();
   return (
     <>
@@ -38,8 +38,10 @@ export default function Home() {
       />
       <main className="m-5">
         <Navbar />
-        <div>
-          <Hero />
+        <div className="mt-40">
+          <Section>
+            <ProjectsContent />
+          </Section>
         </div>
         <div className="mt-96  ">
           <Section>

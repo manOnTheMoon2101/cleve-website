@@ -34,7 +34,7 @@ const AboutContent = () => {
           <br />i make apps for a living
         </p>
         <p className="my-40 text-center md:text-right">
-          falled in l❤️ve with tech at a young age
+          falled in L❤️ve with tech at a young age
           <br />
           <span className="text-4xl text-slate-400">
             (since i was chewing batteries as a baby)
@@ -53,7 +53,7 @@ const AboutContent = () => {
               </Tooltip>
             </TooltipProvider>
           </span>{" "}
-          christian guy
+          Christian guy
           <br />
           who enjoys the little things in life
         </p>

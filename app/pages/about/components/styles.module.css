@@ -1,8 +1,7 @@
 .gallery {
-    --g: 6px; /* the gap */
-    
+    --g: 6px;
     display: grid;
-    width: 450px; /* the size */
+    width: 450px;
     aspect-ratio: 1;
     grid: auto-flow 1fr/repeat(3,1fr);
     gap: var(--g);

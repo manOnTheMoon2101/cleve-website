@@ -28,19 +28,19 @@ const AboutContent = () => {
           <Image src={cleveC} alt="Photo of Cleve Drinking a cocount" />
         </div>
       </div>
-      <div className={`${prompt.className} m-40 text-6xl`}>
-        <p className="text-left">
+      <div className={`${prompt.className} my-40 text-6xl`}>
+        <p className="text-center md:text-left">
           my name's cleve,
           <br />i make apps for a living
         </p>
-        <p className="my-40 text-right">
+        <p className="my-40 text-center md:text-right">
           falled in l❤️ve with tech at a young age
           <br />
           <span className="text-4xl text-slate-400">
             (since i was chewing batteries as a baby)
           </span>
         </p>
-        <p className="text-left my-40 ">
+        <p className="text-center md:text-left my-40 ">
           <span>
             <TooltipProvider>
               <Tooltip>

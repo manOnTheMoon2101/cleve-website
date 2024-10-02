@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { ModeToggle } from "../../header/provider/Button";
+import { ModeToggle } from "../../provider/Button";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
 import { Socials } from "./components/socials/Socials";
@@ -12,9 +12,6 @@ const prompt = Prompt({
   weight: "800",
 });
 const Navbar = () => {
-  const pathname = usePathname();
-  const isActive = (path: string) => pathname === path;
-
   return (
     <div className={`sticky top-5 z-10 ${prompt.className}`}>
       <div className="flex flex-row justify-between">

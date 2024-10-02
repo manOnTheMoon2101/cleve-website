@@ -1,8 +1,8 @@
 "use client";
-import Footer from "../../components/layout/footer/Footer";
+import Footer from "@/app/components/body/components/layout/footer/Footer";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import Navbar from "../../components/layout/navbar/Navbar";
+import Navbar from "@/app/components/body/components/layout/navbar/Navbar";
 import { motion, useScroll } from "framer-motion";
 import ProjectsContent from "./components/Projects";
 interface SectionProps {

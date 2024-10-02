@@ -6,7 +6,7 @@ const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
 });
-const Header = () => {
+const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen relative ">
       <div className="absolute top-0 left-20 right-0 bottom-0 z-10">
@@ -28,4 +28,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;

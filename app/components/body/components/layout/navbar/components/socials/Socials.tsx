@@ -25,9 +25,9 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import Image from "next/image";
-import linkedin from "../../../../../../public/icons/linkedin.svg";
-import github from "../../../../../../public/icons/github.svg";
-import email from "../../../../../../public/icons/email.svg";
+import linkedin from "@/public/icons/linkedin.svg";
+import github from "@/public/icons/github.svg";
+import email from "@/public/icons/email.svg";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { Prompt } from "next/font/google";
 const prompt = Prompt({

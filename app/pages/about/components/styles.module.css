@@ -1,16 +1,14 @@
 .gallery {
-  --g: 6px;
-
   display: grid;
   width: 450px;
   aspect-ratio: 1;
   grid: auto-flow 1fr / repeat(3, 1fr);
-  gap: var(--g);
+  gap: 6px;
 }
 @media (max-width: 768px) {
   .gallery {
     width: 200px;
-    height: auto;
+    height: 100%;
   }
 }
 .gallery img {
@@ -30,16 +28,16 @@
     0 0,
     100% 0,
     100% 100%,
-    calc(50% + var(--g) / 4) 100%,
-    0 calc(50% - var(--g) / 4)
+    calc(50% + 6px / 4) 100%,
+    0 calc(50% - 6px / 4)
   );
 }
 .gallery img:nth-child(3) {
   grid-area: 2/1 / span 2 / span 2;
   clip-path: polygon(
     0 0,
-    calc(50% - var(--g) / 4) 0,
-    100% calc(50% + var(--g) / 4),
+    calc(50% - 6px / 4) 0,
+    100% calc(50% + 6px / 4),
     100% 100%,
     0 100%
   );

@@ -1,16 +1,8 @@
+"use client";
 import * as React from "react";
-
-import { cn } from "@/lib/utils";
 import { useMediaQuery } from "@custom-react-hooks/use-media-query";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import {
   Tooltip,
   TooltipContent,
@@ -49,7 +41,9 @@ export function Socials() {
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <div className="mt-10">
-            <h2 className={`text-center text-4xl ${prompt.className}`}>Say hey!</h2>
+            <h2 className={`text-center text-4xl ${prompt.className}`}>
+              Say hey!
+            </h2>
             <div className="flex flex-row justify-center m-10">
               <TooltipProvider>
                 <Tooltip>

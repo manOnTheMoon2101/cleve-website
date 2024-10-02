@@ -5,13 +5,6 @@ import {
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
-  DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import React from "react";
@@ -33,8 +26,6 @@ export function NavMenu() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
-        {/* <DropdownMenuLabel>My Account</DropdownMenuLabel>
-        <DropdownMenuSeparator /> */}
         <DropdownMenuGroup>
           <DropdownMenuItem>
             <Link href="/" className="flex flex-row w-full justify-evenly my-2">

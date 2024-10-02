@@ -1,6 +1,4 @@
 "use client";
-import { IoOpenOutline } from "react-icons/io5";
-import Spline from "@splinetool/react-spline";
 import { Prompt } from "next/font/google";
 import weight from "@/public/images/graph.png";
 import weather from "@/public/images/weather.png";

@@ -21,7 +21,7 @@ const AboutContent = () => {
   return (
     <>
       <div className="flex flex-row justify-center">
-        <div className={styles.gallery}>
+        <div className={`${styles.gallery}`}>
           <Image src={lion} alt="Photo of a lion" />
           <Image src={beach} alt="Photo of a beach" />
           <Image src={food} alt="Photo of pancakes" />

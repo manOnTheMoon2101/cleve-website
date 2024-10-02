@@ -49,7 +49,7 @@ export function Socials() {
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <div className="mt-10">
-            <h2 className="text-center text-4xl">Say hey!</h2>
+            <h2 className={`text-center text-4xl ${prompt.className}`}>Say hey!</h2>
             <div className="flex flex-row justify-center m-10">
               <TooltipProvider>
                 <Tooltip>

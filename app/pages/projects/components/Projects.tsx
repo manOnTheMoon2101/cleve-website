@@ -7,6 +7,7 @@ import weather from "@/public/images/weather.png";
 import Card from "./Card/Card";
 import loglive from "@/public/images/loglive.png";
 import match from "@/public/images/match.png";
+import "animate.css";
 import Image from "next/image";
 const prompt = Prompt({
   subsets: ["latin"],
@@ -67,7 +68,7 @@ const ProjectsContent = () => {
   };
   return (
     <div className="clear-both">
-      <h2 className="text-center md:text-left">
+      <h2 className="text-center md:text-left animate__animated animate__zoomInRight ">
         <span
           className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${prompt.className}`}
         >

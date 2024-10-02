@@ -9,6 +9,10 @@ import {
 } from "@/components/ui/tooltip";
 import sign from "@/public/images/sign.png";
 import Image from "next/image";
+import lion from "@/public/images/lion.jpeg";
+import beach from "@/public/images/beach.jpeg";
+import food from "@/public/images/food.jpeg";
+import cleveC from "@/public/images/cleveC.jpeg";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -18,16 +22,13 @@ const AboutContent = () => {
     <>
       <div className="flex flex-row justify-center">
         <div className={styles.gallery}>
-          <img
-            src="https://picsum.photos/id/815/400/400"
+          <Image
+            src={lion}
             alt="Two hands creating a heart and showing the sun"
           />
-          <img src="https://picsum.photos/id/872/400/400" alt="The mountain" />
-          <img src="https://picsum.photos/id/603/400/400" alt="a river" />
-          <img
-            src="https://picsum.photos/id/823/400/400"
-            alt="a women with a camera"
-          />
+          <Image src={beach} alt="The mountain" />
+          <Image src={food} alt="a river" />
+          <Image src={cleveC} alt="a women with a camera" />
         </div>
       </div>
       <div className={`${prompt.className} m-5 text-6xl`}>

@@ -22,10 +22,15 @@ const AboutContent = () => {
     <>
       <div className="flex flex-row justify-center">
         <div className={`${styles.gallery}`}>
-          <Image src={lion} alt="Photo of a lion" />
-          <Image src={beach} alt="Photo of a beach" />
-          <Image src={food} alt="Photo of pancakes" />
-          <Image src={cleveC} alt="Photo of Cleve Drinking a cocount" />
+          <Image src={lion} alt="Photo of a lion" priority quality={100} />
+          <Image src={beach} alt="Photo of a beach" priority quality={100} />
+          <Image src={food} alt="Photo of pancakes" priority quality={100} />
+          <Image
+            src={cleveC}
+            alt="Photo of Cleve Drinking a cocount"
+            priority
+            quality={100}
+          />
         </div>
       </div>
       <div className={`${prompt.className} my-40 text-6xl`}>

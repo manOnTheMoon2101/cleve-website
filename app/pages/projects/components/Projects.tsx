@@ -1,9 +1,9 @@
 "use client";
 import { Prompt } from "next/font/google";
-import weight from "@/public/images/graph.png";
+import weight from "@/public/images/test2.png";
 import weather from "@/public/images/weather.png";
 import Card from "./Card/Card";
-import loglive from "@/public/images/loglive.png";
+import loglive from "@/public/images/test.png";
 import match from "@/public/images/match.png";
 import "animate.css";
 import Image from "next/image";

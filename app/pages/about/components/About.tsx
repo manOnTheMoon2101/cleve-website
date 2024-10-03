@@ -39,8 +39,7 @@ const AboutContent = () => {
       </div>
       <div className={`${spline.className} my-40 text-6xl`}>
         <p className="text-center md:text-left">
-          My name's{" "}
-          <span className="text-emerald-400 italic">@cleveclayton</span>,
+          My name's <span className="text-emerald-400 italic">@cleve</span>,
           <br />
           I'm a <span className="underline">Software Developer</span>
         </p>

@@ -1,15 +1,19 @@
 "use client";
 import { Prompt } from "next/font/google";
-import weight from "@/public/images/graph.png";
+import weight from "@/public/images/test2.png";
 import weather from "@/public/images/weather.png";
 import Card from "./Card/Card";
-import loglive from "@/public/images/loglive.png";
+import loglive from "@/public/images/test.png";
 import match from "@/public/images/match.png";
 import "animate.css";
 import Image from "next/image";
+import { Spline_Sans_Mono } from "next/font/google";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
+});
+const spline = Spline_Sans_Mono({
+  subsets: ["latin"],
 });
 const ProjectsContent = () => {
   const data: any = {
@@ -68,11 +72,12 @@ const ProjectsContent = () => {
     <div className="clear-both">
       <h2 className="text-center md:text-left animate__animated animate__zoomInRight ">
         <span
-          className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${prompt.className}`}
+          className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
         >
           projects
         </span>
-        <br /> <span className="text-5xl">i've contributed to</span>
+        <br />{" "}
+        <span className="text-5xl underline italic">i've contributed to</span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(contributed).map((x: any) => (
@@ -83,12 +88,12 @@ const ProjectsContent = () => {
       </div>
       <h2 className="text-center md:text-left">
         <span
-          className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${prompt.className}`}
+          className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
         >
           projects
         </span>
         <br />
-        <span className="text-5xl">i've made</span>
+        <span className="text-5xl underline italic">i've made</span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(data).map((x: any) => (

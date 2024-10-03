@@ -1,7 +1,6 @@
 "use client";
 import * as React from "react";
 import { useMediaQuery } from "@custom-react-hooks/use-media-query";
-import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import {
   Tooltip,
@@ -9,22 +8,20 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerFooter,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import Image from "next/image";
 import linkedin from "@/public/icons/linkedin.svg";
 import github from "@/public/icons/github.svg";
 import email from "@/public/icons/email.svg";
 import { IoShareSocialSharp } from "react-icons/io5";
 import { Prompt } from "next/font/google";
+import { Spline_Sans_Mono } from "next/font/google";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
+});
+const spline = Spline_Sans_Mono({
+  subsets: ["latin"],
 });
 export function Socials() {
   const [open, setOpen] = React.useState(false);
@@ -41,7 +38,7 @@ export function Socials() {
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <div className="mt-10">
-            <h2 className={`text-center text-4xl ${prompt.className}`}>
+            <h2 className={`text-center text-4xl ${spline.className}`}>
               Say hey!
             </h2>
             <div className="flex flex-row justify-center m-10">
@@ -136,7 +133,9 @@ export function Socials() {
       </DrawerTrigger>
       <DrawerContent>
         <div className="mt-10">
-          <h2 className="text-center text-4xl">Say hey!</h2>
+          <h2 className={`text-center text-4xl ${spline.className}`}>
+            Say hey!
+          </h2>
           <div className="flex flex-row justify-center m-10">
             <TooltipProvider>
               <Tooltip>

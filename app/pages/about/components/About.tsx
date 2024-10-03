@@ -13,9 +13,13 @@ import lion from "@/public/images/lion.jpeg";
 import beach from "@/public/images/beach.jpeg";
 import food from "@/public/images/food.jpeg";
 import cleveC from "@/public/images/cleveC.jpeg";
+import { Spline_Sans_Mono } from "next/font/google";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
+});
+const spline = Spline_Sans_Mono({
+  subsets: ["latin"],
 });
 const AboutContent = () => {
   return (
@@ -33,15 +37,16 @@ const AboutContent = () => {
           />
         </div>
       </div>
-      <div className={`${prompt.className} my-40 text-6xl`}>
+      <div className={`${spline.className} my-40 text-6xl`}>
         <p className="text-center md:text-left">
-          my name's cleve,
-          <br />i make apps for a living
+          My name's <span className="text-emerald-400 italic">@cleve</span>,
+          <br />
+          I'm a <span className="underline">Software Developer</span>
         </p>
         <p className="my-40 text-center md:text-right">
-          falled in L❤️ve with tech at a young age
+          I fell in L❤️ve with Tech at a young age
           <br />
-          <span className="text-4xl text-slate-400">
+          <span className="text-4xl text-slate-400 italic">
             (since i was chewing batteries as a baby)
           </span>
         </p>
@@ -50,17 +55,19 @@ const AboutContent = () => {
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <span>"Plat op die aarde"</span>
+                  <span className="">"Plat op die aarde"</span>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>down to earth</p>
+                  <p>Down to earth</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
           </span>{" "}
           Christian guy
           <br />
-          who enjoys the little things in life
+          who enjoys the{" "}
+          <span className="text-2xl italic text-yellow-900">little</span> things
+          in life.
         </p>
         <p className="my-40 text-center text-4xl text-emerald-400">
           "It is like a mustard seed, which is the smallest of all seeds on

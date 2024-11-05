@@ -1,6 +1,7 @@
 "use client";
 import { Prompt } from "next/font/google";
 import weight from "@/public/images/test2.png";
+import x from "@/public/images/weight.png";
 import weather from "@/public/images/weather.png";
 import Card from "./Card/Card";
 import loglive from "@/public/images/test.png";
@@ -34,7 +35,7 @@ const ProjectsContent = () => {
       image: (
         <Image
           alt="image"
-          src={weight}
+          src={x}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
         />
       ),

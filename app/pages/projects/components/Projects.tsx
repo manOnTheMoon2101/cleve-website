@@ -6,6 +6,7 @@ import weather from "@/public/images/weather.png";
 import Card from "./Card/Card";
 import loglive from "@/public/images/test.png";
 import match from "@/public/images/match.png";
+import dogs from "@/public/images/dogs3.jpg";
 import "animate.css";
 import Image from "next/image";
 import { Spline_Sans_Mono } from "next/font/google";
@@ -18,6 +19,18 @@ const spline = Spline_Sans_Mono({
 });
 const ProjectsContent = () => {
   const data: any = {
+    animal: {
+      title: "Find🐕nimal",
+      image: (
+        <Image
+          alt="image"
+          src={dogs}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+      ),
+      link: "https://findanimal-omega.vercel.app/",
+      body: "Pet Adoption App",
+    },
     weather: {
       title: "Weather App⛅",
       image: (
@@ -78,7 +91,7 @@ const ProjectsContent = () => {
           projects
         </span>
         <br />{" "}
-        <span className="text-5xl underline italic">i've contributed to</span>
+        <span className="text-5xl underline italic">I Have Contributed To</span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(contributed).map((x: any) => (
@@ -94,7 +107,9 @@ const ProjectsContent = () => {
           projects
         </span>
         <br />
-        <span className="text-5xl underline italic">i've made</span>
+        <span className="text-5xl underline italic">
+          Projects I Have Developed
+        </span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(data).map((x: any) => (

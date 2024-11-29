@@ -16,11 +16,11 @@ const Hero = () => {
         Cleve Clayton
       </h1>
       <h3 className={`text-xl relative mt-6 tracking-tight`}>
-        web <span className="text-emerald-400">designer</span>{" "}
-        <span className="text-neutral-600">x</span> software
-        <span className="text-emerald-400"> developer</span>{" "}
+        web <span className="text-emerald-400"> developer</span>{" "}
+        <span className="text-neutral-600">x</span> software{" "}
+        <span className="text-emerald-400"> engineer</span>{" "}
         <span className="text-neutral-600">x</span> ux{" "}
-        <span className="text-emerald-400">designer</span>
+        <span className="text-emerald-400"> designer</span>
       </h3>
     </div>
   );

@@ -15,13 +15,13 @@ const Hero = () => {
       >
         Cleve Clayton
       </h1>
-      <h3 className={`text-xl relative mt-6 tracking-tight`}>
-        web <span className="text-emerald-400"> developer</span>{" "}
-        <span className="text-neutral-600">x</span> software{" "}
-        <span className="text-emerald-400"> engineer</span>{" "}
-        <span className="text-neutral-600">x</span> ux{" "}
-        <span className="text-emerald-400"> designer</span>
-      </h3>
+      <div className={`text-xl relative mt-6 tracking-tight flex flex-row`}>
+        web <h3 className="text-emerald-400 animate-pulse mx-2"> developer</h3>{" "}
+        <h3 className="text-neutral-600  mx-2">x</h3> software{" "}
+        <h3 className="text-emerald-400  animate-pulse  mx-2"> engineer</h3>{" "}
+        <h3 className="text-neutral-600  mx-2">x</h3> ux{" "}
+        <h3 className="text-emerald-400  animate-pulse  mx-2"> designer</h3>
+      </div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="flex flex-row justify-center items-center">
       <div className="text-center">
         <div>Designed by @cleveclayton</div>
-        <div>@2024</div>
+        <div>@2025</div>
       </div>
     </div>
   );

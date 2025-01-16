@@ -6,7 +6,13 @@ import {
   DockIcon,
   DockLabel,
 } from "@/app/components/body/components/dock/Dock";
-import { HomeIcon, SettingsIcon, UserIcon, FolderKanban, SunIcon } from "lucide-react";
+import {
+  HomeIcon,
+  SettingsIcon,
+  UserIcon,
+  FolderKanban,
+  SunIcon,
+} from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ThemeProvider } from "../../provider/theme-provider";
@@ -25,7 +31,6 @@ export function DockExample() {
           <DockLabel>Home</DockLabel>
         </DockItem>
       </Link>
-
       <Link
         href="/pages/about"
         className={`${isActive("/pages/about") ? "text-emerald-400" : ""}`}
@@ -37,7 +42,6 @@ export function DockExample() {
           <DockLabel>About</DockLabel>
         </DockItem>
       </Link>
-
       <Link
         href="/pages/projects"
         className={`${isActive("/pages/projects") ? "text-emerald-400" : ""}`}
@@ -50,12 +54,11 @@ export function DockExample() {
         </DockItem>
       </Link>
       |
-    <div>
-
+      <div>
         <DockItem>
           <ModeToggle />
         </DockItem>
-    </div>
+      </div>
     </Dock>
   );
 }

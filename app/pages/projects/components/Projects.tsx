@@ -86,7 +86,7 @@ const ProjectsContent = () => {
         </span>
         <br />
         <span className="text-5xl underline italic">
-          Projects I Have Developed
+         I Have Developed
         </span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">

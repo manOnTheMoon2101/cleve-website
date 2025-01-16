@@ -2,9 +2,9 @@
 import Footer from "@/app/components/body/components/layout/footer/Footer";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import Navbar from "@/app/components/body/components/layout/navbar/Navbar";
 import { motion, useScroll } from "framer-motion";
 import AboutContent from "./components/About";
+import { DockExample } from "@/app/components/body/components/dock/ActuallDock/Navbar";
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -37,11 +37,13 @@ export default function About() {
         style={{ scaleX: scrollYProgress }}
       />
       <main className="m-5">
-        <Navbar />
         <div className="mt-20">
           <Section>
             <AboutContent />
           </Section>
+          <div className="fixed bottom-0 left-0 right-0 z-40">
+            <DockExample />
+          </div>
         </div>
         <div className="mt-96  ">
           <Section>

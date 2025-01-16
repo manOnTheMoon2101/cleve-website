@@ -23,6 +23,7 @@ const Hero = () => {
   <h3 className="text-emerald-400 animate-pulse mx-2">designer</h3>
 </div>
 
+
     </div>
   );
 };

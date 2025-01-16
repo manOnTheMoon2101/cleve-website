@@ -9,6 +9,7 @@ import dogs from "@/public/images/dogs3.jpg";
 import "animate.css";
 import Image from "next/image";
 import { Spline_Sans_Mono } from "next/font/google";
+import { MorphingDialogBasicOne } from "./Dialog/Dialog";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -20,37 +21,19 @@ const ProjectsContent = () => {
   const data: any = {
     animal: {
       title: "Find🐕nimal",
-      image: (
-        <Image
-          alt="image"
-          src={dogs}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-        />
-      ),
+      image: dogs.src,
       link: "https://findanimal-omega.vercel.app/",
       body: "Pet Adoption App",
     },
     weather: {
       title: "Weather App⛅",
-      image: (
-        <Image
-          alt="image"
-          src={weather}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-        />
-      ),
+      image: weather.src,
       link: "https://weather-app-one-mu-88.vercel.app/",
       body: "Simple Weather App",
     },
     weight: {
       title: "Weight Management App🥩",
-      image: (
-        <Image
-          alt="image"
-          src={x}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-        />
-      ),
+      image: x.src,
       link: "https://weight-management.vercel.app/",
       body: "Weight Management App",
     },
@@ -58,25 +41,15 @@ const ProjectsContent = () => {
   const contributed: any = {
     match: {
       title: "Match Exchange🌾",
-      image: (
-        <Image
-          alt="image"
-          src={match}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-        />
-      ),
+      description: "Grain Delivery",
+      image: match.src,
       link: "https://matchmx.com/",
       body: "Grain Platform",
     },
     loglive: {
       title: "Loglive🍊",
-      image: (
-        <Image
-          alt="image"
-          src={loglive}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-        />
-      ),
+      description: "Fruit Delivery",
+      image: loglive.src,
       link: "https://loglive.ai/",
       body: "Fruit Platform",
     },
@@ -95,7 +68,13 @@ const ProjectsContent = () => {
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(contributed).map((x: any) => (
           <div className="my-48">
-            <Card title={x.title} link={x.link} image={x.image} body={x.body} />
+            <MorphingDialogBasicOne
+              title={x.title}
+              link={x.link}
+              image={x.image}
+              body={x.body}
+              description={x.description}
+            />
           </div>
         ))}
       </div>
@@ -107,13 +86,19 @@ const ProjectsContent = () => {
         </span>
         <br />
         <span className="text-5xl underline italic">
-          Projects I Have Developed
+         I Have Developed
         </span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(data).map((x: any) => (
           <div className="my-48">
-            <Card title={x.title} link={x.link} image={x.image} body={x.body} />
+            <MorphingDialogBasicOne
+              title={x.title}
+              link={x.link}
+              image={x.image}
+              body={x.body}
+              description={x.description}
+            />
           </div>
         ))}
       </div>

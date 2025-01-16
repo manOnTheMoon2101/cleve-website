@@ -6,9 +6,12 @@ import {
   DockIcon,
   DockLabel,
 } from "@/app/components/body/components/dock/Dock";
-import { HomeIcon, SettingsIcon, UserIcon, FolderKanban } from "lucide-react";
+import { HomeIcon, SettingsIcon, UserIcon, FolderKanban, SunIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ThemeProvider } from "../../provider/theme-provider";
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "../../provider/Button";
 export function DockExample() {
   const pathname = usePathname();
   const isActive = (path: string) => pathname === path;
@@ -46,6 +49,13 @@ export function DockExample() {
           <DockLabel>Projects</DockLabel>
         </DockItem>
       </Link>
+      |
+    <div>
+
+        <DockItem>
+          <ModeToggle />
+        </DockItem>
+    </div>
     </Dock>
   );
 }

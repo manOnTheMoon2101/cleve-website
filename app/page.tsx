@@ -3,10 +3,8 @@ import Hero from "./components/body/Body";
 import Footer from "@/app/components/body/components/layout/footer/Footer";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import Navbar from "@/app/components/body/components/layout/navbar/Navbar";
 import { motion, useScroll } from "framer-motion";
-import { Dock } from "./components/body/components/dock/Dock";
-import { DockExample } from "./components/body/components/dock/ActuallDock.vue/Navbar";
+import { DockExample } from "./components/body/components/dock/ActuallDock/Navbar";
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -39,7 +37,6 @@ export default function Home() {
         style={{ scaleX: scrollYProgress }}
       />
       <main className="m-5">
-        <Navbar />
         <div>
           <Hero />
 

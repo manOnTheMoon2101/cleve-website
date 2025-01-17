@@ -37,8 +37,8 @@ export function Socials() {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <Button variant={"outline"}>
-            <MessageCircle className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+          <Button variant={"outline"} size="icon">
+            <MessageCircle />
           </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
@@ -56,7 +56,7 @@ export function Socials() {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                      <div className="flex items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                         <Image
                           src={linkedin}
                           alt={"Linkedin"}
@@ -80,7 +80,7 @@ export function Socials() {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                      <div className="flex text-white items-center font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                         <Image
                           src={github}
                           alt={"Github"}
@@ -104,7 +104,7 @@ export function Socials() {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                      <div className="flex items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                         <Image
                           src={email}
                           alt={"Email"}
@@ -127,12 +127,11 @@ export function Socials() {
   }
   return (
     <Drawer open={open} onOpenChange={setOpen}>
-      <DrawerTrigger asChild>
-        <div className="flex flex-row w-full justify-evenly my-2">
-          <IoShareSocialSharp className="w-1/2" />
-          <span className="w-1/2">Socials</span>
-        </div>
-      </DrawerTrigger>
+      <DialogTrigger asChild>
+        <Button variant={"outline"} size="icon">
+          <MessageCircle />
+        </Button>
+      </DialogTrigger>
       <DrawerContent>
         <div className="mt-10">
           <h2 className={`text-center text-4xl ${spline.className}`}>
@@ -148,7 +147,7 @@ export function Socials() {
                     className="px-5"
                     rel="noopener noreferrer"
                   >
-                    <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                    <div className="flex items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                       <Image
                         src={linkedin}
                         alt={"Linkedin"}
@@ -172,7 +171,7 @@ export function Socials() {
                     className="px-5"
                     rel="noopener noreferrer"
                   >
-                    <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                    <div className="flex items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                       <Image
                         src={github}
                         alt={"Github"}
@@ -196,7 +195,7 @@ export function Socials() {
                     className="px-5"
                     rel="noopener noreferrer"
                   >
-                    <div className="flex text-white items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                    <div className="flex items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                       <Image src={email} alt={"Email"} height={60} width={60} />
                     </div>
                   </a>

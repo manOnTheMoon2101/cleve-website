@@ -18,6 +18,7 @@ import { usePathname } from "next/navigation";
 import { ThemeProvider } from "../../provider/theme-provider";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "../../provider/Button";
+import { Socials } from "../../socials/Socials";
 export function DockExample() {
   const pathname = usePathname();
   const isActive = (path: string) => pathname === path;
@@ -57,6 +58,11 @@ export function DockExample() {
       <div>
         <DockItem>
           <ModeToggle />
+        </DockItem>
+      </div>
+      <div>
+        <DockItem>
+         <Socials/>
         </DockItem>
       </div>
     </Dock>

@@ -37,7 +37,7 @@ export function MorphingDialogBasicOne(title: any) {
               {title.title}
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
-              {title.body}
+              {title.description}
             </MorphingDialogSubtitle>
           </div>
           <button

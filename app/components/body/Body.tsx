@@ -19,11 +19,11 @@ const Hero = () => {
       <div
         className={`text-xl relative mt-6 tracking-tight flex flex-row flex-wrap`}
       >
-        web <h3 className="text-emerald-400 animate-pulse mx-2">developer</h3>{" "}
+        web <h3 className="text-emerald-400 animate-pulse mx-2 font-bold">developer</h3>{" "}
         <h3 className="text-neutral-600 mx-2">x</h3> software{" "}
-        <h3 className="text-emerald-400 animate-pulse mx-2">engineer</h3>{" "}
+        <h3 className="text-emerald-400 animate-pulse mx-2 font-bold">engineer</h3>{" "}
         <h3 className="text-neutral-600 mx-2">x</h3> ux{" "}
-        <h3 className="text-emerald-400 animate-pulse mx-2">designer</h3>
+        <h3 className="text-emerald-400 animate-pulse mx-2 font-bold">designer</h3>
       </div>
     </div>
   );

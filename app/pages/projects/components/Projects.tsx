@@ -61,10 +61,10 @@ const ProjectsContent = () => {
         <span
           className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
         >
-          projects
+          Projects
         </span>
         <br />{" "}
-        <span className="text-5xl underline italic">I Have Contributed To</span>
+        <span className="text-5xl text-gray-500  italic">I Have Contributed To</span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(contributed).map((x: any) => (
@@ -79,14 +79,14 @@ const ProjectsContent = () => {
           </div>
         ))}
       </div>
-      <h2 className="text-center md:text-left">
+      <h2 className="text-center  md:text-left">
         <span
           className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
         >
-          projects
+          Projects
         </span>
         <br />
-        <span className="text-5xl underline italic">I Have Developed</span>
+        <span className="text-5xl text-gray-500  italic">I Have Developed</span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
         {Object.values(data).map((x: any) => (

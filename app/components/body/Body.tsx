@@ -16,15 +16,23 @@ const Hero = () => {
       >
         Cleve Clayton
       </h1>
-      <div
+
+      <TextRoll className={`text-xl relative mt-6 tracking-tight flex flex-row flex-wrap`}>
+  web <span className="text-emerald-400 animate-pulse mx-2 font-bold">developer</span>{" "}
+  <span className="text-neutral-600 mx-2">x</span> software{" "}
+  <span className="text-emerald-400 animate-pulse mx-2 font-bold">engineer</span>{" "}
+  <span className="text-neutral-600 mx-2">x</span> ux{" "}
+  <span className="text-emerald-400 animate-pulse mx-2 font-bold">designer</span>
+</TextRoll>
+      {/* <div
         className={`text-xl relative mt-6 tracking-tight flex flex-row flex-wrap`}
       >
-        web <h3 className="text-emerald-400 animate-pulse mx-2 font-bold">developer</h3>{" "}
-        <h3 className="text-neutral-600 mx-2">x</h3> software{" "}
-        <h3 className="text-emerald-400 animate-pulse mx-2 font-bold">engineer</h3>{" "}
-        <h3 className="text-neutral-600 mx-2">x</h3> ux{" "}
-        <h3 className="text-emerald-400 animate-pulse mx-2 font-bold">designer</h3>
-      </div>
+        web <span className="text-emerald-400 animate-pulse mx-2 font-bold">developer</span>{" "}
+        <span className="text-neutral-600 mx-2">x</span> software{" "}
+        <span className="text-emerald-400 animate-pulse mx-2 font-bold">engineer</span>{" "}
+        <span className="text-neutral-600 mx-2">x</span> ux{" "}
+        <span className="text-emerald-400 animate-pulse mx-2 font-bold">designer</span>
+      </div> */}
     </div>
   );
 };

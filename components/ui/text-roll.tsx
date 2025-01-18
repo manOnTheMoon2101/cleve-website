@@ -6,9 +6,10 @@ import {
   TargetAndTransition,
   Transition,
 } from 'motion/react';
+import React from 'react';
 
 export type TextRollProps = {
-  children: string;
+  children: React.ReactNode;
   duration?: number;
   getEnterDelay?: (index: number) => number;
   getExitDelay?: (index: number) => number;
@@ -49,54 +50,53 @@ export function TextRoll({
     },
   } as const;
 
-  const letters = children.split('');
+  // Render each child separately
+  const renderContent = (child: React.ReactNode, index: number) => {
+    if (typeof child === 'string') {
+      // Handle text nodes
+      return child.split('').map((letter, i) => (
+        <span
+          key={`${index}-${i}`}
+          className='relative inline-block [perspective:10000px] [transform-style:preserve-3d] [width:auto]'
+          aria-hidden='true'
+        >
+          <motion.span
+            className='absolute inline-block [backface-visibility:hidden] [transform-origin:50%_25%]'
+            initial={variants?.enter?.initial ?? defaultVariants.enter.initial}
+            animate={variants?.enter?.animate ?? defaultVariants.enter.animate}
+            transition={{
+              ...transition,
+              duration,
+              delay: getEnterDelay(i),
+            }}
+          >
+            {letter === ' ' ? '\u00A0' : letter}
+          </motion.span>
+          <motion.span
+            className='absolute inline-block [backface-visibility:hidden] [transform-origin:50%_100%]'
+            initial={variants?.exit?.initial ?? defaultVariants.exit.initial}
+            animate={variants?.exit?.animate ?? defaultVariants.exit.animate}
+            transition={{
+              ...transition,
+              duration,
+              delay: getExitDelay(i),
+            }}
+          >
+            {letter === ' ' ? '\u00A0' : letter}
+          </motion.span>
+          <span className='invisible'>
+            {letter === ' ' ? '\u00A0' : letter}
+          </span>
+        </span>
+      ));
+    }
+    // Pass through JSX elements unchanged
+    return child;
+  };
 
   return (
     <span className={className}>
-      {letters.map((letter, i) => {
-        return (
-          <span
-            key={i}
-            className='relative inline-block [perspective:10000px] [transform-style:preserve-3d] [width:auto]'
-            aria-hidden='true'
-          >
-            <motion.span
-              className='absolute inline-block [backface-visibility:hidden] [transform-origin:50%_25%]'
-              initial={
-                variants?.enter?.initial ?? defaultVariants.enter.initial
-              }
-              animate={
-                variants?.enter?.animate ?? defaultVariants.enter.animate
-              }
-              transition={{
-                ...transition,
-                duration,
-                delay: getEnterDelay(i),
-              }}
-            >
-              {letter === ' ' ? '\u00A0' : letter}
-            </motion.span>
-            <motion.span
-              className='absolute inline-block [backface-visibility:hidden] [transform-origin:50%_100%]'
-              initial={variants?.exit?.initial ?? defaultVariants.exit.initial}
-              animate={variants?.exit?.animate ?? defaultVariants.exit.animate}
-              transition={{
-                ...transition,
-                duration,
-                delay: getExitDelay(i),
-              }}
-              onAnimationComplete={
-                letters.length === i + 1 ? onAnimationComplete : undefined
-              }
-            >
-              {letter === ' ' ? '\u00A0' : letter}
-            </motion.span>
-            <span className='invisible'>
-              {letter === ' ' ? '\u00A0' : letter}
-            </span>
-          </span>
-        );
-      })}
+      {React.Children.map(children, (child, index) => renderContent(child, index))}
       <span className='sr-only'>{children}</span>
     </span>
   );

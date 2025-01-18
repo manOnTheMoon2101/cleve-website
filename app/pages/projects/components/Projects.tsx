@@ -67,8 +67,8 @@ const ProjectsContent = () => {
         <span className="text-5xl text-gray-500  italic">I Have Contributed To</span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
-        {Object.values(contributed).map((x: any) => (
-          <div className="my-48">
+      {Object.entries(contributed).map(([key, x]: [string, any]) => (
+          <div key={key} className="my-48">
             <MorphingDialogBasicOne
               title={x.title}
               link={x.link}
@@ -89,8 +89,8 @@ const ProjectsContent = () => {
         <span className="text-5xl text-gray-500  italic">I Have Developed</span>
       </h2>
       <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
-        {Object.values(data).map((x: any) => (
-          <div className="my-48">
+      {Object.entries(data).map(([key, x]: [string, any]) => (
+          <div key={key} className="my-48">
             <MorphingDialogBasicOne
               title={x.title}
               link={x.link}

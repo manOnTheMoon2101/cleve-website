@@ -44,7 +44,7 @@ export function Socials() {
         <DialogContent className="sm:max-w-[425px]">
           <div className="mt-10">
             <DialogTitle className={`text-center text-4xl ${spline.className}`}>
-              Say hey!
+              Say Hey!
             </DialogTitle>
             <div className="flex flex-row justify-center m-10">
               <TooltipProvider>
@@ -135,7 +135,7 @@ export function Socials() {
       <DrawerContent>
         <div className="mt-10">
           <h2 className={`text-center text-4xl ${spline.className}`}>
-            Say hey!
+            Say Hey!
           </h2>
           <div className="flex flex-row justify-center m-10">
             <TooltipProvider>

@@ -10,7 +10,7 @@ import {
 import sign from "@/public/images/sign.png";
 import Image from "next/image";
 import lion from "@/public/images/lion.jpeg";
-import beach from "@/public/images/beach.jpeg";
+import cape from "@/public/images/cape.jpeg";
 import food from "@/public/images/food.jpeg";
 import cleveC from "@/public/images/cleveC.jpeg";
 import { Spline_Sans_Mono } from "next/font/google";
@@ -29,7 +29,7 @@ const AboutContent = () => {
       <div className="flex flex-row justify-center">
         <div className={`${styles.gallery}`}>
           <Image src={lion} alt="Photo of a lion" priority quality={100} />
-          <Image src={beach} alt="Photo of a beach" priority quality={100} />
+          <Image src={cape} alt="Photo of a cape" priority quality={100} />
           <Image src={food} alt="Photo of pancakes" priority quality={100} />
           <Image
             src={cleveC}

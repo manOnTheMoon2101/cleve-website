@@ -19,9 +19,9 @@ const Hero = () => {
 
       <TextRoll className={`text-xl relative mt-6 tracking-tight flex flex-row flex-wrap`}>
   web <span className="text-emerald-400 animate-pulse mx-2 font-bold">developer</span>{" "}
-  <span className="text-neutral-600 mx-2">x</span> software{" "}
+  <span className="text-neutral-400 mx-2">x</span> software{" "}
   <span className="text-emerald-400 animate-pulse mx-2 font-bold">engineer</span>{" "}
-  <span className="text-neutral-600 mx-2">x</span> ux{" "}
+  <span className="text-neutral-400 mx-2">x</span> ux{" "}
   <span className="text-emerald-400 animate-pulse mx-2 font-bold">designer</span>
 </TextRoll>
       {/* <div

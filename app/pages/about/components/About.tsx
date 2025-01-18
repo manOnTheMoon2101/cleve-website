@@ -1,28 +1,12 @@
 import React from "react";
 import styles from "../components/styles.module.css";
-import { Prompt } from "next/font/google";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import sign from "@/public/images/sign.png";
 import Image from "next/image";
 import lion from "@/public/images/lion.jpeg";
 import cape from "@/public/images/cape.jpeg";
 import food from "@/public/images/food.jpeg";
 import cleveC from "@/public/images/cleveC.jpeg";
-import { Spline_Sans_Mono } from "next/font/google";
-import { InView } from "@/components/ui/in-view";
 import { InViewBasic } from "./Body/Body";
-const prompt = Prompt({
-  subsets: ["latin"],
-  weight: "800",
-});
-const spline = Spline_Sans_Mono({
-  subsets: ["latin"],
-});
 const AboutContent = () => {
   return (
     <>

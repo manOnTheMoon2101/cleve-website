@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion, useScroll } from "framer-motion";
 import AboutContent from "./components/About";
-import { DockExample } from "@/app/components/body/components/dock/ActuallDock/Navbar";
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -31,7 +30,15 @@ const Section: React.FC<SectionProps> = ({ children }) => {
 export default function About() {
   const { scrollYProgress } = useScroll();
   return (
-    <>
+    <motion.div
+    initial={{ opacity: 0, x: -200 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: 200 }}
+    transition={{ 
+      duration: 0.5,
+      ease: "easeInOut"
+    }}
+    >
       <motion.div
         className="fixed top-0 left-0 right-0 h-2.5 bg-emerald-400 rounded transform origin-left z-50"
         style={{ scaleX: scrollYProgress }}
@@ -41,9 +48,9 @@ export default function About() {
           <Section>
             <AboutContent />
           </Section>
-          <div className="fixed bottom-0 left-0 right-0 z-40">
+          {/* <div className="fixed bottom-0 left-0 right-0 z-40">
             <DockExample />
-          </div>
+          </div> */}
         </div>
         <div className="mt-96  ">
           <Section>
@@ -51,6 +58,6 @@ export default function About() {
           </Section>
         </div>
       </main>
-    </>
+    </motion.div>
   );
 }

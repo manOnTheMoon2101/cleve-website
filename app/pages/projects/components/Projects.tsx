@@ -3,6 +3,7 @@ import { Prompt } from "next/font/google";
 import x from "@/public/images/weight7.png";
 import weather from "@/public/images/weather.png";
 import loglive from "@/public/images/test.png";
+import splitline from "@/public/images/splitline.png";
 import match from "@/public/images/match.png";
 import dogs from "@/public/images/dogs3.jpg";
 import "animate.css";
@@ -72,6 +73,14 @@ const ProjectsContent = () => {
       image: match.src,
       link: "https://matchmx.com/",
       body: "Connecting stakeholders in the agricultural supply chain involves facilitating communication and collaboration among farmers, suppliers, distributors, retailers, and consumers to ensure efficient production, distribution, and consumption of agricultural products.",
+    },
+    splitline:{
+      title: "Splitline🧴",
+      devices: <div className="flex flex-row">{<CiLaptop />}</div>,
+      description: "Plastic Molding",
+      image: splitline.src,
+      link: "https://www.splitline.co.za",
+      body: "Splitline is a plastic manufacturing company that manufactures plastic products for the industry.",
     },
     loglive: {
       title: "Loglive🍊",

@@ -74,7 +74,7 @@ const ProjectsContent = () => {
       link: "https://matchmx.com/",
       body: "Connecting stakeholders in the agricultural supply chain involves facilitating communication and collaboration among farmers, suppliers, distributors, retailers, and consumers to ensure efficient production, distribution, and consumption of agricultural products.",
     },
-    splitline:{
+    splitline: {
       title: "Splitline🧴",
       devices: <div className="flex flex-row">{<CiLaptop />}</div>,
       description: "Plastic Molding",
@@ -82,13 +82,13 @@ const ProjectsContent = () => {
       link: "https://www.splitline.co.za",
       body: "Splitline is a plastic manufacturing company that manufactures plastic products for the industry.",
     },
-    loglive: {
-      title: "Loglive🍊",
+    metaship: {
+      title: "Metaship🍊",
       devices: <div className="flex flex-row">{<CiLaptop />}</div>,
       description: "Fruit Plaform",
       image: loglive.src,
-      link: "https://loglive.ai/",
-      body: "LogLive is a fully-managed AI platform that empowers import, export, clearance, trade, and logistics companies to streamline operations. It enables data transformation, storage, and real-time monitoring of the supply chain, using AI and Big Data to enhance efficiency. By leveraging cloud technologies, LogLive addresses inefficiencies in the logistics industry for a more seamless global supply chain.",
+      link: "https://metaship.ai/",
+      body: "Metaship is a fully-managed AI platform that empowers import, export, clearance, trade, and logistics companies to streamline operations. It enables data transformation, storage, and real-time monitoring of the supply chain, using AI and Big Data to enhance efficiency. By leveraging cloud technologies, Metaship addresses inefficiencies in the logistics industry for a more seamless global supply chain.",
     },
   };
   return (

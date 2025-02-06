@@ -104,7 +104,7 @@ const ProjectsContent = () => {
       >
         <h2 className="text-center md:text-left animate__animated animate__zoomInRight ">
           <span
-            className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
+            className={`text-primary italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
           >
             Projects
           </span>
@@ -147,7 +147,7 @@ const ProjectsContent = () => {
       >
         <h2 className="text-center  md:text-left">
           <span
-            className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
+            className={`text-primary italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
           >
             Projects
           </span>

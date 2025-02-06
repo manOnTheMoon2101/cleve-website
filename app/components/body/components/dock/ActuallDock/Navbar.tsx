@@ -24,7 +24,7 @@ export function DockExample() {
   const isActive = (path: string) => pathname === path;
   return (
     <Dock>
-      <Link href="/" className={`${isActive("/") ? "text-emerald-400" : ""}`}>
+      <Link href="/" className={`${isActive("/") ? "text-accent" : ""}`}>
         <DockItem>
           <DockIcon>
             <HomeIcon className="w-full h-full" />
@@ -34,7 +34,7 @@ export function DockExample() {
       </Link>
       <Link
         href="/pages/about"
-        className={`${isActive("/pages/about") ? "text-emerald-400" : ""}`}
+        className={`${isActive("/pages/about") ? "text-accent" : ""}`}
       >
         <DockItem>
           <DockIcon>
@@ -45,7 +45,7 @@ export function DockExample() {
       </Link>
       <Link
         href="/pages/projects"
-        className={`${isActive("/pages/projects") ? "text-emerald-400" : ""}`}
+        className={`${isActive("/pages/projects") ? "text-accent" : ""}`}
       >
         <DockItem>
           <DockIcon>

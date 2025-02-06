@@ -24,14 +24,14 @@ export function MorphingDialogBasicOne(title: any) {
         style={{
           borderRadius: "12px",
         }}
-        className="flex max-w-[270px] flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900"
+        className="flex max-w-[270px] flex-col overflow-hidden border  bg-white border-foreground dark:bg-zinc-900"
       >
         <MorphingDialogImage
           src={title.image}
           alt="Image"
           className="h-48 w-full object-cover"
         />
-        <div className="flex flex-grow flex-row items-end justify-between p-2">
+        <div className="flex flex-grow flex-row items-end justify-between p-2 bg-background">
           <div>
             <MorphingDialogTitle className="text-zinc-950 dark:text-zinc-50">
               {title.title}
@@ -43,10 +43,10 @@ export function MorphingDialogBasicOne(title: any) {
           </div>
           <button
             type="button"
-            className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border border-zinc-950/10 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-800 focus-visible:ring-2 active:scale-[0.98] dark:border-zinc-50/10 dark:bg-zinc-900 dark:text-zinc-500 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-500"
+            className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border border-zinc-950/10 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-800 focus-visible:ring-2 active:scale-[0.98] dark:border-zinc-50/10 dark:bg-foreground dark:text-zinc-500 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-500"
             aria-label="Open dialog"
           >
-            <PlusIcon size={12} />
+            <PlusIcon className="text-secondary" size={12} />
           </button>
         </div>
       </MorphingDialogTrigger>
@@ -55,7 +55,7 @@ export function MorphingDialogBasicOne(title: any) {
           style={{
             borderRadius: "24px",
           }}
-          className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 sm:w-[500px]"
+          className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden  bg-background  sm:w-[500px]"
         >
           <MorphingDialogImage
             src={title.image}

@@ -28,7 +28,6 @@ const Section: React.FC<SectionProps> = ({ children }) => {
 };
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
   return (
     <motion.div
     initial={{ opacity: 0, x: -200 }}

@@ -8,15 +8,11 @@ import {
 } from "@/app/components/body/components/dock/Dock";
 import {
   HomeIcon,
-  SettingsIcon,
   UserIcon,
   FolderKanban,
-  SunIcon,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ThemeProvider } from "../../provider/theme-provider";
-import { Button } from "@/components/ui/button";
 import { ModeToggle } from "../../provider/Button";
 import { Socials } from "../../socials/Socials";
 export function DockExample() {

@@ -21,7 +21,7 @@ export function InViewBasic() {
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <p className="text-center md:text-left">
-          My name's <span className="text-emerald-400 italic">@cleve</span>,
+          My name's <span className="text-accent italic">@cleve</span>,
           <br />
           I'm a <span className="underline">Software Developer</span>
         </p>
@@ -38,7 +38,7 @@ export function InViewBasic() {
         <p className="my-40 text-center md:text-right">
           I fell in L❤️ve with Tech at a young age
           <br />
-          <span className="text-4xl text-slate-400 italic">
+          <span className="text-4xl text-secondary italic">
             (since i was chewing batteries as a baby)
           </span>
         </p>
@@ -81,13 +81,13 @@ export function InViewBasic() {
         viewOptions={{ margin: "0px 0px -200px 0px" }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <p className="my-40 text-center text-4xl text-emerald-400">
+        <p className="my-40 text-center text-4xl text-accent">
           "It is like a mustard seed, which is the smallest of all seeds on
           earth.
           <br />
           Yet when planted, it grows and becomes the largest of all garden
           plants, with such big branches that the birds can perch in its shade”-
-          <span className="text-4xl text-slate-400">Mark 4-31</span>
+          <span className="text-4xl text-secondary">Mark 4-31</span>
         </p>
       </InView>
     </div>

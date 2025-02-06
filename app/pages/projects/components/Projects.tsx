@@ -7,6 +7,7 @@ import splitline from "@/public/images/splitline.png";
 import match from "@/public/images/match.png";
 import dogs from "@/public/images/dogs3.jpg";
 import "animate.css";
+import { InView } from "@/components/ui/in-view";
 import { Spline_Sans_Mono } from "next/font/google";
 import { MorphingDialogBasicOne } from "./Dialog/Dialog";
 import { CiMobile1 } from "react-icons/ci";
@@ -93,54 +94,92 @@ const ProjectsContent = () => {
   };
   return (
     <div className="clear-both">
-      <h2 className="text-center md:text-left animate__animated animate__zoomInRight ">
-        <span
-          className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
-        >
-          Projects
-        </span>
-        <br />{" "}
-        <span className="text-5xl text-gray-500  italic">
-          I Have Contributed To
-        </span>
-      </h2>
-      <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
-        {Object.entries(contributed).map(([key, x]: [string, any]) => (
-          <div key={key} className="my-48">
-            <MorphingDialogBasicOne
-              title={x.title}
-              link={x.link}
-              devices={x.devices}
-              image={x.image}
-              body={x.body}
-              description={x.description}
-            />
-          </div>
-        ))}
-      </div>
-      <h2 className="text-center  md:text-left">
-        <span
-          className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
-        >
-          Projects
-        </span>
-        <br />
-        <span className="text-5xl text-gray-500  italic">I Have Developed</span>
-      </h2>
-      <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
-        {Object.entries(data).map(([key, x]: [string, any]) => (
-          <div key={key} className="my-48">
-            <MorphingDialogBasicOne
-              title={x.title}
-              link={x.link}
-              devices={x.devices}
-              image={x.image}
-              body={x.body}
-              description={x.description}
-            />
-          </div>
-        ))}
-      </div>
+      <InView
+        variants={{
+          hidden: { opacity: 0, y: 100, filter: "blur(4px)" },
+          visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+        }}
+        viewOptions={{ margin: "0px 0px -200px 0px" }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+      >
+        <h2 className="text-center md:text-left animate__animated animate__zoomInRight ">
+          <span
+            className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
+          >
+            Projects
+          </span>
+          <br />{" "}
+          <span className="text-5xl text-gray-500  italic">
+            I Have Contributed To
+          </span>
+        </h2>
+      </InView>
+      <InView
+        variants={{
+          hidden: { opacity: 0, y: 100, filter: "blur(4px)" },
+          visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+        }}
+        viewOptions={{ margin: "0px 0px -200px 0px" }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+      >
+        <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
+          {Object.entries(contributed).map(([key, x]: [string, any]) => (
+            <div key={key} className="my-48">
+              <MorphingDialogBasicOne
+                title={x.title}
+                link={x.link}
+                devices={x.devices}
+                image={x.image}
+                body={x.body}
+                description={x.description}
+              />
+            </div>
+          ))}
+        </div>
+      </InView>
+      <InView
+        variants={{
+          hidden: { opacity: 0, y: 100, filter: "blur(4px)" },
+          visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+        }}
+        viewOptions={{ margin: "0px 0px -200px 0px" }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+      >
+        <h2 className="text-center  md:text-left">
+          <span
+            className={`text-emerald-400 italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
+          >
+            Projects
+          </span>
+          <br />
+          <span className="text-5xl text-gray-500  italic">
+            I Have Developed
+          </span>
+        </h2>
+      </InView>
+      <InView
+        variants={{
+          hidden: { opacity: 0, y: 100, filter: "blur(4px)" },
+          visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+        }}
+        viewOptions={{ margin: "0px 0px -200px 0px" }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+      >
+        <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
+          {Object.entries(data).map(([key, x]: [string, any]) => (
+            <div key={key} className="my-48">
+              <MorphingDialogBasicOne
+                title={x.title}
+                link={x.link}
+                devices={x.devices}
+                image={x.image}
+                body={x.body}
+                description={x.description}
+              />
+            </div>
+          ))}
+        </div>
+      </InView>
     </div>
   );
 };

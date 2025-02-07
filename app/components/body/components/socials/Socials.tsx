@@ -80,7 +80,7 @@ export function Socials() {
                       className="px-5"
                       rel="noopener noreferrer"
                     >
-                      <div className="flex text-white items-center font-neucha text-base leading-6 py-3 px-3 inline-block rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                      <div className="flex text-white items-center font-neucha text-base leading-6 py-3 px-3  rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                         <Image
                           src={github}
                           alt={"Github"}

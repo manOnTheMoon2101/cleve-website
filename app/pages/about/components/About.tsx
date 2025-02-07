@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import styles from "../components/styles.module.css";
 import sign from "@/public/images/sign.png";

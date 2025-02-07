@@ -7,7 +7,39 @@ import { AnimatePresence } from "framer-motion";
 import { DockExample } from "./components/body/components/dock/ActuallDock/Navbar";
 export const metadata: Metadata = {
   title: "@cleveclayton",
-  description: "Landing Page of @cleveclayton...",
+  description: "My name's @cleveclayton,I'm a Software Developer...",
+  keywords: [
+    "Cleve Clayton",
+    "Web Developer",
+    "Software Engineer",
+    "Portfolio",
+    "Full Stack Developer",
+    "CV",
+  ],
+  authors: [{ name: "Cleve Clayton" }],
+  creator: "Cleve Clayton",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://cleveclayton.me",
+    title: "@cleveclayton",
+    description: "Landing Page of @cleveclayton...",
+    siteName: "@cleveclayton",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "@cleveclayton",
+    description: "Landing Page of @cleveclayton...",
+    creator: "@cleveclayton",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 };
 export default function RootLayout({
   children,

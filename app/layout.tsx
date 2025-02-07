@@ -49,19 +49,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
-        >
-          <AnimatePresence>{children}</AnimatePresence>
-          <div className="fixed bottom-0 left-0 right-0 z-40">
-            <DockExample />
-          </div>
-          <SpeedInsights />
-          <Analytics />
-        </ThemeProvider>
+        > */}
+        <AnimatePresence>{children}</AnimatePresence>
+        <div className="fixed bottom-0 left-0 right-0 z-40">
+          <DockExample />
+        </div>
+        <SpeedInsights />
+        <Analytics />
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

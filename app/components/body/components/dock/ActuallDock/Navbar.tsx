@@ -6,11 +6,7 @@ import {
   DockIcon,
   DockLabel,
 } from "@/app/components/body/components/dock/Dock";
-import {
-  HomeIcon,
-  UserIcon,
-  FolderKanban,
-} from "lucide-react";
+import { HomeIcon, UserIcon, FolderKanban } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "../../provider/Button";
@@ -51,14 +47,14 @@ export function DockExample() {
         </DockItem>
       </Link>
       |
-      <div>
+      {/* <div>
         <DockItem>
           <ModeToggle />
         </DockItem>
-      </div>
+      </div> */}
       <div>
         <DockItem>
-         <Socials/>
+          <Socials />
         </DockItem>
       </div>
     </Dock>

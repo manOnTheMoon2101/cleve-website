@@ -21,19 +21,19 @@ const spline = Spline_Sans_Mono({
 });
 const ProjectsContent = () => {
   const data: any = {
-    // animal: {
-    //   title: "Find🐕nimal",
-    //   devices: (
-    //     <div className="flex flex-row">
-    //       {<CiMobile1 />}
-    //       {<CiLaptop />}
-    //     </div>
-    //   ),
-    //   description: "Pet Adoption App",
-    //   image: dogs.src,
-    //   link: "https://findanimal-omega.vercel.app/",
-    //   body: "Pet Adoption App that allows users to find and adopt pets in their area(Currently only in Wellington,South Africa).",
-    // },
+    animal: {
+      title: "Find🐕nimal",
+      devices: (
+        <div className="flex flex-row">
+          {<CiMobile1 />}
+          {<CiLaptop />}
+        </div>
+      ),
+      description: "Pet Adoption App",
+      image: dogs.src,
+      link: "https://find-animal-umber.vercel.app/",
+      body: "Pet Adoption App that allows users to find and adopt pets in their area(Currently only in Wellington,South Africa).",
+    },
     weather: {
       title: "Weather App⛅",
       devices: (

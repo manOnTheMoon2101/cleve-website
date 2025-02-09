@@ -5,7 +5,7 @@ import weather from "@/public/images/weather.png";
 import loglive from "@/public/images/test.png";
 import splitline from "@/public/images/splitline.png";
 import match from "@/public/images/match.png";
-import dogs from "@/public/images/dogs3.jpg";
+import dogs from "@/public/images/cool.jpg";
 import "animate.css";
 import { InView } from "@/components/ui/in-view";
 import { Spline_Sans_Mono } from "next/font/google";

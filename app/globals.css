@@ -33,17 +33,17 @@
     --radius: 0.5rem;
   }
   .dark {
-    --background: 194, 56%, 19%;
-    --foreground: 37, 67%, 60%;
-    --card: 194, 56%, 19%;
-    --popover: 194, 56%, 19%;
-    --popover-foreground: 37, 67%, 60%;
+    --background: 194 56%  19%;
+    --foreground: 37 67%  60%;
+    --card: 194 56% 19%;
+    --popover: 194 56% 19%;
+    --popover-foreground: 37 67% 60%;
 
-    --primary: 37, 67%, 60%;
+    --primary: 37 67% 60%;
     --primary-foreground: 222.2 47.4% 11.2%;
-    --accent: 169, 28%, 73%;
+    --accent: 169 28% 73%;
 
-    --secondary: 48, 79%, 93%;
+    --secondary: 48 79% 93%;
     --secondary-foreground: 210 40% 98%;
 
     --radius: 0.5rem;

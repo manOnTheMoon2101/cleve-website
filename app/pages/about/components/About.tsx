@@ -3,7 +3,7 @@ import React from "react";
 import styles from "../components/styles.module.css";
 import sign from "@/public/images/sign.png";
 import Image from "next/image";
-import lion from "@/public/images/lion.jpeg";
+import air from "@/public/images/air.jpeg";
 import cape from "@/public/images/cape.jpeg";
 import food from "@/public/images/food.jpeg";
 import cleveC from "@/public/images/cleveC.jpeg";
@@ -13,9 +13,9 @@ const AboutContent = () => {
     <>
       <div className="flex flex-row justify-center">
         <div className={`${styles.gallery}`}>
-          <Image src={lion} alt="Photo of a lion" priority quality={100} />
+          <Image src={food} alt="Photo of a lion" priority quality={100} />
           <Image src={cape} alt="Photo of a cape" priority quality={100} />
-          <Image src={food} alt="Photo of pancakes" priority quality={100} />
+          <Image src={air} alt="Photo of pancakes" priority quality={100} />
           <Image
             src={cleveC}
             alt="Photo of Cleve Drinking a cocount"

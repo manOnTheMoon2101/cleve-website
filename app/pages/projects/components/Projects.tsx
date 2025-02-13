@@ -1,6 +1,6 @@
 "use client";
 import { Prompt } from "next/font/google";
-import x from "@/public/images/weight7.png";
+import x from "@/public/images/health.png";
 import weather from "@/public/images/cleveland.png";
 import loglive from "@/public/images/test.png";
 import splitline from "@/public/images/splitline.png";

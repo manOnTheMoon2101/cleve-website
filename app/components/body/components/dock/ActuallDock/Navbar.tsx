@@ -26,8 +26,8 @@ export function DockExample() {
         </DockItem>
       </Link>
       <Link
-        href="/pages/about"
-        className={`${isActive("/pages/about") ? "text-accent" : ""}`}
+        href="/about"
+        className={`${isActive("/about") ? "text-accent" : ""}`}
       >
         <DockItem>
           <DockIcon>
@@ -37,8 +37,8 @@ export function DockExample() {
         </DockItem>
       </Link>
       <Link
-        href="/pages/projects"
-        className={`${isActive("/pages/projects") ? "text-accent" : ""}`}
+        href="/projects"
+        className={`${isActive("/projects") ? "text-accent" : ""}`}
       >
         <DockItem>
           <DockIcon>

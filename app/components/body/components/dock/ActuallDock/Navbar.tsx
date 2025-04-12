@@ -11,6 +11,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "../../provider/Button";
 import { Socials } from "../../socials/Socials";
+import { Sword } from "lucide-react";
 export function DockExample() {
   const pathname = usePathname();
   const isActive = (path: string) => pathname === path;
@@ -41,9 +42,9 @@ export function DockExample() {
       >
         <DockItem>
           <DockIcon>
-            <FolderKanban className="w-full h-full" />
+            <Sword className="w-full h-full" />
           </DockIcon>
-          <DockLabel>Projects</DockLabel>
+          <DockLabel>My Adventure</DockLabel>
         </DockItem>
       </Link>
       |

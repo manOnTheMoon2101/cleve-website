@@ -39,7 +39,7 @@ export function InViewBasic() {
         <p className="my-40 text-center md:text-right">
           I fell in L❤️ve with Tech at a young age
           <br />
-          <span className="text-4xl text-secondary italic">
+          <span className="text-4xl text-secondary italic text-slate-400">
             (since i was chewing batteries as a baby)
           </span>
         </p>
@@ -88,7 +88,7 @@ export function InViewBasic() {
           <br />
           Yet when planted, it grows and becomes the largest of all garden
           plants, with such big branches that the birds can perch in its shade”-
-          <span className="text-4xl text-secondary">Mark 4-31</span>
+          <span className="text-4xl text-slate-400">Mark 4-31</span>
         </p>
       </InView>
     </div>

@@ -34,6 +34,7 @@ export default function WebCareerTimeline() {
       date: "2019 (December Vacation)",
       company: " Isipani Construction (Pty) Ltd",
       title: "General Worker",
+      fallBack:'ISI',
       image: isipani.src,
       description:
         "Assisted in daily site operations including material handling, site clean-up, and basic carpentry tasks ",
@@ -45,6 +46,7 @@ export default function WebCareerTimeline() {
       date: "2022 (10 months)",
       company: "Splitline Manufacturing",
       image: splitline.src,
+      fallBack:'SLM',
       title: "General Worker",
       description:
         "Managed a warehouse for packaged plastic goods and developed a basic Point of Sale (POS) system to maintain product inventory records.",
@@ -56,6 +58,7 @@ export default function WebCareerTimeline() {
       date: "2023 (3 months)",
       title: "It Intern",
       company: "The Cutting Edge Group",
+      fallBack:'TCE',
       image: edge.src,
       description:
         "Assisted with customer computer hardware failures including network monitoring etc... ",
@@ -67,6 +70,7 @@ export default function WebCareerTimeline() {
       date: "2024 (3 months)",
       image: match.src,
       title: "Frontend Developer",
+      fallBack:'MXE',
       company: "The Match Exchange",
       description:
         "Contributed in improving the UI/UX of the organisation's web app.",
@@ -78,6 +82,7 @@ export default function WebCareerTimeline() {
       date: "2024 (Present)",
       image: meta.src,
       title: "Full Stack Developer",
+      fallBack:'MET',
       company: "Metaship",
       description:
         "Contributing to the improvement of both the frontend and backend of the organization's web application by enhancing user experience, optimizing performance, and implementing new features.",
@@ -125,7 +130,7 @@ export default function WebCareerTimeline() {
                     <div className="flex flex-row items-center">
                       <Avatar>
                         <AvatarImage src={`${milestone.image}`} />
-                        <AvatarFallback>CJ</AvatarFallback>
+                        <AvatarFallback>{milestone.fallBack}</AvatarFallback>
                       </Avatar>
                       <h4 className="text-xl font-semibold text-gray-400 mx-2">
                         {milestone.company}

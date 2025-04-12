@@ -13,7 +13,17 @@ import { MorphingDialogBasicOne } from "./Dialog/Dialog";
 import { CiMobile1 } from "react-icons/ci";
 import { CiLaptop } from "react-icons/ci";
 import WebCareerTimeline from "./Timeline/timeline";
-import { Code, Database, Layout, Globe, Briefcase, Award, ChevronDown, ChevronUp } from 'lucide-react';
+import {
+  Code,
+  Database,
+  Layout,
+  Globe,
+  Briefcase,
+  Award,
+  ChevronDown,
+  ChevronUp,
+  ToyBrick,
+} from "lucide-react";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -83,7 +93,7 @@ const ProjectsContent = () => {
   };
   return (
     <div className="clear-both">
-      <WebCareerTimeline/>
+      <WebCareerTimeline />
 
       {/* <InView
         variants={{
@@ -136,16 +146,23 @@ const ProjectsContent = () => {
         viewOptions={{ margin: "0px 0px -200px 0px" }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <h2 className="text-center  md:text-left">
+        {/* <h2 className="text-center  md:text-left">
           <span
             className={`text-primary italic font-bold tracking-wide text-6xl md:text-8xl ${spline.className}`}
           >
-            Projects
+            Stuff
           </span>
           <br />
           <span className="text-5xl text-gray-500  italic">
-            I Have Developed
+            I’ve been messing around with
           </span>
+        </h2> */}
+
+        <h2
+          className={`${spline.className} text-2xl font-bold text-gray-800 mb-8 flex items-center gap-2`}
+        >
+          <ToyBrick className="text-accent" />
+          Stuff I've been messing around with
         </h2>
       </InView>
       <InView

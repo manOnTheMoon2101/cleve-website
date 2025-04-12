@@ -12,6 +12,8 @@ import { Spline_Sans_Mono } from "next/font/google";
 import { MorphingDialogBasicOne } from "./Dialog/Dialog";
 import { CiMobile1 } from "react-icons/ci";
 import { CiLaptop } from "react-icons/ci";
+import WebCareerTimeline from "./Timeline/timeline";
+import { Code, Database, Layout, Globe, Briefcase, Award, ChevronDown, ChevronUp } from 'lucide-react';
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -81,7 +83,9 @@ const ProjectsContent = () => {
   };
   return (
     <div className="clear-both">
-      <InView
+      <WebCareerTimeline/>
+
+      {/* <InView
         variants={{
           hidden: { opacity: 0, y: 100, filter: "blur(4px)" },
           visible: { opacity: 1, y: 0, filter: "blur(0px)" },
@@ -123,7 +127,7 @@ const ProjectsContent = () => {
             </div>
           ))}
         </div>
-      </InView>
+      </InView> */}
       <InView
         variants={{
           hidden: { opacity: 0, y: 100, filter: "blur(4px)" },

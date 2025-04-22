@@ -1,9 +1,7 @@
-"use client";
 import React from "react";
 import { Prompt } from "next/font/google";
 import "animate.css";
 import { TextRoll } from "@/components/ui/text-roll";
-import { Badge } from "@/components/ui/badge";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",

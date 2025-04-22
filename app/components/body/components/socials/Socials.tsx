@@ -1,4 +1,3 @@
-"use client";
 import * as React from "react";
 import { useMediaQuery } from "@custom-react-hooks/use-media-query";
 import {

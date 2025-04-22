@@ -1,4 +1,3 @@
-"use client"
 import { InView } from "@/components/ui/in-view";
 import {
   Tooltip,

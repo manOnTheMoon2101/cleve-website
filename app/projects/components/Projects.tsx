@@ -1,4 +1,3 @@
-"use client";
 import { Prompt } from "next/font/google";
 import x from "@/public/images/save.png";
 import weather from "@/public/images/cleveland.png";

@@ -8,7 +8,8 @@ import { DockExample } from "./components/body/components/dock/ActuallDock/Navba
 
 export const metadata: Metadata = {
   title: "Cleve Clayton | Software Developer Portfolio",
-  description: "Cleve Clayton (@cleveclayton) is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies.",
+  description:
+    "Cleve Clayton (@cleveclayton) is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies.",
   keywords: [
     "Cleve Clayton",
     "Web Developer",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
     "Frontend Development",
-    "Hire Developer"
+    "Hire Developer",
   ],
   authors: [{ name: "Cleve Clayton", url: "https://cleveclayton.me" }],
   creator: "Cleve Clayton",
@@ -34,7 +35,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://cleveclayton.me",
     title: "Cleve Clayton | Software Developer Portfolio",
-    description: "Explore the portfolio of Cleve Clayton, a skilled software developer with expertise in modern web technologies.",
+    description:
+      "Explore the portfolio of Cleve Clayton, a skilled software developer with expertise in modern web technologies.",
     siteName: "Cleve Clayton Portfolio",
     images: [
       {
@@ -48,9 +50,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Cleve Clayton | Software Developer",
-    description: "Explore the portfolio of Cleve Clayton, a skilled software developer with expertise in modern web technologies.",
+    description:
+      "Explore the portfolio of Cleve Clayton, a skilled software developer with expertise in modern web technologies.",
     creator: "@cleveclayton",
-    images: ["/twitter-image.jpg"], // Add a Twitter-specific image if desired
   },
   robots: {
     index: true,
@@ -58,37 +60,20 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
-  },
-  icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-    ],
-    apple: [
-      { url: '/apple-touch-icon.png' },
-    ],
-    other: [
-      {
-        rel: 'manifest',
-        url: '/site.webmanifest',
-      },
-    ],
   },
   viewport: {
     width: "device-width",
     initialScale: 1,
     maximumScale: 5,
   },
+  category: "technology",
   verification: {
-    google: "google-site-verification=9MlTTSsheThcuKJDD3be3CSjko0PWdm0eGvtLcW13xs", // Add your Google verification code
-    // Add other verification codes as needed
+    google: "9MlTTSsheThcuKJDD3be3CSjko0PWdm0eGvtLcW13xs",
   },
-  category: 'technology',
 };
 
 export default function RootLayout({
@@ -105,12 +90,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         > */}
-          <AnimatePresence>{children}</AnimatePresence>
-          <div className="fixed bottom-0 left-0 right-0 z-40">
-            <DockExample />
-          </div>
-          <SpeedInsights />
-          <Analytics />
+        <AnimatePresence>{children}</AnimatePresence>
+        <div className="fixed bottom-0 left-0 right-0 z-40">
+          <DockExample />
+        </div>
+        <SpeedInsights />
+        <Analytics />
         {/* </ThemeProvider> */}
       </body>
     </html>

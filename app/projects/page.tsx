@@ -4,6 +4,8 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion, useScroll } from "framer-motion";
 import ProjectsContent from "./components/Projects";
+import { InfiniteSliderBasic } from "./components/Slider/slider";
+
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -48,9 +50,7 @@ export default function Projects() {
           <Section>
             <ProjectsContent />
           </Section>
-          {/* <div className="fixed bottom-0 left-0 right-0 z-40">
-            <DockExample />
-          </div> */}
+         {/* <InfiniteSliderBasic/> */}
         </div>
         <div className="mt-96  ">
           <Section>

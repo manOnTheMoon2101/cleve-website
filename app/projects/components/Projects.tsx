@@ -1,10 +1,10 @@
 import { Prompt } from "next/font/google";
-import x from "@/public/images/save.png";
+import x from "@/public/images/weightNew.png";
 import weather from "@/public/images/weatherNew.png";
 import loglive from "@/public/images/test.png";
 import splitline from "@/public/images/splitline.png";
 import match from "@/public/images/match.png";
-import dogs from "@/public/images/cool.jpg";
+import demo from "@/public/images/demo.jpeg";
 import "animate.css";
 import { InView } from "@/components/ui/in-view";
 import { Spline_Sans_Mono } from "next/font/google";
@@ -12,17 +12,7 @@ import { MorphingDialogBasicOne } from "./Dialog/Dialog";
 import { CiMobile1 } from "react-icons/ci";
 import { CiLaptop } from "react-icons/ci";
 import WebCareerTimeline from "./Timeline/timeline";
-import {
-  Code,
-  Database,
-  Layout,
-  Globe,
-  Briefcase,
-  Award,
-  ChevronDown,
-  ChevronUp,
-  ToyBrick,
-} from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -57,6 +47,18 @@ const ProjectsContent = () => {
       image: x.src,
       link: "https://weight-management.vercel.app/",
       body: "Weight Management App that allows users to track their weight and view their progress.",
+    },
+    demo: {
+      // title: "Unkown",
+      // devices: (
+      //   <div className="flex flex-row">
+      //     {<CiMobile1 />}
+      //     {<CiLaptop />}
+      //   </div>
+      // ),
+      description: "soon...",
+      image: demo.src,
+      link: "",
     },
   };
   const contributed: any = {
@@ -158,11 +160,11 @@ const ProjectsContent = () => {
         </h2> */}
 
         <h2
-          className={`${spline.className} text-2xl font-bold text-gray-800 mb-8 flex items-center gap-2`}
+          className={`${spline.className} text-4xl font-bold text-gray-800 mb-2 flex items-center text-center justify-center gap-2`}
         >
-          <ToyBrick className="text-accent" />
-          Stuff I've been messing around with
+          Apps I've been messing around with...
         </h2>
+        <Separator className="bg-accent mt-8" />
       </InView>
       <InView
         variants={{

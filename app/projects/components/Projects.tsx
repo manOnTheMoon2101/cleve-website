@@ -33,7 +33,7 @@ const ProjectsContent = () => {
       description: "Weather App",
       image: weather.src,
       link: "https://weather-app-one-mu-88.vercel.app/",
-      body: "Weather App that allows users to view the weather in their area and other areas.",
+      body: "A sleek and simple weather app that shows real-time weather updates for your chosen city, complete with stunning visuals and an interactive 3D model",
     },
     weight: {
       title: "Weight Management App🥩",
@@ -46,7 +46,7 @@ const ProjectsContent = () => {
       description: "Weight Management App",
       image: x.src,
       link: "https://weight-management.vercel.app/",
-      body: "Weight Management App that allows users to track their weight and view their progress.",
+      body: "A weight tracker app that displays your main nutrients through advanced, visually stunning graphs and detailed table for comprehensive health tracking."
     },
     demo: {
       // title: "Unkown",

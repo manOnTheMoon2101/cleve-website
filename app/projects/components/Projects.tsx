@@ -1,6 +1,6 @@
 import { Prompt } from "next/font/google";
 import x from "@/public/images/save.png";
-import weather from "@/public/images/cleveland.png";
+import weather from "@/public/images/weatherNew.png";
 import loglive from "@/public/images/test.png";
 import splitline from "@/public/images/splitline.png";
 import match from "@/public/images/match.png";

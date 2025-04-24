@@ -50,7 +50,7 @@ export default function Projects() {
           <Section>
             <ProjectsContent />
           </Section>
-         <InfiniteSliderBasic/>
+         {/* <InfiniteSliderBasic/> */}
         </div>
         <div className="mt-96  ">
           <Section>

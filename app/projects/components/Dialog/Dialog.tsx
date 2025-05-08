@@ -15,9 +15,9 @@ export function MorphingDialogBasicOne(title: any) {
   return (
     <MorphingDialog
       transition={{
-        type: "spring",
-        bounce: 0.05,
-        duration: 0.25,
+        type: 'spring',
+        stiffness: 200,
+        damping: 24,
       }}
     >
       <MorphingDialogTrigger

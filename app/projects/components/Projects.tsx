@@ -1,5 +1,6 @@
 import { Prompt } from "next/font/google";
-import x from "@/public/images/weightNew.png";
+import weight from "@/public/images/weightNew.png";
+import animal from "@/public/images/animal-scraper.png";
 import weather from "@/public/images/weatherNew.png";
 import loglive from "@/public/images/test.png";
 import splitline from "@/public/images/splitline.png";
@@ -44,21 +45,22 @@ const ProjectsContent = () => {
         </div>
       ),
       description: "Weight Management App",
-      image: x.src,
+      image: weight.src,
       link: "https://weight-management.vercel.app/",
       body: "A weight tracker app that displays your main nutrients through advanced, visually stunning graphs and detailed table for comprehensive health tracking."
     },
-    demo: {
-      // title: "Unkown",
-      // devices: (
-      //   <div className="flex flex-row">
-      //     {<CiMobile1 />}
-      //     {<CiLaptop />}
-      //   </div>
-      // ),
-      description: "soon...",
-      image: demo.src,
-      link: "",
+    animal_scraper: {
+      title: "Animal-Adoption🐕",
+      devices: (
+        <div className="flex flex-row">
+          {<CiMobile1 />}
+          {<CiLaptop />}
+        </div>
+      ),
+      description: "Animal-Adoption App",
+      image: animal.src,
+      link: "https://animal-scraper.vercel.app/",
+      body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon."
     },
   };
   const contributed: any = {

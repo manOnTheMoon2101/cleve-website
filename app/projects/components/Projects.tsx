@@ -2,7 +2,7 @@ import { Prompt } from "next/font/google";
 import weight from "@/public/images/weightNew.png";
 import animal from "@/public/images/animal-scraper.png";
 import food from "@/public/images/food.jpg";
-import weather from "@/public/images/weatherNew.png";
+import weather from "@/public/images/weathernew.png";
 import loglive from "@/public/images/test.png";
 import splitline from "@/public/images/splitline.png";
 import match from "@/public/images/match.png";

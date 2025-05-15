@@ -60,7 +60,7 @@ export function MorphingDialogBasicOne(title: any) {
           <MorphingDialogImage
             src={title.image}
             alt="Image"
-            className="h-[500px] w-[500px] sm:h-full sm:w-full"
+             className="h-full w-full"
           />
           <div className="p-6">
             <MorphingDialogTitle className="text-2xl text-zinc-950 dark:text-zinc-50">

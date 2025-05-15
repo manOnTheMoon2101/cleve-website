@@ -1,6 +1,7 @@
 import { Prompt } from "next/font/google";
 import weight from "@/public/images/weightNew.png";
 import animal from "@/public/images/animal-scraper.png";
+import food from "@/public/images/food.jpg";
 import weather from "@/public/images/weatherNew.png";
 import loglive from "@/public/images/test.png";
 import splitline from "@/public/images/splitline.png";
@@ -61,6 +62,17 @@ const ProjectsContent = () => {
       image: animal.src,
       link: "https://animal-scraper.vercel.app/",
       body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon."
+    },
+    demo: {
+      title: "Coming soon...",
+      devices: (
+        <div className="flex flex-row">
+          {<CiMobile1 />}
+          {<CiLaptop />}
+        </div>
+      ),
+      description: "Demo",
+      image: food.src,
     },
   };
   const contributed: any = {

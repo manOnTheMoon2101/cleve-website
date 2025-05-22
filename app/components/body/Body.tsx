@@ -19,13 +19,9 @@ const Hero = () => {
       <TextRoll
         className={`text-xl text-secondary relative mt-6 tracking-tight flex flex-row flex-wrap`}
       >
-        web{" "}
+        software{" "}
         <span className="text-accent animate-pulse mx-2 font-bold">
           developer
-        </span>{" "}
-        <span className="text-foreground mx-2">x</span> software{" "}
-        <span className="text-accent animate-pulse mx-2 font-bold">
-          engineer
         </span>{" "}
         <span className="text-foreground mx-2">x</span> ux{" "}
         <span className="text-accent animate-pulse mx-2 font-bold">

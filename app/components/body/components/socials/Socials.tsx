@@ -22,6 +22,7 @@ import { IoShareSocialSharp } from "react-icons/io5";
 import { Prompt } from "next/font/google";
 import { Spline_Sans_Mono } from "next/font/google";
 import { Button } from "@/components/ui/button";
+
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -29,9 +30,19 @@ const prompt = Prompt({
 const spline = Spline_Sans_Mono({
   subsets: ["latin"],
 });
+
 export function Socials() {
   const [open, setOpen] = React.useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText("clevejohnclayton.2101@gmail.com");
+    } catch (err) {
+      return null;
+    }
+  };
+
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
@@ -45,7 +56,7 @@ export function Socials() {
             Say Hey!
           </DialogTitle>
           <div className="flex flex-row justify-center m-10">
-            <TooltipProvider>
+            {/* <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <a
@@ -69,6 +80,7 @@ export function Socials() {
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
+             */}
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -78,13 +90,14 @@ export function Socials() {
                     className="px-5"
                     rel="noopener noreferrer"
                   >
-                    <div className="flex items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                    <div className="flex items-center leading-6 py-3 px-3 rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
                       <Image
                         src={github}
                         alt={"Github"}
                         height={60}
                         width={60}
                       />
+                      <h3 className={`text-xl ${spline.className}`}>Github</h3>
                     </div>
                   </a>
                 </TooltipTrigger>
@@ -93,19 +106,20 @@ export function Socials() {
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
+
             <TooltipProvider>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <a
-                    href="mailto:clevejohnclayton.2101@gmail.com"
-                    target="_blank"
-                    className="px-5"
-                    rel="noopener noreferrer"
-                  >
-                    <div className="flex items-center text-gray-700 font-neucha text-base leading-6 py-3 px-3 rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
-                      <Image src={email} alt={"Email"} height={60} width={60} />
-                    </div>
-                  </a>
+                  <div className="flex items-center  leading-6 py-3 px-3 rounded-custom  transition-all duration-235 ease-in-out cursor-pointer select-none touch-manipulation transform hover:translate-y-0.5 focus:ring-0 focus:shadow-lg focus:translate-y-0.5">
+                    <Image
+                      src={email}
+                      alt={"Email"}
+                      height={60}
+                      width={60}
+                      onClick={copyToClipboard}
+                    />
+                    <h3 className={`text-xl ${spline.className}`}>Email</h3>
+                  </div>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>Email : clevejohnclayton.2101@gmail.com</p>

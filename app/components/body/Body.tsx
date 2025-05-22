@@ -2,6 +2,10 @@ import React from "react";
 import { Prompt } from "next/font/google";
 import "animate.css";
 import { TextRoll } from "@/components/ui/text-roll";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { CornerDownRight } from "lucide-react";
+import Link from "next/link";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -19,13 +23,9 @@ const Hero = () => {
       <TextRoll
         className={`text-xl text-secondary relative mt-6 tracking-tight flex flex-row flex-wrap`}
       >
-        web{" "}
+        software{" "}
         <span className="text-accent animate-pulse mx-2 font-bold">
           developer
-        </span>{" "}
-        <span className="text-foreground mx-2">x</span> software{" "}
-        <span className="text-accent animate-pulse mx-2 font-bold">
-          engineer
         </span>{" "}
         <span className="text-foreground mx-2">x</span> ux{" "}
         <span className="text-accent animate-pulse mx-2 font-bold">

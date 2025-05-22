@@ -22,6 +22,7 @@ import { IoShareSocialSharp } from "react-icons/io5";
 import { Prompt } from "next/font/google";
 import { Spline_Sans_Mono } from "next/font/google";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 const prompt = Prompt({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export function Socials() {
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText("clevejohnclayton.2101@gmail.com");
+      toast.success("Email copied to clipboard");
     } catch (err) {
       return null;
     }

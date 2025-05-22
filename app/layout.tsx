@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AnimatePresence } from "framer-motion";
 import { DockExample } from "./components/body/components/dock/ActuallDock/Navbar";
-
+import { Toaster } from "@/components/ui/sonner"
 export const metadata: Metadata = {
   title: "Cleve Clayton | Software Developer Portfolio",
   description:
@@ -96,6 +96,7 @@ export default function RootLayout({
         </div>
         <SpeedInsights />
         <Analytics />
+        <Toaster />
         {/* </ThemeProvider> */}
       </body>
     </html>

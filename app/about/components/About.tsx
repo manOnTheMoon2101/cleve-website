@@ -7,6 +7,7 @@ import cape from "@/public/images/cape.jpeg";
 import food from "@/public/images/food.jpeg";
 import cleveC from "@/public/images/cleveC.jpeg";
 import { InViewBasic } from "./Body/Body";
+import { ArrowBigDown } from "lucide-react";
 const AboutContent = () => {
   return (
     <>
@@ -22,6 +23,9 @@ const AboutContent = () => {
             quality={100}
           />
         </div>
+      </div>
+      <div className="flex flex-row justify-center my-6">
+      <ArrowBigDown size={60} className="animate-bounce"/>
       </div>
       <InViewBasic />
 

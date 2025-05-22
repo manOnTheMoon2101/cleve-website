@@ -2,6 +2,10 @@ import React from "react";
 import { Prompt } from "next/font/google";
 import "animate.css";
 import { TextRoll } from "@/components/ui/text-roll";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { CornerDownRight } from "lucide-react";
+import Link from "next/link";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",

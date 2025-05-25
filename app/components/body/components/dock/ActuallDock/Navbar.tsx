@@ -47,17 +47,16 @@ export function DockExample() {
           <DockLabel>My Adventure</DockLabel>
         </DockItem>
       </Link>
-      |
       {/* <div>
         <DockItem>
           <ModeToggle />
         </DockItem>
       </div> */}
-      <div>
+      {/* <div>
         <DockItem>
           <Socials />
         </DockItem>
-      </div>
+      </div> */}
     </Dock>
   );
 }

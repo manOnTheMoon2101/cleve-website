@@ -99,7 +99,6 @@ export function Socials() {
                         height={60}
                         width={60}
                       />
-                      <h3 className={`text-xl ${spline.className}`}>Github</h3>
                     </div>
                   </a>
                 </TooltipTrigger>
@@ -120,7 +119,7 @@ export function Socials() {
                       width={60}
                       onClick={copyToClipboard}
                     />
-                    <h3 className={`text-xl ${spline.className}`}>Email</h3>
+                    {/* <h3 className={`text-xl ${spline.className}`}>Email</h3> */}
                   </div>
                 </TooltipTrigger>
                 <TooltipContent>

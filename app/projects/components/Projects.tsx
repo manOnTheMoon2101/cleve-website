@@ -1,6 +1,6 @@
 import { Prompt } from "next/font/google";
 import weight from "@/public/images/weightNew.png";
-import animal from "@/public/images/animal-scraper.png";
+import animal from "@/public/images/newsnip.png";
 import food from "@/public/images/food.jpg";
 import weather from "@/public/images/weatherNew.png";
 import loglive from "@/public/images/test.png";
@@ -51,7 +51,7 @@ const ProjectsContent = () => {
       body: "A weight tracker app that displays your main nutrients through advanced, visually stunning graphs and detailed table for comprehensive health tracking."
     },
     animal_scraper: {
-      title: "Animal-Adoption🐕",
+      title: "FurEver🐕",
       devices: (
         <div className="flex flex-row">
           {<CiMobile1 />}

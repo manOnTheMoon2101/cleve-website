@@ -15,6 +15,16 @@ import { CiMobile1 } from "react-icons/ci";
 import { CiLaptop } from "react-icons/ci";
 import WebCareerTimeline from "./Timeline/timeline";
 import { Separator } from "@/components/ui/separator";
+
+import { RiNextjsFill } from "react-icons/ri";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { TbBrandThreejs } from "react-icons/tb";
+import { SiShadcnui } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { SiPrisma } from "react-icons/si";
+import { SiCheerio } from "react-icons/si";
+import { RiSvelteFill } from "react-icons/ri";
+import { FaUtensilSpoon } from "react-icons/fa";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -26,9 +36,27 @@ const ProjectsContent = () => {
   const data: any = {
     weather: {
       title: "Weather App⛅",
+      stack: [
+        {
+          icon: <RiNextjsFill />,
+          tooltip: "NextJS 14",
+        },
+        {
+          icon: <SiShadcnui />,
+          tooltip: "Shadcn UI",
+        },
+        {
+          icon: <RiTailwindCssFill color="#00bbff" />,
+          tooltip: "Tailwind CSS",
+        },
+        {
+          icon: <TbBrandThreejs />,
+          tooltip: "Three.js",
+        },
+      ],
       devices: (
         <div className="flex flex-row">
-          {<CiMobile1 />}
+          {<RiNextjsFill />}
           {<CiLaptop />}
         </div>
       ),
@@ -39,6 +67,28 @@ const ProjectsContent = () => {
     },
     weight: {
       title: "Weight Management App🥩",
+      stack: [
+        {
+          icon: <RiNextjsFill />,
+          tooltip: "NextJS 14",
+        },
+        {
+          icon: <SiShadcnui />,
+          tooltip: "Shadcn UI",
+        },
+        {
+          icon: <RiTailwindCssFill color="#00bbff" />,
+          tooltip: "Tailwind CSS",
+        },
+        {
+          icon: <DiMongodb color="#00ed63" />,
+          tooltip: "MongoDB",
+        },
+        {
+          icon: <SiPrisma color="#15a395" />,
+          tooltip: "PrismaORM",
+        },
+      ],
       devices: (
         <div className="flex flex-row">
           {<CiMobile1 />}
@@ -48,10 +98,28 @@ const ProjectsContent = () => {
       description: "Weight Management App",
       image: weight.src,
       link: "https://weight-management.vercel.app/",
-      body: "A weight tracker app that displays your main nutrients through advanced, visually stunning graphs and detailed table for comprehensive health tracking."
+      body: "A weight tracker app that displays your main nutrients through advanced, visually stunning graphs and detailed table for comprehensive health tracking.",
     },
     animal_scraper: {
       title: "FurEver🐕",
+      stack: [
+        {
+          icon: <RiNextjsFill />,
+          tooltip: "NextJS 15",
+        },
+        {
+          icon: <SiShadcnui />,
+          tooltip: "Shadcn UI",
+        },
+        {
+          icon: <RiTailwindCssFill color="#00bbff" />,
+          tooltip: "Tailwind CSS",
+        },
+        {
+          icon: <SiCheerio color="#e88d1e" />,
+          tooltip: "Cheerio",
+        },
+      ],
       devices: (
         <div className="flex flex-row">
           {<CiMobile1 />}
@@ -61,10 +129,28 @@ const ProjectsContent = () => {
       description: "Animal-Adoption App",
       image: animal.src,
       link: "https://animal-scraper.vercel.app/",
-      body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon."
+      body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon.",
     },
     demo: {
       title: "Coming soon...",
+      stack: [
+        {
+          icon: <RiSvelteFill color="#ff5805" />,
+          tooltip: "SvelteKit 5",
+        },
+        {
+          icon: <SiShadcnui />,
+          tooltip: "Shadcn UI",
+        },
+        {
+          icon: <RiTailwindCssFill />,
+          tooltip: "Tailwind CSS",
+        },
+        // {
+        //   icon: <FaUtensilSpoon color="#009644" />,
+        //   tooltip: "Spoonacular API",
+        // },
+      ],
       devices: (
         <div className="flex flex-row">
           {<CiMobile1 />}
@@ -169,7 +255,7 @@ const ProjectsContent = () => {
           </span>
           <br />
           <span className="text-5xl text-gray-500  italic">
-            I’ve been messing around with
+            I've been messing around with
           </span>
         </h2> */}
 
@@ -198,6 +284,7 @@ const ProjectsContent = () => {
                 image={x.image}
                 body={x.body}
                 description={x.description}
+                stack={x.stack}
               />
             </div>
           ))}

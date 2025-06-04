@@ -25,6 +25,7 @@ import { SiPrisma } from "react-icons/si";
 import { SiCheerio } from "react-icons/si";
 import { RiSvelteFill } from "react-icons/ri";
 import { FaUtensilSpoon } from "react-icons/fa";
+import { link } from "fs";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -132,7 +133,8 @@ const ProjectsContent = () => {
       body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon.",
     },
     demo: {
-      title: "Coming soon...",
+      title: "RecipeReel🍜",
+      body:"This app helps users discover delicious recipes by simply entering an ingredient. Just type in what you have on hand, and the site instantly shows a variety of recipe ideas that feature that ingredient.",
       stack: [
         {
           icon: <RiSvelteFill color="#ff5805" />,
@@ -157,7 +159,8 @@ const ProjectsContent = () => {
           {<CiLaptop />}
         </div>
       ),
-      description: "Demo",
+      description: "Recipe Finder App",
+      link:"https://recipe-finder-alpha-one.vercel.app/",
       image: food.src,
     },
   };

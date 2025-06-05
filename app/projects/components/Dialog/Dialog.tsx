@@ -11,11 +11,23 @@ import {
 } from "@/components/ui/morphing-dialog";
 import { PlusIcon } from "lucide-react";
 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
+interface StackItem {
+  icon: React.ReactNode;
+  tooltip: string;
+}
+
 export function MorphingDialogBasicOne(title: any) {
   return (
     <MorphingDialog
       transition={{
-        type: 'spring',
+        type: "spring",
         stiffness: 200,
         damping: 24,
       }}
@@ -35,7 +47,21 @@ export function MorphingDialogBasicOne(title: any) {
           <div>
             <MorphingDialogTitle className="text-zinc-950 dark:text-zinc-50">
               {title.title ? title.title : title.description}
-              {title.devices}
+              <div className="flex gap-2 mt-2">
+                {Array.isArray(title.stack) &&
+                  title.stack.map((item: StackItem, index: number) => (
+                    <div key={index} className="relative group">
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <span> {item.icon}</span>
+                          </TooltipTrigger>
+                          <TooltipContent>{item.tooltip}</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </div>
+                  ))}
+              </div>
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
               {title.link}
@@ -60,11 +86,26 @@ export function MorphingDialogBasicOne(title: any) {
           <MorphingDialogImage
             src={title.image}
             alt="Image"
-             className="h-full w-full"
+            className="h-full w-full"
           />
           <div className="p-6">
             <MorphingDialogTitle className="text-2xl text-zinc-950 dark:text-zinc-50">
               {title.title}
+              <div className="flex gap-2 mt-2">
+                {Array.isArray(title.stack) &&
+                  title.stack.map((item: StackItem, index: number) => (
+                    <div key={index} className="relative group">
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <span> {item.icon}</span>
+                          </TooltipTrigger>
+                          <TooltipContent>{item.tooltip}</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </div>
+                  ))}
+              </div>
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
               {title.body}

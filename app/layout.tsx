@@ -5,9 +5,9 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AnimatePresence } from "framer-motion";
 import { DockExample } from "./components/body/components/dock/ActuallDock/Navbar";
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/components/ui/sonner";
 export const metadata: Metadata = {
-  title: "Cleve Clayton | Software Developer Portfolio",
+  title: "Cleve Clayton | Software Developer",
   description:
     "Cleve Clayton (@cleveclayton) is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies.",
   keywords: [
@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     "Full Stack Developer",
     "CV",
     "JavaScript",
+    "Sveltekit 5",
     "React",
     "Next.js",
     "Frontend Development",
-    "Hire Developer",
   ],
   authors: [{ name: "Cleve Clayton", url: "https://cleveclayton.me" }],
   creator: "Cleve Clayton",
@@ -38,14 +38,14 @@ export const metadata: Metadata = {
     description:
       "Explore the portfolio of Cleve Clayton, a skilled software developer with expertise in modern web technologies.",
     siteName: "Cleve Clayton Portfolio",
-    images: [
-      {
-        url: "/og-image.jpg", // Add a high-quality OG image
-        width: 1200,
-        height: 630,
-        alt: "Cleve Clayton Portfolio Preview",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "/og-image.jpg",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Cleve Clayton Portfolio Preview",
+    //   },
+    // ],
   },
   twitter: {
     card: "summary_large_image",
@@ -65,15 +65,15 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-  },
   category: "technology",
   verification: {
     google: "9MlTTSsheThcuKJDD3be3CSjko0PWdm0eGvtLcW13xs",
   },
+  // viewport: {
+  //   width: "device-width",
+  //   initialScale: 1,
+  //   maximumScale: 5,
+  // },
 };
 
 export default function RootLayout({

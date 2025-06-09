@@ -3,6 +3,7 @@ import { Prompt } from "next/font/google";
 import "animate.css";
 import { TextRoll } from "@/components/ui/text-roll";
 import github from "@/public/icons/github.svg";
+import linkedin from "@/public/icons/linkedin.svg";
 import email from "@/public/icons/email.svg";
 import Image from "next/image";
 import { toast } from "sonner";
@@ -45,9 +46,10 @@ const Hero = () => {
         </span>
       </TextRoll>
       <div
-        className={`text-xl relative mt-6 tracking-tight flex flex-row flex-wrap`}
+        className={`text-xl mt-6 flex flex-row items-center`}
       >
-        <TooltipProvider>
+      <div>
+      <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
               <Image
@@ -64,7 +66,34 @@ const Hero = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
-        <TooltipProvider>
+      </div>
+       <div>
+       <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <a
+                href="https://www.linkedin.com/in/cleve-john-a1667836a/"
+                target="_blank"
+                className="px-5"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  className="mx-2 cursor-pointer transition-transform duration-200 hover:scale-90"
+                  src={linkedin}
+                  alt={"LinkedIn"}
+                  height={30}
+                  width={30}
+                />
+              </a>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>LinkedIn</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
+       </div>
+      <div>
+      <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
               <a
@@ -87,6 +116,7 @@ const Hero = () => {
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
+      </div>
       </div>
     </div>
   );

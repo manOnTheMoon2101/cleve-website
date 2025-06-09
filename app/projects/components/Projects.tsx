@@ -145,7 +145,7 @@ const ProjectsContent = () => {
           tooltip: "Shadcn UI",
         },
         {
-          icon: <RiTailwindCssFill />,
+          icon: <RiTailwindCssFill color="#00bbff" />,
           tooltip: "Tailwind CSS",
         },
         // {

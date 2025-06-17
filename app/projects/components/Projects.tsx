@@ -6,7 +6,7 @@ import weather from "@/public/images/weatherNew.png";
 import loglive from "@/public/images/test.png";
 import splitline from "@/public/images/splitline.png";
 import match from "@/public/images/match.png";
-import demo from "@/public/images/demo.jpeg";
+import demo from "@/public/images/go.png";
 import "animate.css";
 import { InView } from "@/components/ui/in-view";
 import { Spline_Sans_Mono } from "next/font/google";
@@ -24,6 +24,7 @@ import { DiMongodb } from "react-icons/di";
 import { SiPrisma } from "react-icons/si";
 import { SiCheerio } from "react-icons/si";
 import { RiSvelteFill } from "react-icons/ri";
+import { FaGolang } from "react-icons/fa6";
 import { FaUtensilSpoon } from "react-icons/fa";
 import { link } from "fs";
 const prompt = Prompt({
@@ -132,7 +133,7 @@ const ProjectsContent = () => {
       link: "https://animal-scraper.vercel.app/",
       body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon.",
     },
-    demo: {
+    recipeReel: {
       title: "RecipeReel🍜",
       body:"This app helps users discover delicious recipes by simply entering an ingredient. Just type in what you have on hand, and the site instantly shows a variety of recipe ideas that feature that ingredient.",
       stack: [
@@ -162,6 +163,26 @@ const ProjectsContent = () => {
       description: "Recipe Finder App",
       link:"https://recipe-finder-alpha-one.vercel.app/",
       image: food.src,
+    },
+    demo: {
+      title: "Coming Soon...",
+      body:"",
+      stack: [
+        {
+          icon: <FaGolang color="#007c9c" />,
+          tooltip: "SvelteKit 5",
+        },
+      
+      ],
+      devices: (
+        <div className="flex flex-row">
+          {<CiMobile1 />}
+          {<CiLaptop />}
+        </div>
+      ),
+      description: "Demo",
+      link:"",
+      image: demo.src,
     },
   };
   const contributed: any = {

@@ -134,7 +134,7 @@ const ProjectsContent = () => {
       body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon.",
     },
     recipeReel: {
-      title: "RecipeReel🍜",
+      title: "RecipeReel 🍜",
       body:"This app helps users discover delicious recipes by simply entering an ingredient. Just type in what you have on hand, and the site instantly shows a variety of recipe ideas that feature that ingredient.",
       stack: [
         {

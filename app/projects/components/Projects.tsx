@@ -170,7 +170,7 @@ const ProjectsContent = () => {
       stack: [
         {
           icon: <FaGolang color="#007c9c" />,
-          tooltip: "SvelteKit 5",
+          tooltip: "Golang",
         },
       
       ],

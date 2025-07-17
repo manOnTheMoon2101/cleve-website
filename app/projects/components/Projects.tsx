@@ -166,7 +166,7 @@ const ProjectsContent = () => {
       image: food.src,
     },
     demo: {
-      title: "Coming Soon...",
+      title: "Still Cooking...",
       body:"",
       stack: [
         {

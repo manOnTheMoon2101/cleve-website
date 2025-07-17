@@ -27,6 +27,7 @@ import { RiSvelteFill } from "react-icons/ri";
 import { FaGolang } from "react-icons/fa6";
 import { FaUtensilSpoon } from "react-icons/fa";
 import { link } from "fs";
+import { Globe, Laptop } from "lucide-react";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",
@@ -283,12 +284,11 @@ const ProjectsContent = () => {
           </span>
         </h2> */}
 
-        <h2
-          className={`${spline.className} text-4xl font-bold text-gray-800 mb-2 flex items-center text-center justify-center gap-2`}
-        >
-          Apps I've been messing around with...
-        </h2>
-        <Separator className="bg-accent mt-8" />
+<h2  className={`${spline.className} text-2xl font-bold text-gray-800 mb-8 flex items-center gap-2 p-6`}>
+        <Laptop className="text-accent" />
+        Stuff...
+      </h2>
+        {/* <Separator className="bg-accent mt-8" /> */}
       </InView>
       <InView
         variants={{
@@ -300,7 +300,7 @@ const ProjectsContent = () => {
       >
         <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
           {Object.entries(data).map(([key, x]: [string, any]) => (
-            <div key={key} className="my-48">
+            <div key={key} >
               <MorphingDialogBasicOne
                 title={x.title}
                 link={x.link}

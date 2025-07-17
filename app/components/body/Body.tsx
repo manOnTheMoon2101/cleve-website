@@ -34,7 +34,7 @@ const Hero = () => {
         Cleve Clayton
       </h1>
       <TextRoll
-        className={`text-xl text-secondary relative mt-6 tracking-tight flex flex-row flex-wrap`}
+        className={`text-lg sm:text-xl text-secondary relative mt-6 tracking-tight flex flex-row flex-wrap`}
       >
         software{" "}
         <span className="text-accent animate-pulse mx-2 font-bold">

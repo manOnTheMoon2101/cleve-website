@@ -25,7 +25,7 @@ const AboutContent = () => {
         </div>
       </div>
       <div className="flex flex-row justify-center my-6">
-      <ArrowBigDown size={60} className="animate-bounce"/>
+      <ArrowBigDown size={60} className="animate-pulse"/>
       </div>
       <InViewBasic />
 

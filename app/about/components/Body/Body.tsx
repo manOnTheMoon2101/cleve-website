@@ -60,7 +60,7 @@ export function InViewBasic() {
                   <span className="">"Plat op die aarde"</span>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>Down to earth</p>
+                  <span>Down to earth</span>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>

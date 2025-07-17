@@ -300,7 +300,7 @@ const ProjectsContent = () => {
       >
         <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
           {Object.entries(data).map(([key, x]: [string, any]) => (
-            <div key={key} >
+            <div key={key} className="my-24 md:my-0" >
               <MorphingDialogBasicOne
                 title={x.title}
                 link={x.link}

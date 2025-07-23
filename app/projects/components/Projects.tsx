@@ -165,26 +165,26 @@ const ProjectsContent = () => {
       link:"https://recipe-finder-alpha-one.vercel.app/",
       image: food.src,
     },
-    demo: {
-      title: "Still Cooking...",
-      body:"",
-      stack: [
-        {
-          icon: <FaGolang color="#007c9c" />,
-          tooltip: "Golang",
-        },
+    // demo: {
+    //   title: "Still Cooking...",
+    //   body:"",
+    //   stack: [
+    //     {
+    //       icon: <FaGolang color="#007c9c" />,
+    //       tooltip: "Golang",
+    //     },
       
-      ],
-      devices: (
-        <div className="flex flex-row">
-          {<CiMobile1 />}
-          {<CiLaptop />}
-        </div>
-      ),
-      description: "Demo",
-      link:"",
-      image: demo.src,
-    },
+    //   ],
+    //   devices: (
+    //     <div className="flex flex-row">
+    //       {<CiMobile1 />}
+    //       {<CiLaptop />}
+    //     </div>
+    //   ),
+    //   description: "Demo",
+    //   link:"",
+    //   image: demo.src,
+    // },
   };
   const contributed: any = {
     match: {

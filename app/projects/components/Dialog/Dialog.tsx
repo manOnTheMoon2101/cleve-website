@@ -50,33 +50,18 @@ export function MorphingDialogBasicOne(title: any) {
           <div>
             <MorphingDialogTitle className="text-zinc-950 dark:text-zinc-50 font-bold">
               {title.title ? title.title : title.description}
-              <div className="flex gap-2 mt-2">
-                {Array.isArray(title.stack) &&
-                  title.stack.map((item: StackItem, index: number) => (
-                    <div key={index} className="relative group">
-                      <TooltipProvider delayDuration={100}>
-                        <Tooltip>
-                          <TooltipTrigger asChild>
-                            <span className="text-2xl"> {item.icon}</span>
-                          </TooltipTrigger>
-                          <TooltipContent>{item.tooltip}</TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </div>
-                  ))}
-              </div>
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
               <Link href={title.link} target="_blank" rel="noopener noreferrer">
-                <div className="flex flex-row items-center my-2">
+                <div className="flex flex-row items-center my-2 text-accent">
                   <Globe className="text-accent" />
                   Live Demo
                 </div>
               </Link>
 
-              <Link href={title.link} target="_blank" rel="noopener noreferrer">
-                <Badge className="flex flex-row items-center my-2 bg-white text-accent">
-                  <GitBranch className="text-accent" />
+              <Link href={title.link} target="_blank" rel="noopener noreferrer" className="flex flex-row justify-start">
+                <Badge className="flex flex-row items-center my-2 bg-accent text-white">
+                  <GitBranch className="text-white" />
                   Github Repo
                 </Badge>
               </Link>

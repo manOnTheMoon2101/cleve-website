@@ -10,13 +10,16 @@ import {
   MorphingDialogContainer,
 } from "@/components/ui/morphing-dialog";
 import { PlusIcon } from "lucide-react";
-
+import { Globe } from "lucide-react";
+import { GitBranch } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 
 interface StackItem {
   icon: React.ReactNode;
@@ -45,7 +48,7 @@ export function MorphingDialogBasicOne(title: any) {
         />
         <div className="flex flex-grow flex-row items-end justify-between p-2 bg-background">
           <div>
-            <MorphingDialogTitle className="text-zinc-950 dark:text-zinc-50">
+            <MorphingDialogTitle className="text-zinc-950 dark:text-zinc-50 font-bold">
               {title.title ? title.title : title.description}
               <div className="flex gap-2 mt-2">
                 {Array.isArray(title.stack) &&
@@ -54,7 +57,7 @@ export function MorphingDialogBasicOne(title: any) {
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
                           <TooltipTrigger asChild>
-                            <span> {item.icon}</span>
+                            <span className="text-2xl"> {item.icon}</span>
                           </TooltipTrigger>
                           <TooltipContent>{item.tooltip}</TooltipContent>
                         </Tooltip>
@@ -64,7 +67,19 @@ export function MorphingDialogBasicOne(title: any) {
               </div>
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
-              {title.link}
+              <Link href={title.link} target="_blank" rel="noopener noreferrer">
+                <div className="flex flex-row items-center my-2">
+                  <Globe className="text-accent" />
+                  Live Demo
+                </div>
+              </Link>
+
+              <Link href={title.link} target="_blank" rel="noopener noreferrer">
+                <Badge className="flex flex-row items-center my-2 bg-white text-accent">
+                  <GitBranch className="text-accent" />
+                  Github Repo
+                </Badge>
+              </Link>
             </MorphingDialogSubtitle>
           </div>
           <button

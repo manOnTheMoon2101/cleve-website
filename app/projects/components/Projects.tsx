@@ -140,7 +140,7 @@ const ProjectsContent = () => {
       stack: [
         {
           icon: <RiSvelteFill color="#ff5805" />,
-          tooltip: "SvelteKit 5",
+          tooltip: "SvelteKit",
         },
         {
           icon: <SiShadcnui />,

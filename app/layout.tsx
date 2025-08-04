@@ -7,75 +7,34 @@ import { AnimatePresence } from "framer-motion";
 import { DockExample } from "./components/body/components/dock/ActuallDock/Navbar";
 import { Toaster } from "@/components/ui/sonner";
 export const metadata: Metadata = {
-  title: "Cleve Clayton | Software Developer",
-  description:
-    "Cleve Clayton (@cleveclayton) is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies.",
-  keywords: [
-    "Cleve Clayton",
-    "Web Developer",
-    "Software Engineer",
-    "Portfolio",
-    "Full Stack Developer",
-    "CV",
-    "JavaScript",
-    "Sveltekit 5",
-    "React",
-    "Next.js",
-    "Frontend Development",
-  ],
-  authors: [{ name: "Cleve Clayton", url: "https://cleveclayton.me" }],
+  title: "Cleve Clayton",
+  description: "@cleveclayton is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies",
+  keywords: ["TypeScript", "Software", "Developer"],
+  authors: [{ name: "Cleve Clayton" }],
   creator: "Cleve Clayton",
   publisher: "Cleve Clayton",
-  metadataBase: new URL("https://cleveclayton.me"),
-  alternates: {
-    canonical: "/",
+  robots: {
+    index: true,
+    follow: true,
   },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://cleveclayton.me",
-    title: "Cleve Clayton | Software Developer Portfolio",
-    description:
-      "Explore the portfolio of Cleve Clayton, a skilled software developer with expertise in modern web technologies.",
-    siteName: "Cleve Clayton Portfolio",
-    // images: [
-    //   {
-    //     url: "/og-image.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Cleve Clayton Portfolio Preview",
-    //   },
-    // ],
+    title: "Cleve Clayton",
+    description: "@cleveclayton is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies",
+    siteName: "Cleve Clayton",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cleve Clayton | Software Developer",
-    description:
-      "Explore the portfolio of Cleve Clayton, a skilled software developer with expertise in modern web technologies.",
-    creator: "@cleveclayton",
+    title: "Cleve Clayton",
+    description: "@cleveclayton is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies",
+    creator: "@CJohn217",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  category: "technology",
   verification: {
-    google: "9MlTTSsheThcuKJDD3be3CSjko0PWdm0eGvtLcW13xs",
+    google: "google-site-verification=9MlTTSsheThcuKJDD3be3CSjko0PWdm0eGvtLcW13xs",
   },
-  // viewport: {
-  //   width: "device-width",
-  //   initialScale: 1,
-  //   maximumScale: 5,
-  // },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

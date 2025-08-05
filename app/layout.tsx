@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import { DockExample } from "./components/body/components/dock/ActuallDock/Navbar";
 import { Toaster } from "@/components/ui/sonner";
 export const metadata: Metadata = {
-  title: "Cleve Clayton",
+  title: "Cleve Clayton | Software Developer",
   description: "@cleveclayton is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies",
   keywords: ["TypeScript", "Software", "Developer"],
   authors: [{ name: "Cleve Clayton" }],
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://cleveclayton.me",
-    title: "Cleve Clayton",
+    title: "Cleve Clayton | Software Developer",
     description: "@cleveclayton is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies",
     siteName: "Cleve Clayton",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cleve Clayton",
+    title:  "Cleve Clayton | Software Developer",
     description: "@cleveclayton is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies",
     creator: "@CJohn217",
   },

@@ -23,7 +23,10 @@ import {
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 
+import { Eye } from "lucide-react";
+
 import { Spline_Sans_Mono } from "next/font/google";
+import { Button } from "@/components/ui/button";
 const spline = Spline_Sans_Mono({
   subsets: ["latin"],
 });
@@ -55,25 +58,42 @@ export function MorphingDialogBasicOne(title: any) {
         />
         <div>
           <div className="bg-accent">
-            <MorphingDialogTitle className={`${spline.className} text-white text-center text-xl border-b border-primary mx-2`}>
-              {title.title ? title.title : title.description}
+            <MorphingDialogTitle
+              className={`${spline.className} text-white text-center text-xl border-b border-primary mx-2`}
+            >
+             <h3 className="py-4"> {title.title ? title.title : title.description}</h3>
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-white dark:text-zinc-400 flex flex-col justify-start">
-            <Link href={title.link} target="_blank" rel="noopener noreferrer" className="flex flex-row justify-start items-center">
+              <Link
+                href={title.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row justify-start items-center"
+              >
                 <Badge className="flex flex-row items-center my-2  text-white font-bold bg-accent">
                   <FaGithub size={24} className="text-white mr-1" />
                   Github
                 </Badge>
               </Link>
 
-              <Link href={title.link} target="_blank" rel="noopener noreferrer" className="flex flex-row justify-start items-center">
+              <Link
+                href={title.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row justify-start items-center"
+              >
                 <Badge className="flex flex-row items-center my-2 bg-accent">
-                <FaLink size={24} className="text-white mr-1" />
+                  <FaLink size={24} className="text-white mr-1" />
                   Live
                 </Badge>
               </Link>
+              <Button
+               className="bg-primary"
 
-              
+                aria-label="Open dialog"
+              >
+                <Eye className="text-white" size={24} />
+              </Button>
             </MorphingDialogSubtitle>
           </div>
         </div>
@@ -91,8 +111,10 @@ export function MorphingDialogBasicOne(title: any) {
             className="h-full w-full"
           />
           <div className="p-6">
-          <MorphingDialogTitle className={`${spline.className} text-white text-xl border-b border-primary mx-2`}>
-              {title.title}
+            <MorphingDialogTitle
+              className={`${spline.className} text-white text-xl border-b border-primary mx-2`}
+            >
+              <h3 className="py-4"> {title.title ? title.title : title.description}</h3>
               {/* <div className="flex gap-2 mt-2">
                 {Array.isArray(title.stack) &&
                   title.stack.map((item: StackItem, index: number) => (
@@ -120,16 +142,26 @@ export function MorphingDialogBasicOne(title: any) {
                 exit: { opacity: 0, scale: 0.8, y: 100 },
               }}
             >
-             <Link href={title.link} target="_blank" rel="noopener noreferrer" className="flex flex-row">
+              <Link
+                href={title.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row"
+              >
                 <Badge className="flex flex-row items-center my-2  text-white font-bold bg-accent mr-2">
                   <FaGithub size={24} className="text-white" />
                   Github
                 </Badge>
               </Link>
 
-              <Link href={title.link} target="_blank" rel="noopener noreferrer" className="flex flex-row">
+              <Link
+                href={title.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row"
+              >
                 <Badge className="flex flex-row items-center my-2 bg-accent mr-2">
-                <FaLink size={24} className="text-white" />
+                  <FaLink size={24} className="text-white" />
                   Live
                 </Badge>
               </Link>

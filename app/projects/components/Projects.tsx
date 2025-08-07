@@ -38,7 +38,7 @@ const spline = Spline_Sans_Mono({
 const ProjectsContent = () => {
   const data: any = {
     weather: {
-      title: "Weather App⛅",
+      title: "Weather App",
       stack: [
         {
           icon: <RiNextjsFill />,
@@ -69,7 +69,7 @@ const ProjectsContent = () => {
       body: "A sleek and simple weather app that shows real-time weather updates for your chosen city, complete with stunning visuals and an interactive 3D model",
     },
     weight: {
-      title: "Weight Management App🥩",
+      title: "Weight Management App V1",
       stack: [
         {
           icon: <RiNextjsFill />,
@@ -104,7 +104,7 @@ const ProjectsContent = () => {
       body: "A weight tracker app that displays your main nutrients through advanced, visually stunning graphs and detailed table for comprehensive health tracking.",
     },
     animal_scraper: {
-      title: "FurEver🐕",
+      title: "Animal Adoption App",
       stack: [
         {
           icon: <RiNextjsFill />,
@@ -135,7 +135,7 @@ const ProjectsContent = () => {
       body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon.",
     },
     recipeReel: {
-      title: "RecipeReel🍜",
+      title: "Recipe Finder App",
       body:"This app helps users discover delicious recipes by simply entering an ingredient. Just type in what you have on hand, and the site instantly shows a variety of recipe ideas that feature that ingredient.",
       stack: [
         {

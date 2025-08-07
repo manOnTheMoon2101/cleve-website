@@ -10,6 +10,7 @@ import {
   MorphingDialogContainer,
 } from "@/components/ui/morphing-dialog";
 import { PlusIcon } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { Globe } from "lucide-react";
 import { GitBranch } from "lucide-react";
 import {
@@ -46,34 +47,29 @@ export function MorphingDialogBasicOne(title: any) {
           alt="Image"
           className="h-48 w-full object-cover"
         />
-        <div className="flex flex-grow flex-row items-end justify-between p-2 bg-background">
-          <div>
-            <MorphingDialogTitle className="text-zinc-950 dark:text-zinc-50 font-bold">
+        <div>
+          <div className="bg-accent">
+            <MorphingDialogTitle className="text-white text-xl">
               {title.title ? title.title : title.description}
             </MorphingDialogTitle>
-            <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
-              <Link href={title.link} target="_blank" rel="noopener noreferrer">
-                <div className="flex flex-row items-center my-2 text-accent">
-                  <Globe className="text-accent" />
+            <MorphingDialogSubtitle className="text-white dark:text-zinc-400 flex flex-row justify-between">
+            <Link href={title.link} target="_blank" rel="noopener noreferrer" className="flex flex-row">
+                <Badge className="flex flex-row items-center my-2  text-white font-bold">
+                  <FaGithub size={24} className="text-white" />
+                  Github
+                </Badge>
+              </Link>
+
+              <Link href={title.link} target="_blank" rel="noopener noreferrer" className="flex flex-row">
+                <div className="flex flex-row items-center my-2">
+                <Globe className="text-white" />
                   Live Demo
                 </div>
               </Link>
 
-              <Link href={title.link} target="_blank" rel="noopener noreferrer" className="flex flex-row justify-start">
-                <Badge className="flex flex-row items-center my-2 bg-accent text-white">
-                  <GitBranch className="text-white" />
-                  Github Repo
-                </Badge>
-              </Link>
+              
             </MorphingDialogSubtitle>
           </div>
-          <button
-            type="button"
-            className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border border-zinc-950/10 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-800 focus-visible:ring-2 active:scale-[0.98] dark:border-zinc-50/10 dark:bg-foreground dark:text-zinc-500 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-500"
-            aria-label="Open dialog"
-          >
-            <PlusIcon className="text-primary" size={12} />
-          </button>
         </div>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
@@ -89,7 +85,7 @@ export function MorphingDialogBasicOne(title: any) {
             className="h-full w-full"
           />
           <div className="p-6">
-            <MorphingDialogTitle className="text-2xl text-zinc-950 dark:text-zinc-50">
+            <MorphingDialogTitle className="text-zinc-950 dark:text-zinc-50">
               {title.title}
               <div className="flex gap-2 mt-2">
                 {Array.isArray(title.stack) &&
@@ -118,15 +114,18 @@ export function MorphingDialogBasicOne(title: any) {
                 exit: { opacity: 0, scale: 0.8, y: 100 },
               }}
             >
-              <p>{title.description}</p>
-              <a
-                className="mt-2 inline-flex text-zinc-500 underline"
-                href={title.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {title.link}
-              </a>
+              <Link href={title.link} target="_blank" rel="noopener noreferrer">
+                <div className="flex flex-row items-center my-2 text-accent">
+                  <Globe className="text-accent" />
+                  Live Demo
+                </div>
+              </Link>
+              <Link href={title.link} target="_blank" rel="noopener noreferrer" className="flex flex-row justify-start">
+                <Badge className="flex flex-row items-center my-2 bg-accent text-white">
+                  <GitBranch className="text-white" />
+                  Github Repo
+                </Badge>
+              </Link>
             </MorphingDialogDescription>
           </div>
           <MorphingDialogClose className="text-zinc-50" />

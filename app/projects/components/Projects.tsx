@@ -39,6 +39,7 @@ const ProjectsContent = () => {
   const data: any = {
     weather: {
       title: "Weather App",
+      github:"https://github.com/manOnTheMoon2101/weather_app",
       stack: [
         {
           icon: <RiNextjsFill />,
@@ -70,6 +71,7 @@ const ProjectsContent = () => {
     },
     weight: {
       title: "Health Tracker App V1",
+      github:"https://github.com/manOnTheMoon2101/weight_management",
       stack: [
         {
           icon: <RiNextjsFill />,
@@ -130,6 +132,7 @@ const ProjectsContent = () => {
         </div>
       ),
       description: "Animal-Adoption App",
+      github:"https://github.com/manOnTheMoon2101/animal-scraper",
       image: animal.src,
       link: "https://animal-scraper.vercel.app/",
       body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon.",
@@ -162,6 +165,7 @@ const ProjectsContent = () => {
         </div>
       ),
       description: "Recipe Finder App",
+      github:"https://github.com/manOnTheMoon2101/recipe-finder",
       link:"https://recipe-finder-alpha-one.vercel.app/",
       image: food.src,
     },
@@ -309,6 +313,7 @@ const ProjectsContent = () => {
                 body={x.body}
                 description={x.description}
                 stack={x.stack}
+                github={x.github}
               />
             </div>
           ))}

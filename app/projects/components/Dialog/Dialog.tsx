@@ -65,7 +65,7 @@ export function MorphingDialogBasicOne(title: any) {
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-white dark:text-zinc-400 flex flex-col justify-start">
               <Link
-                href={title.githib}
+                href={title.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-row justify-start items-center"

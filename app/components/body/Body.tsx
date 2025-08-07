@@ -72,7 +72,7 @@ const Hero = () => {
           <Tooltip>
             <TooltipTrigger asChild>
               <a
-                href="https://www.linkedin.com/in/cleve-clayton-a1667836a/"
+                href="https://www.linkedin.com/in/cleve-clayton-a1667836a"
                 target="_blank"
                 className="px-5"
                 rel="noopener noreferrer"

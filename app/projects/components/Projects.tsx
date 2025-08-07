@@ -69,7 +69,7 @@ const ProjectsContent = () => {
       body: "A sleek and simple weather app that shows real-time weather updates for your chosen city, complete with stunning visuals and an interactive 3D model",
     },
     weight: {
-      title: "Weight Management App V1",
+      title: "Health Tracker App V1",
       stack: [
         {
           icon: <RiNextjsFill />,

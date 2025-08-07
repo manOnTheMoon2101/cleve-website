@@ -1,8 +1,8 @@
 import { Prompt } from "next/font/google";
 import weight from "@/public/images/weightNew.png";
-import animal from "@/public/images/newsnip.png";
-import food from "@/public/images/recipe.png";
-import weather from "@/public/images/weatherNew.png";
+import animal from "@/public/images/animals.png";
+import food from "@/public/images/recipeNew.png";
+import weather from "@/public/images/weather.png";
 import loglive from "@/public/images/test.png";
 import splitline from "@/public/images/splitline.png";
 import match from "@/public/images/match.png";

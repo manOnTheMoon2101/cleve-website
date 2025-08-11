@@ -10,26 +10,16 @@ import {
   MorphingDialogContainer,
 } from "@/components/ui/morphing-dialog";
 import { PlusIcon } from "lucide-react";
-import { FaGithub } from "react-icons/fa";
-import { FaLink } from "react-icons/fa";
-import { Globe } from "lucide-react";
-import { GitBranch } from "lucide-react";
+
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
-
-import { Eye } from "lucide-react";
-
-import { Spline_Sans_Mono } from "next/font/google";
 import { Button } from "@/components/ui/button";
-const spline = Spline_Sans_Mono({
-  subsets: ["latin"],
-});
+import { FaGithub } from "react-icons/fa";
+import { TbBrowser } from "react-icons/tb";
 
 interface StackItem {
   icon: React.ReactNode;
@@ -49,73 +39,18 @@ export function MorphingDialogBasicOne(title: any) {
         style={{
           borderRadius: "12px",
         }}
-        className="flex max-w-[270px] flex-col overflow-hidden border  bg-white border-foreground dark:bg-zinc-900"
+        className="flex max-w-[270px] flex-col overflow-hidden border  border-primary"
       >
         <MorphingDialogImage
           src={title.image}
           alt="Image"
           className="h-48 w-full object-cover"
         />
-        <div>
-          <div className="bg-accent">
-            <MorphingDialogTitle
-              className={`${spline.className} text-white text-center text-xl border-b border-primary mx-2`}
-            >
-             <h3 className="py-4"> {title.title ? title.title : title.description}</h3>
-            </MorphingDialogTitle>
-            <MorphingDialogSubtitle className="text-white dark:text-zinc-400 flex flex-col justify-start">
-              <Link
-                href={title.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-row justify-start items-center"
-              >
-                <Badge className="flex flex-row items-center my-2  text-white font-bold bg-accent">
-                  <FaGithub size={24} className="text-white mr-1" />
-                  Github
-                </Badge>
-              </Link>
-
-              <Link
-                href={title.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-row justify-start items-center"
-              >
-                <Badge className="flex flex-row items-center my-2 bg-accent">
-                  <FaLink size={24} className="text-white mr-1" />
-                  Live
-                </Badge>
-              </Link>
-              <Button
-               className="bg-primary"
-
-                aria-label="Open dialog"
-              >
-                <Eye className="text-white" size={24} />
-              </Button>
-            </MorphingDialogSubtitle>
-          </div>
-        </div>
-      </MorphingDialogTrigger>
-      <MorphingDialogContainer>
-        <MorphingDialogContent
-          style={{
-            borderRadius: "24px",
-          }}
-          className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden  bg-accent  sm:w-[500px]"
-        >
-          <MorphingDialogImage
-            src={title.image}
-            alt="Image"
-            className="h-full w-full"
-          />
-          <div className="p-6">
-            <MorphingDialogTitle
-              className={`${spline.className} text-white text-xl border-b border-primary mx-2`}
-            >
-              <h3 className="py-4"> {title.title ? title.title : title.description}</h3>
-              {/* <div className="flex gap-2 mt-2">
+        <div className="flex flex-grow flex-row items-end justify-between p-2 bg-background">
+          <div>
+            <MorphingDialogTitle className="text-primary font-bold">
+              {title.title ? title.title : title.description}
+              <div className="flex gap-2 my-2">
                 {Array.isArray(title.stack) &&
                   title.stack.map((item: StackItem, index: number) => (
                     <div key={index} className="relative group">
@@ -129,9 +64,52 @@ export function MorphingDialogBasicOne(title: any) {
                       </TooltipProvider>
                     </div>
                   ))}
-              </div> */}
+              </div>
             </MorphingDialogTitle>
-            <MorphingDialogSubtitle className="text-white">
+            <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
+              {title.link ? title.link : title.body}
+            </MorphingDialogSubtitle>
+          </div>
+          {/* <Button
+            className="flex h-6 w-6"
+            aria-label="Open dialog"
+          >
+            <PlusIcon className="text-white" size={21} />
+          </Button> */}
+        </div>
+      </MorphingDialogTrigger>
+      <MorphingDialogContainer>
+        <MorphingDialogContent
+          style={{
+            borderRadius: "24px",
+          }}
+          className="pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden  bg-background  sm:w-[500px]"
+        >
+          <MorphingDialogImage
+            src={title.image}
+            alt="Image"
+            className="h-full w-full"
+          />
+          <div className="p-6">
+          <MorphingDialogTitle className="text-primary font-bold">
+              {title.title}
+              <div className="flex gap-2 mt-2">
+                {Array.isArray(title.stack) &&
+                  title.stack.map((item: StackItem, index: number) => (
+                    <div key={index} className="relative group">
+                      <TooltipProvider delayDuration={100}>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <span> {item.icon}</span>
+                          </TooltipTrigger>
+                          <TooltipContent>{item.tooltip}</TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    </div>
+                  ))}
+              </div>
+            </MorphingDialogTitle>
+            <MorphingDialogSubtitle className="text-black">
               {title.body}
             </MorphingDialogSubtitle>
             <MorphingDialogDescription
@@ -142,29 +120,32 @@ export function MorphingDialogBasicOne(title: any) {
                 exit: { opacity: 0, scale: 0.8, y: 100 },
               }}
             >
-              <Link
-                href={title.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-row"
-              >
-                <Badge className="flex flex-row items-center my-2  text-white font-bold bg-accent mr-2">
-                  <FaGithub size={24} className="text-white" />
-                  Github
-                </Badge>
-              </Link>
-
-              <Link
+             
+             <div className="my-2">
+             <div className="flex flex-row items-center">
+              <TbBrowser color="black"/>
+             <a
+                className="inline-flex text-foreground underline"
                 href={title.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-row"
               >
-                <Badge className="flex flex-row items-center my-2 bg-accent mr-2">
-                  <FaLink size={24} className="text-white" />
-                  Live
-                </Badge>
-              </Link>
+                {title.link}
+              </a>
+             </div>
+
+              <div className="flex flex-row items-center">
+                <FaGithub color="black"/>
+              <a
+                className="inline-flex text-foreground underline"
+                href={title.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {title.github}
+              </a>
+              </div>
+             </div>
             </MorphingDialogDescription>
           </div>
           <MorphingDialogClose className="text-zinc-50" />

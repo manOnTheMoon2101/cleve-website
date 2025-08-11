@@ -19,7 +19,7 @@ import { Separator } from "@/components/ui/separator";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
-import { SiShadcnui } from "react-icons/si";
+import { SiDrizzle, SiPostgresql, SiShadcnui } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { SiPrisma } from "react-icons/si";
 import { SiCheerio } from "react-icons/si";
@@ -42,11 +42,11 @@ const ProjectsContent = () => {
       github:"https://github.com/manOnTheMoon2101/weather_app",
       stack: [
         {
-          icon: <RiNextjsFill />,
+          icon: <RiNextjsFill color="black" />,
           tooltip: "NextJS 14",
         },
         {
-          icon: <SiShadcnui />,
+          icon: <SiShadcnui color="black" />,
           tooltip: "Shadcn UI",
         },
         {
@@ -74,11 +74,11 @@ const ProjectsContent = () => {
       github:"https://github.com/manOnTheMoon2101/weight_management",
       stack: [
         {
-          icon: <RiNextjsFill />,
+          icon: <RiNextjsFill color="black" />,
           tooltip: "NextJS 14",
         },
         {
-          icon: <SiShadcnui />,
+          icon: <SiShadcnui color="black" />,
           tooltip: "Shadcn UI",
         },
         {
@@ -105,15 +105,51 @@ const ProjectsContent = () => {
       link: "https://weight-management.vercel.app/",
       body: "A weight tracker app that displays your main nutrients through advanced, visually stunning graphs and detailed table for comprehensive health tracking.",
     },
+    weight2: {
+      title: "Health Tracker App V2",
+      github:"https://github.com/manOnTheMoon2101/weight-managementV2",
+      stack: [
+        {
+          icon: <RiSvelteFill color="#ff5805" />,
+          tooltip: "Sveltekit",
+        },
+        {
+          icon: <SiShadcnui color="black" />,
+          tooltip: "Shadcn UI",
+        },
+        {
+          icon: <RiTailwindCssFill color="#00bbff" />,
+          tooltip: "Tailwind CSS",
+        },
+        {
+          icon: <SiPostgresql color="#2d628d"/>,
+          tooltip: "NeonDB",
+        },
+        {
+          icon: <SiDrizzle color="#abd546"/>,
+          tooltip: "DrizzleORM",
+        },
+      ],
+      devices: (
+        <div className="flex flex-row">
+          {<CiMobile1 />}
+          {<CiLaptop />}
+        </div>
+      ),
+      // description: "Weight Management App",
+      image: weight.src,
+      // link: "https://weight-management.vercel.app/",
+      body: "Coming Soon...",
+    },
     animal_scraper: {
       title: "Animal Adoption App",
       stack: [
         {
-          icon: <RiNextjsFill />,
+          icon: <RiNextjsFill color="black" />,
           tooltip: "NextJS 15",
         },
         {
-          icon: <SiShadcnui />,
+          icon: <SiShadcnui color="black" />,
           tooltip: "Shadcn UI",
         },
         {
@@ -146,7 +182,7 @@ const ProjectsContent = () => {
           tooltip: "SvelteKit",
         },
         {
-          icon: <SiShadcnui />,
+          icon: <SiShadcnui color="black" />,
           tooltip: "Shadcn UI",
         },
         {

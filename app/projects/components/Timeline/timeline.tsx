@@ -124,7 +124,7 @@ export default function WebCareerTimeline() {
                   onClick={() => toggleExpand(milestone.id)}
                 >
                   <div>
-                    <span className="text-sm font-medium text-accent mb-1 block">
+                    <span className="text-sm font-bold text-accent mb-1 block">
                       {milestone.date}
                     </span>
                     <div className="flex flex-row items-center">

@@ -48,7 +48,7 @@ export function MorphingDialogBasicOne(title: any) {
         />
         <div className="flex flex-grow flex-row items-end justify-between p-2 bg-background">
           <div>
-            <MorphingDialogTitle className="text-primary font-bold">
+            <MorphingDialogTitle className="text-primary font-bold text-xl">
               {title.title ? title.title : title.description}
               <div className="flex gap-2 my-2">
                 {Array.isArray(title.stack) &&

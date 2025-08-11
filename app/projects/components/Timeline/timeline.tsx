@@ -31,7 +31,7 @@ export default function WebCareerTimeline() {
   const careerMilestones = [
     {
       id: 1,
-      date: "2019 (December Vacation)",
+      date: "2019",
       company: " Isipani Construction (Pty) Ltd",
       title: "General Worker",
       fallBack:'ISI',
@@ -43,7 +43,7 @@ export default function WebCareerTimeline() {
     },
     {
       id: 2,
-      date: "2022 (10 months)",
+      date: "2022",
       company: "Splitline Manufacturing",
       image: splitline.src,
       fallBack:'SLM',
@@ -55,7 +55,7 @@ export default function WebCareerTimeline() {
     },
     {
       id: 3,
-      date: "2023 (3 months)",
+      date: "2023",
       title: "It Intern",
       company: "The Cutting Edge Group",
       fallBack:'TCE',
@@ -67,7 +67,7 @@ export default function WebCareerTimeline() {
     },
     {
       id: 4,
-      date: "2024 (3 months)",
+      date: "2024",
       image: match.src,
       title: "Frontend Developer",
       fallBack:'MXE',

@@ -25,7 +25,7 @@ import { SiPrisma } from "react-icons/si";
 import { SiCheerio } from "react-icons/si";
 import { RiSvelteFill } from "react-icons/ri";
 import { FaGolang } from "react-icons/fa6";
-import { FaUtensilSpoon } from "react-icons/fa";
+import { FaReact, FaUtensilSpoon } from "react-icons/fa";
 import { link } from "fs";
 import { Globe, Laptop } from "lucide-react";
 const prompt = Prompt({
@@ -41,6 +41,10 @@ const ProjectsContent = () => {
       title: "Weather App",
       github:"https://github.com/manOnTheMoon2101/weather_app",
       stack: [
+        {
+          icon: <FaReact color="#4b9fb3" />,
+          tooltip: "React 19",
+        },
         {
           icon: <RiNextjsFill color="black" />,
           tooltip: "NextJS 14",
@@ -73,6 +77,10 @@ const ProjectsContent = () => {
       title: "Health Tracker App V1",
       github:"https://github.com/manOnTheMoon2101/weight_management",
       stack: [
+        {
+          icon: <FaReact color="#4b9fb3" />,
+          tooltip: "React 19",
+        },
         {
           icon: <RiNextjsFill color="black" />,
           tooltip: "NextJS 14",
@@ -144,6 +152,10 @@ const ProjectsContent = () => {
     animal_scraper: {
       title: "Animal Adoption App",
       stack: [
+        {
+          icon: <FaReact color="#4b9fb3" />,
+          tooltip: "React 19",
+        },
         {
           icon: <RiNextjsFill color="black" />,
           tooltip: "NextJS 15",

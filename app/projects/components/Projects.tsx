@@ -10,8 +10,7 @@ import { MorphingDialogBasicOne } from "./Dialog/Dialog";
 import { CiMobile1 } from "react-icons/ci";
 import { CiLaptop } from "react-icons/ci";
 import WebCareerTimeline from "./Timeline/timeline";
-import { Separator } from "@/components/ui/separator";
-import weather from "@/public/images/weather.png";
+import weather from "@/public/images/weatherNew.png";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
@@ -20,8 +19,7 @@ import { DiMongodb } from "react-icons/di";
 import { SiPrisma } from "react-icons/si";
 import { SiCheerio } from "react-icons/si";
 import { RiSvelteFill } from "react-icons/ri";
-import { FaGolang } from "react-icons/fa6";
-import { FaReact, FaUtensilSpoon } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { link } from "fs";
 import { Globe, Laptop } from "lucide-react";
 const prompt = Prompt({
@@ -35,7 +33,7 @@ const ProjectsContent = () => {
   const data: any = {
     weather: {
       title: "Weather App",
-      github:"https://github.com/manOnTheMoon2101/weather_app",
+      github: "https://github.com/manOnTheMoon2101/weather_app",
       stack: [
         {
           icon: <FaReact color="#4b9fb3" />,
@@ -65,13 +63,13 @@ const ProjectsContent = () => {
         </div>
       ),
       description: "Weather App",
-      image:weather.src,
+      image: weather.src,
       link: "https://weather-app-one-mu-88.vercel.app/",
       body: "A sleek and simple weather app that shows real-time weather updates for your chosen city, complete with stunning visuals and an interactive 3D model",
     },
     weight: {
       title: "Health Tracker App V1",
-      github:"https://github.com/manOnTheMoon2101/weight_management",
+      github: "https://github.com/manOnTheMoon2101/weight_management",
       stack: [
         {
           icon: <FaReact color="#4b9fb3" />,
@@ -111,7 +109,7 @@ const ProjectsContent = () => {
     },
     weight2: {
       title: "Health Tracker App V2",
-      github:"https://github.com/manOnTheMoon2101/weight-managementV2",
+      github: "https://github.com/manOnTheMoon2101/weight-managementV2",
       stack: [
         {
           icon: <RiSvelteFill color="#ff5805" />,
@@ -126,11 +124,11 @@ const ProjectsContent = () => {
           tooltip: "Tailwind CSS",
         },
         {
-          icon: <SiPostgresql color="#2d628d"/>,
+          icon: <SiPostgresql color="#2d628d" />,
           tooltip: "NeonDB",
         },
         {
-          icon: <SiDrizzle color="#abd546"/>,
+          icon: <SiDrizzle color="#abd546" />,
           tooltip: "DrizzleORM",
         },
       ],
@@ -176,14 +174,14 @@ const ProjectsContent = () => {
         </div>
       ),
       description: "Animal-Adoption App",
-      github:"https://github.com/manOnTheMoon2101/animal-scraper",
+      github: "https://github.com/manOnTheMoon2101/animal-scraper",
       image: animal.src,
       link: "https://animal-scraper.vercel.app/",
       body: "An adoption app that currently features animals from the Wellington SPCA, with more adoption centers to be added soon.",
     },
     recipeReel: {
       title: "Recipe Finder App",
-      body:"This app helps users discover delicious recipes by simply entering an ingredient. Just type in what you have on hand, and the site instantly shows a variety of recipe ideas that feature that ingredient.",
+      body: "This app helps users discover delicious recipes by simply entering an ingredient. Just type in what you have on hand, and the site instantly shows a variety of recipe ideas that feature that ingredient.",
       stack: [
         {
           icon: <RiSvelteFill color="#ff5805" />,
@@ -209,8 +207,8 @@ const ProjectsContent = () => {
         </div>
       ),
       description: "Recipe Finder App",
-      github:"https://github.com/manOnTheMoon2101/recipe-finder",
-      link:"https://recipe-finder-alpha-one.vercel.app/",
+      github: "https://github.com/manOnTheMoon2101/recipe-finder",
+      link: "https://recipe-finder-alpha-one.vercel.app/",
       image: food.src,
     },
     // demo: {
@@ -221,7 +219,7 @@ const ProjectsContent = () => {
     //       icon: <FaGolang color="#007c9c" />,
     //       tooltip: "Golang",
     //     },
-      
+
     //   ],
     //   devices: (
     //     <div className="flex flex-row">
@@ -329,10 +327,12 @@ const ProjectsContent = () => {
           </span>
         </h2> */}
 
-<h2  className={`${spline.className} text-2xl font-bold text-gray-800 mb-8 flex items-center gap-2 p-6`}>
-        <Laptop className="text-accent" />
-        Stuff...
-      </h2>
+        <h2
+          className={`${spline.className} text-2xl font-bold text-gray-800 mb-8 flex items-center gap-2 p-6`}
+        >
+          <Laptop className="text-accent" />
+          Stuff...
+        </h2>
         {/* <Separator className="bg-accent mt-8" /> */}
       </InView>
       <InView
@@ -345,7 +345,7 @@ const ProjectsContent = () => {
       >
         <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
           {Object.entries(data).map(([key, x]: [string, any]) => (
-            <div key={key} className="my-24 md:my-0" >
+            <div key={key} className="my-24 md:my-0">
               <MorphingDialogBasicOne
                 title={x.title}
                 link={x.link}

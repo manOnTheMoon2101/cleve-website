@@ -27,11 +27,11 @@ const AboutContent = () => {
       <div className="flex flex-row justify-center my-6">
       <ArrowBigDown size={60} className="animate-pulse"/>
       </div>
-      <InViewBasic />
+      {/* <InViewBasic /> */}
 
-      <div className="flex flex-row justify-center">
+      {/* <div className="flex flex-row justify-center">
         <Image src={sign} alt="singnature" />
-      </div>
+      </div> */}
     </>
   );
 };

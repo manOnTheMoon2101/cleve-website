@@ -2,11 +2,7 @@ import { Prompt } from "next/font/google";
 import weight from "@/public/images/weightNew.png";
 import animal from "@/public/images/animals.png";
 import food from "@/public/images/recipeNew.png";
-import weather from "@/public/images/weather.png";
-import loglive from "@/public/images/test.png";
-import splitline from "@/public/images/splitline.png";
-import match from "@/public/images/match.png";
-import demo from "@/public/images/go.png";
+
 import "animate.css";
 import { InView } from "@/components/ui/in-view";
 import { Spline_Sans_Mono } from "next/font/google";
@@ -15,7 +11,7 @@ import { CiMobile1 } from "react-icons/ci";
 import { CiLaptop } from "react-icons/ci";
 import WebCareerTimeline from "./Timeline/timeline";
 import { Separator } from "@/components/ui/separator";
-
+import weather from "@/public/images/weather.png";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
@@ -69,7 +65,7 @@ const ProjectsContent = () => {
         </div>
       ),
       description: "Weather App",
-      image: weather.src,
+      image:weather.src,
       link: "https://weather-app-one-mu-88.vercel.app/",
       body: "A sleek and simple weather app that shows real-time weather updates for your chosen city, complete with stunning visuals and an interactive 3D model",
     },
@@ -248,7 +244,6 @@ const ProjectsContent = () => {
         </div>
       ),
       description: "Grain Platform",
-      image: match.src,
       link: "https://matchmx.com/",
       body: "Connecting stakeholders in the agricultural supply chain involves facilitating communication and collaboration among farmers, suppliers, distributors, retailers, and consumers to ensure efficient production, distribution, and consumption of agricultural products.",
     },
@@ -256,7 +251,6 @@ const ProjectsContent = () => {
       title: "Splitline🧴",
       devices: <div className="flex flex-row">{<CiLaptop />}</div>,
       description: "Plastic Molding",
-      image: splitline.src,
       link: "https://www.splitline.co.za",
       body: "Splitline is a plastic manufacturing company that manufactures plastic products for the industry.",
     },
@@ -264,7 +258,6 @@ const ProjectsContent = () => {
       title: "Metaship🍊",
       devices: <div className="flex flex-row">{<CiLaptop />}</div>,
       description: "Fruit Plaform",
-      image: loglive.src,
       link: "https://metaship.ai/",
       body: "Metaship is a fully-managed AI platform that empowers import, export, clearance, trade, and logistics companies to streamline operations. It enables data transformation, storage, and real-time monitoring of the supply chain, using AI and Big Data to enhance efficiency. By leveraging cloud technologies, Metaship addresses inefficiencies in the logistics industry for a more seamless global supply chain.",
     },

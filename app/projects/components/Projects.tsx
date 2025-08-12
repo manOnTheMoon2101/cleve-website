@@ -328,11 +328,12 @@ const ProjectsContent = () => {
         </h2> */}
 
         <h2
-          className={`${spline.className} text-2xl font-bold text-gray-800 mb-8 flex items-center gap-2 p-6`}
+          className={`${spline.className} text-6xl font-bold text-gray-800 mb-8 flex items-center gap-2 p-6`}
         >
           <Laptop className="text-accent" />
-          Stuff...
+          Did I mention I love programming?
         </h2>
+
         {/* <Separator className="bg-accent mt-8" /> */}
       </InView>
       <InView

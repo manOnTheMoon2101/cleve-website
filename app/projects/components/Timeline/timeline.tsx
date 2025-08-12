@@ -97,7 +97,7 @@ export default function WebCareerTimeline() {
 
   return (
     <div className="mx-auto p-6">
-      <h2  className={`${spline.className} text-2xl font-bold text-gray-800 mb-8 flex items-center gap-2`}>
+      <h2  className={`${spline.className} text-6xl font-bold text-gray-800 mb-8 flex flex-row justify-center items-center gap-2`}>
         <Globe className="text-accent" />
         My Adventure
       </h2>

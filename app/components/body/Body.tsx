@@ -29,11 +29,11 @@ const Hero = () => {
   return (
     <div className="flex flex-col items-center justify-center  relative my-48 ">
       <h1
-        className={`text-8xl font-bold relative animate__animated animate__zoomInUp ${prompt.className}`}
+        className={`text-8xl font-bold relative  ${prompt.className} animate-bounce`}
       >
-        Cleve Clayton
+       Hello There!
       </h1>
-      <TextRoll
+      {/* <TextRoll
         className={`text-lg sm:text-xl text-secondary relative mt-6 tracking-tight flex flex-row flex-wrap`}
       >
         software{" "}
@@ -44,8 +44,10 @@ const Hero = () => {
         <span className="text-accent animate-pulse mx-2 font-bold">
           designer
         </span>
-      </TextRoll>
-      <div className={`text-xl mt-6 flex flex-row items-center`}>
+      </TextRoll> */}
+
+
+      {/* <div className={`text-xl mt-6 flex flex-row items-center`}>
         <div>
           <TooltipProvider>
             <Tooltip>
@@ -115,7 +117,7 @@ const Hero = () => {
             </Tooltip>
           </TooltipProvider>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

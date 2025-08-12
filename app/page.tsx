@@ -5,6 +5,9 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion, useScroll } from "framer-motion";
 import About from "./about/page";
+import { InViewBasic } from "./about/components/Body/Body";
+import AboutContent from "./about/components/About";
+import ProjectsContent from "./projects/components/Projects";
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -45,16 +48,22 @@ export default function Home() {
       /> */}
 
       <header>
-        <About/>
+        <AboutContent/>
       </header>
       <main className="m-5">
         
         <div>
           <Hero />
+        </div>
+        
 
-          {/* <div className="fixed bottom-0 left-0 right-0 z-40">
-            <DockExample />
-          </div> */}
+        <div>
+          <InViewBasic/>
+        </div>
+
+
+        <div>
+          <ProjectsContent/>
         </div>
         <div className="mt-96  ">
           <Section>

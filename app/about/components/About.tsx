@@ -33,12 +33,14 @@ const AboutContent = () => {
     { src: rugby, alt: "Rugby Practice" },
     { src: tupac_glasses, alt: "Tupac with Glasses" },
     { src: warrick_geland, alt: "Warrick Geland" },
+    { src: beach, alt: "Beach" },
     { src: lion, alt: "Lion" },
+    { src: beach, alt: "Beach" },
     { src: beach, alt: "Beach" },
   ];
 
   return (
-    <div className="w-full my-4">
+    <div className="w-full my-4 ">
       <div className="gallery">
         {images.map((image, index) => (
           <div key={index} className="gallery-item">
@@ -56,7 +58,8 @@ const AboutContent = () => {
         .gallery {
           display: grid;
           width: 100%;
-          max-width: 1200px;
+          max-width: 100%;
+          height:600px;
           margin: 0 auto;
           aspect-ratio: 16/10;
           grid: auto-flow 1fr / repeat(8, 1fr);

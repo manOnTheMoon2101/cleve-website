@@ -13,6 +13,7 @@ import { FaGolang } from "react-icons/fa6";
 import WebCareerTimeline from "./Timeline/timeline";
 import weather from "@/public/images/weatherNew.png";
 import go from "@/public/images/go.png";
+import weightV2 from "@/public/images/weightV2.png";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
@@ -141,7 +142,7 @@ const ProjectsContent = () => {
         </div>
       ),
       // description: "Weight Management App",
-      image: weight.src,
+      image: weightV2.src,
       // link: "https://weight-management.vercel.app/",
       body: "Coming Soon...",
     },

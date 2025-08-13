@@ -12,6 +12,7 @@ import {
   Milk,
   Monitor,
   Brush,
+  Sword,
 } from "lucide-react";
 import edge from "@/public/images/organisations/edge.png";
 import isipani from "@/public/images/organisations/isipani.png";
@@ -97,9 +98,10 @@ export default function WebCareerTimeline() {
 
   return (
     <div className="mx-auto p-6">
-      <h2  className={`${spline.className} text-6xl font-bold text-gray-800 mb-8 flex flex-row justify-center items-center gap-2`}>
-        <Globe className="text-accent" />
-        My Adventure
+      <h2  className={`${spline.className} text-8xl font-bold  mb-8 flex flex-row justify-start items-center gap-2`}>
+        {/* <Globe className="text-accent" /> */}
+        {/* <Sword /> */}
+        My Adventures!
       </h2>
 
       <div className="relative">
@@ -124,6 +126,9 @@ export default function WebCareerTimeline() {
                   onClick={() => toggleExpand(milestone.id)}
                 >
                   <div>
+                  <h3 className="text-xl font-semibold text-gray-800">
+                      {milestone.title}
+                    </h3>
                     <span className="text-sm font-bold text-accent mb-1 block">
                       {milestone.date}
                     </span>
@@ -136,9 +141,7 @@ export default function WebCareerTimeline() {
                         {milestone.company}
                       </h4>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-800">
-                      {milestone.title}
-                    </h3>
+                   
                   </div>
                   <div className="text-gray-500">
                     {expanded === milestone.id ? (

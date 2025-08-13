@@ -86,8 +86,8 @@ export function InViewBasic() {
           earth.
           <br />
           Yet when planted, it grows and becomes the largest of all garden
-          plants, with such big branches that the birds can perch in its shade”-
-          <span className="text-4xl text-slate-400">Mark 4-31</span>
+          plants, with such big branches that the birds can perch in its shade”
+          <span className="text-2xl">-Mark 4-31</span>
         </p>
       </InView>
     </div>

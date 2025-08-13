@@ -9,6 +9,7 @@ import { Spline_Sans_Mono } from "next/font/google";
 import { MorphingDialogBasicOne } from "./Dialog/Dialog";
 import { CiMobile1 } from "react-icons/ci";
 import { CiLaptop } from "react-icons/ci";
+import { FaGolang } from "react-icons/fa6";
 import WebCareerTimeline from "./Timeline/timeline";
 import weather from "@/public/images/weatherNew.png";
 import { RiNextjsFill } from "react-icons/ri";
@@ -211,26 +212,45 @@ const ProjectsContent = () => {
       link: "https://recipe-finder-alpha-one.vercel.app/",
       image: food.src,
     },
-    // demo: {
-    //   title: "Still Cooking...",
-    //   body:"",
-    //   stack: [
-    //     {
-    //       icon: <FaGolang color="#007c9c" />,
-    //       tooltip: "Golang",
-    //     },
+    videoConverter: {
+      title: "Mov to MP4 Converter(Planning)",
+      body: "",
+      stack: [
+        {
+          icon: <FaGolang color="#007c9c" />,
+          tooltip: "Golang",
+        },
+      ],
+      devices: (
+        <div className="flex flex-row">
+          {<CiMobile1 />}
+          {<CiLaptop />}
+        </div>
+      ),
+      description: "Demo",
+      link: "",
+      // image: demo.src,
+    },
 
-    //   ],
-    //   devices: (
-    //     <div className="flex flex-row">
-    //       {<CiMobile1 />}
-    //       {<CiLaptop />}
-    //     </div>
-    //   ),
-    //   description: "Demo",
-    //   link:"",
-    //   image: demo.src,
-    // },
+    cli: {
+      title: "CLI App(Planning)",
+      body: "",
+      stack: [
+        {
+          icon: <FaGolang color="#007c9c" />,
+          tooltip: "Golang",
+        },
+      ],
+      devices: (
+        <div className="flex flex-row">
+          {<CiMobile1 />}
+          {<CiLaptop />}
+        </div>
+      ),
+      description: "Demo",
+      link: "",
+      // image: demo.src,
+    },
   };
   const contributed: any = {
     match: {
@@ -328,13 +348,18 @@ const ProjectsContent = () => {
         </h2> */}
 
         <h2
-          className={`${spline.className} text-6xl font-bold text-gray-800 mb-8 flex items-center gap-2 p-6`}
+          className={`${spline.className} text-8xl font-bold  flex items-center gap-2 p-6 mt-48`}
         >
-          <Laptop className="text-accent" />
-          Did I mention I love programming?
+          {/* <Laptop className="text-accent" /> */}
+          Did I mention I L❤️ve programming?
         </h2>
 
-        {/* <Separator className="bg-accent mt-8" /> */}
+        <span
+          className={`${spline.className}  font-italic text-accent  flex items-center gap-2 p-6`}
+        >
+          Some Projects I've been working on(always for the lookout and testing
+          new stacks)
+        </span>
       </InView>
       <InView
         variants={{
@@ -344,7 +369,7 @@ const ProjectsContent = () => {
         viewOptions={{ margin: "0px 0px -200px 0px" }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <div className="flex flex-col md:flex-row justify-center md:justify-around items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 justify-items-center">
           {Object.entries(data).map(([key, x]: [string, any]) => (
             <div key={key} className="my-24 md:my-0">
               <MorphingDialogBasicOne

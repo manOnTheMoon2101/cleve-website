@@ -62,10 +62,12 @@ export default function Home() {
         </div>
 
 
-        <div>
-          <ProjectsContent/>
+        <div className="my-96">
+         <Section>
+         <ProjectsContent/>
+         </Section>
         </div>
-        <div className="mt-96  ">
+        <div className="mt-96">
           <Section>
             <Footer />
           </Section>

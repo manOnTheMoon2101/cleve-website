@@ -8,6 +8,8 @@ import About from "./about/page";
 import { InViewBasic } from "./about/components/Body/Body";
 import AboutContent from "./about/components/About";
 import ProjectsContent from "./projects/components/Projects";
+import { DockExample } from "./components/body/components/dock/ActuallDock/Navbar";
+
 interface SectionProps {
   children: React.ReactNode;
 }
@@ -15,7 +17,6 @@ interface SectionProps {
 const Section: React.FC<SectionProps> = ({ children }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   return (
     <section ref={ref}>
       <span
@@ -34,45 +35,43 @@ const Section: React.FC<SectionProps> = ({ children }) => {
 export default function Home() {
   return (
     <motion.div
-    initial={{ opacity: 0, x: -200 }}
-    animate={{ opacity: 1, x: 0 }}
-    exit={{ opacity: 0, x: 200 }}
-    transition={{ 
-      duration: 0.5,
-      ease: "easeInOut"
-    }}
+      initial={{ opacity: 0, x: -200 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 200 }}
+      transition={{
+        duration: 0.5,
+        ease: "easeInOut",
+      }}
     >
-      {/* <motion.div
-        className="fixed top-0 left-0 right-0 h-2.5 bg-emerald-400 rounded transform origin-left z-50"
-        style={{ scaleX: scrollYProgress }}
-      /> */}
-
-      <header>
-        <AboutContent/>
+      <header id="home">
+        <AboutContent />
       </header>
+
       <main className="m-5">
-        
-        <div>
+        <div id="about">
           <Hero />
         </div>
-        
 
         <div>
-          <InViewBasic/>
+          <InViewBasic />
         </div>
 
-
-        <div className="my-96">
-         <Section>
-         <ProjectsContent/>
-         </Section>
+        <div className="my-96" id="projects">
+          <Section>
+            <ProjectsContent />
+          </Section>
         </div>
+
         <div className="mt-96">
           <Section>
             <Footer />
           </Section>
         </div>
       </main>
+
+      <div className="fixed bottom-0 left-0 right-0 z-40">
+        <DockExample />
+      </div>
     </motion.div>
   );
 }

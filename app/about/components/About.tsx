@@ -16,6 +16,8 @@ import tupac_glasses from "@/public/hero_images/tupac_glasses.jpg";
 import warrick_geland from "@/public/hero_images/warrick_geland.jpg";
 import lion from "@/public/hero_images/lion.jpeg";
 import beach from "@/public/hero_images/beach.jpeg";
+import doom from "@/public/hero_images/doom.jpg";
+import stadium from "@/public/hero_images/stadium.jpg";
 
 const AboutContent = () => {
   const images = [
@@ -35,8 +37,8 @@ const AboutContent = () => {
     { src: warrick_geland, alt: "Warrick Geland" },
     { src: beach, alt: "Beach" },
     { src: lion, alt: "Lion" },
-    { src: beach, alt: "Beach" },
-    { src: beach, alt: "Beach" },
+    { src: doom, alt: "Video Games" },
+    { src: stadium, alt: "Cape Town Stadium" },
   ];
 
   return (

@@ -353,7 +353,7 @@ const ProjectsContent = () => {
         </h2> */}
 
         <h2
-          className={`${spline.className} text-8xl font-bold  flex items-center gap-2 p-6 mt-48`}
+          className={`${spline.className} text-4xl md:text-8xl font-bold  flex items-center gap-2 p-6 mt-48`}
         >
           {/* <Laptop className="text-accent" /> */}
           Did I mention I L❤️ve programming?

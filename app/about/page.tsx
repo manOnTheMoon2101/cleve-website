@@ -1,5 +1,4 @@
 "use client";
-import Footer from "@/app/components/body/components/layout/footer/Footer";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion, useScroll } from "framer-motion";
@@ -48,15 +47,8 @@ export default function About() {
           <Section>
             <AboutContent />
           </Section>
-          {/* <div className="fixed bottom-0 left-0 right-0 z-40">
-            <DockExample />
-          </div> */}
         </div>
-        <div className="mt-96  ">
-          <Section>
-            <Footer />
-          </Section>
-        </div>
+
       </main>
     </motion.div>
   );

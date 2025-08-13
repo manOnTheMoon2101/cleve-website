@@ -17,6 +17,9 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Button } from "@/components/ui/button";
+import { FaGithub } from "react-icons/fa";
+import { TbBrowser } from "react-icons/tb";
 
 interface StackItem {
   icon: React.ReactNode;
@@ -36,7 +39,7 @@ export function MorphingDialogBasicOne(title: any) {
         style={{
           borderRadius: "12px",
         }}
-        className="flex max-w-[270px] flex-col overflow-hidden border  bg-white border-foreground dark:bg-zinc-900"
+        className="flex max-w-[270px] flex-col overflow-hidden border  border-primary"
       >
         <MorphingDialogImage
           src={title.image}
@@ -45,9 +48,9 @@ export function MorphingDialogBasicOne(title: any) {
         />
         <div className="flex flex-grow flex-row items-end justify-between p-2 bg-background">
           <div>
-            <MorphingDialogTitle className="text-zinc-950 dark:text-zinc-50">
+            <MorphingDialogTitle className="text-primary font-bold text-xl">
               {title.title ? title.title : title.description}
-              <div className="flex gap-2 mt-2">
+              <div className="flex gap-2 my-2">
                 {Array.isArray(title.stack) &&
                   title.stack.map((item: StackItem, index: number) => (
                     <div key={index} className="relative group">
@@ -64,16 +67,15 @@ export function MorphingDialogBasicOne(title: any) {
               </div>
             </MorphingDialogTitle>
             <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
-              {title.link}
+              {title.link ? title.link : title.body}
             </MorphingDialogSubtitle>
           </div>
-          <button
-            type="button"
-            className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border border-zinc-950/10 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-800 focus-visible:ring-2 active:scale-[0.98] dark:border-zinc-50/10 dark:bg-foreground dark:text-zinc-500 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-500"
+          {/* <Button
+            className="flex h-6 w-6"
             aria-label="Open dialog"
           >
-            <PlusIcon className="text-secondary" size={12} />
-          </button>
+            <PlusIcon className="text-white" size={21} />
+          </Button> */}
         </div>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
@@ -89,7 +91,7 @@ export function MorphingDialogBasicOne(title: any) {
             className="h-full w-full"
           />
           <div className="p-6">
-            <MorphingDialogTitle className="text-2xl text-zinc-950 dark:text-zinc-50">
+          <MorphingDialogTitle className="text-primary font-bold">
               {title.title}
               <div className="flex gap-2 mt-2">
                 {Array.isArray(title.stack) &&
@@ -107,7 +109,7 @@ export function MorphingDialogBasicOne(title: any) {
                   ))}
               </div>
             </MorphingDialogTitle>
-            <MorphingDialogSubtitle className="text-zinc-700 dark:text-zinc-400">
+            <MorphingDialogSubtitle className="text-black">
               {title.body}
             </MorphingDialogSubtitle>
             <MorphingDialogDescription
@@ -118,15 +120,32 @@ export function MorphingDialogBasicOne(title: any) {
                 exit: { opacity: 0, scale: 0.8, y: 100 },
               }}
             >
-              <p>{title.description}</p>
-              <a
-                className="mt-2 inline-flex text-zinc-500 underline"
+             
+             <div className="my-2">
+             <div className="flex flex-row items-center">
+              <TbBrowser color="black"/>
+             <a
+                className="inline-flex text-foreground underline"
                 href={title.link}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {title.link}
               </a>
+             </div>
+
+              <div className="flex flex-row items-center">
+                <FaGithub color="black"/>
+              <a
+                className="inline-flex text-foreground underline"
+                href={title.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {title.github}
+              </a>
+              </div>
+             </div>
             </MorphingDialogDescription>
           </div>
           <MorphingDialogClose className="text-zinc-50" />

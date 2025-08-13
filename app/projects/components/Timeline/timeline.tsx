@@ -12,6 +12,7 @@ import {
   Milk,
   Monitor,
   Brush,
+  Sword,
 } from "lucide-react";
 import edge from "@/public/images/organisations/edge.png";
 import isipani from "@/public/images/organisations/isipani.png";
@@ -31,7 +32,7 @@ export default function WebCareerTimeline() {
   const careerMilestones = [
     {
       id: 1,
-      date: "2019 (December Vacation)",
+      date: "2019",
       company: " Isipani Construction (Pty) Ltd",
       title: "General Worker",
       fallBack:'ISI',
@@ -43,7 +44,7 @@ export default function WebCareerTimeline() {
     },
     {
       id: 2,
-      date: "2022 (10 months)",
+      date: "2022",
       company: "Splitline Manufacturing",
       image: splitline.src,
       fallBack:'SLM',
@@ -55,7 +56,7 @@ export default function WebCareerTimeline() {
     },
     {
       id: 3,
-      date: "2023 (3 months)",
+      date: "2023",
       title: "It Intern",
       company: "The Cutting Edge Group",
       fallBack:'TCE',
@@ -67,7 +68,7 @@ export default function WebCareerTimeline() {
     },
     {
       id: 4,
-      date: "2024 (3 months)",
+      date: "2024",
       image: match.src,
       title: "Frontend Developer",
       fallBack:'MXE',
@@ -97,10 +98,11 @@ export default function WebCareerTimeline() {
 
   return (
     <div className="mx-auto p-6">
-      <h2  className={`${spline.className} text-2xl font-bold text-gray-800 mb-8 flex items-center gap-2`}>
-        <Globe className="text-accent" />
-        My Adventure
-      </h2>
+   <h2
+  className={`${spline.className} text-4xl md:text-8xl font-bold mb-8 flex flex-row justify-start items-center gap-2`}
+>
+  My Adventures!
+</h2>
 
       <div className="relative">
         <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-background to-accent"></div>
@@ -124,7 +126,10 @@ export default function WebCareerTimeline() {
                   onClick={() => toggleExpand(milestone.id)}
                 >
                   <div>
-                    <span className="text-sm font-medium text-accent mb-1 block">
+                  <h3 className="text-xl font-semibold text-gray-800">
+                      {milestone.title}
+                    </h3>
+                    <span className="text-sm font-bold text-accent mb-1 block">
                       {milestone.date}
                     </span>
                     <div className="flex flex-row items-center">
@@ -136,9 +141,7 @@ export default function WebCareerTimeline() {
                         {milestone.company}
                       </h4>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-800">
-                      {milestone.title}
-                    </h3>
+                   
                   </div>
                   <div className="text-gray-500">
                     {expanded === milestone.id ? (

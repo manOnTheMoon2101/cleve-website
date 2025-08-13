@@ -1,5 +1,4 @@
 "use client";
-
 import {
   Dock,
   DockItem,
@@ -7,27 +6,77 @@ import {
   DockLabel,
 } from "@/app/components/body/components/dock/Dock";
 import { HomeIcon, UserIcon, FolderKanban } from "lucide-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import { ModeToggle } from "../../provider/Button";
 import { Socials } from "../../socials/Socials";
 import { Sword } from "lucide-react";
+
 export function DockExample() {
-  const pathname = usePathname();
-  const isActive = (path: string) => pathname === path;
+  const [activeSection, setActiveSection] = useState("home");
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "-50% 0px -50% 0px",
+      threshold: 0,
+    };
+
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    // Observe all sections
+    const sections = ["home", "about", "projects"];
+    sections.forEach((sectionId) => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const isActive = (section: string) => activeSection === section;
+
   return (
     <Dock>
-      <Link href="/" className={`${isActive("/") ? "text-accent" : ""}`}>
+      <button
+        onClick={() => scrollToSection("home")}
+        className={`${isActive("home") ? "text-accent" : ""}`}
+      >
         <DockItem>
           <DockIcon>
             <HomeIcon className="w-full h-full" />
           </DockIcon>
           <DockLabel>Home</DockLabel>
         </DockItem>
-      </Link>
-      <Link
-        href="/about"
-        className={`${isActive("/about") ? "text-accent" : ""}`}
+      </button>
+
+      <button
+        onClick={() => scrollToSection("about")}
+        className={`${isActive("about") ? "text-accent" : ""}`}
       >
         <DockItem>
           <DockIcon>
@@ -35,10 +84,11 @@ export function DockExample() {
           </DockIcon>
           <DockLabel>About</DockLabel>
         </DockItem>
-      </Link>
-      <Link
-        href="/projects"
-        className={`${isActive("/projects") ? "text-accent" : ""}`}
+      </button>
+
+      <button
+        onClick={() => scrollToSection("projects")}
+        className={`${isActive("projects") ? "text-accent" : ""}`}
       >
         <DockItem>
           <DockIcon>
@@ -46,17 +96,20 @@ export function DockExample() {
           </DockIcon>
           <DockLabel>My Adventure</DockLabel>
         </DockItem>
-      </Link>
-      {/* <div>
+      </button>
+
+      {/* Uncomment these if you want to keep them
+      <div>
         <DockItem>
           <ModeToggle />
         </DockItem>
-      </div> */}
-      {/* <div>
+      </div>
+      <div>
         <DockItem>
           <Socials />
         </DockItem>
-      </div> */}
+      </div>
+      */}
     </Dock>
   );
 }

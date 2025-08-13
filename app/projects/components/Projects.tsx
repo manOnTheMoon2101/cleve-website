@@ -12,6 +12,7 @@ import { CiLaptop } from "react-icons/ci";
 import { FaGolang } from "react-icons/fa6";
 import WebCareerTimeline from "./Timeline/timeline";
 import weather from "@/public/images/weatherNew.png";
+import go from "@/public/images/go.png";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
@@ -214,6 +215,7 @@ const ProjectsContent = () => {
     },
     videoConverter: {
       title: "Mov to MP4 Converter(Planning)",
+      image:go.src,
       body: "",
       stack: [
         {
@@ -234,6 +236,7 @@ const ProjectsContent = () => {
 
     cli: {
       title: "CLI App(Planning)",
+      image:go.src,
       body: "",
       stack: [
         {

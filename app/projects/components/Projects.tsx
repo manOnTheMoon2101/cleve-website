@@ -13,7 +13,7 @@ import { FaGolang } from "react-icons/fa6";
 import WebCareerTimeline from "./Timeline/timeline";
 import weather from "@/public/images/weatherNew.png";
 import go from "@/public/images/go.png";
-import weightV2 from "@/public/images/weightV2.png";
+import weightV2 from "@/public/images/tracker.png";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
@@ -142,10 +142,9 @@ const ProjectsContent = () => {
           {<CiLaptop />}
         </div>
       ),
-      // description: "Weight Management App",
+      description: "Health Tracker App V2(Beta)",
       image: weightV2.src,
-      // link: "https://weight-management.vercel.app/",
-      body: "Coming Soon...",
+      body: "Weight Tracker v2 gives you a faster, smoother way to track your health. Now with water intake, step counting, and new pie charts alongside detailed nutrient graphs and tables for a complete, visually engaging view of your progress.",
     },
     animal_scraper: {
       title: "Animal Adoption App",

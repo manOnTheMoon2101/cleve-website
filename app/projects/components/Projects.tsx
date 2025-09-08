@@ -111,7 +111,7 @@ const ProjectsContent = () => {
       body: "A weight tracker app that displays your main nutrients through advanced, visually stunning graphs and detailed table for comprehensive health tracking.",
     },
     weight2: {
-      title: "Health Tracker App V2(Beta)",
+      title: "Health Tracker App V2",
       github: "https://github.com/manOnTheMoon2101/weight-managementV2",
       link:"https://weight-management-v2.vercel.app/",
       stack: [

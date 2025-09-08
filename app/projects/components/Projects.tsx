@@ -142,7 +142,7 @@ const ProjectsContent = () => {
           {<CiLaptop />}
         </div>
       ),
-      description: "Health Tracker App V2(Beta)",
+      description: "Health Tracker App V2",
       image: weightV2.src,
       body: "Weight Tracker v2 gives you a faster, smoother way to track your health. Now with water intake, step counting, and new pie charts alongside detailed nutrient graphs and tables for a complete, visually engaging view of your progress.",
     },

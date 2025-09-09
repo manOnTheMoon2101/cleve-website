@@ -91,7 +91,7 @@ export function MorphingDialogBasicOne(title: any) {
             className="h-full w-full"
           />
           <div className="p-6">
-          <MorphingDialogTitle className="text-primary font-bold">
+          <MorphingDialogTitle className="text-primary font-bold text-xl">
               {title.title}
               <div className="flex gap-2 mt-2">
                 {Array.isArray(title.stack) &&

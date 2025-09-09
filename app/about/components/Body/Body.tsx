@@ -38,7 +38,7 @@ export function InViewBasic() {
         <p className="my-40 text-center md:text-right">
           I fell in L❤️ve with Tech at a young age
           <br />
-          <span className="text-4xl italic text-slate-400">
+          <span className="text-4xl italic text-yellow-900">
             (since i was chewing batteries as a baby)
           </span>
         </p>

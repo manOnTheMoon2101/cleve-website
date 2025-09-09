@@ -1,6 +1,6 @@
 import { Prompt } from "next/font/google";
 import weight from "@/public/images/weightNew.png";
-import animal from "@/public/images/animals.png";
+import animal from "@/public/images/animal-updated.png";
 import food from "@/public/images/recipeNew.png";
 
 import "animate.css";
@@ -13,7 +13,7 @@ import { FaGolang } from "react-icons/fa6";
 import WebCareerTimeline from "./Timeline/timeline";
 import weather from "@/public/images/weatherNew.png";
 import go from "@/public/images/go.png";
-import weightV2 from "@/public/images/tracker.png";
+import weightV2 from "@/public/images/light-weight.png";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
@@ -214,29 +214,8 @@ const ProjectsContent = () => {
       link: "https://recipe-finder-alpha-one.vercel.app/",
       image: food.src,
     },
-    videoConverter: {
-      title: "Mov to MP4 Converter(Planning)",
-      image:go.src,
-      body: "",
-      stack: [
-        {
-          icon: <FaGolang color="#007c9c" />,
-          tooltip: "Golang",
-        },
-      ],
-      devices: (
-        <div className="flex flex-row">
-          {<CiMobile1 />}
-          {<CiLaptop />}
-        </div>
-      ),
-      description: "Demo",
-      link: "",
-      // image: demo.src,
-    },
-
     cli: {
-      title: "CLI App(Planning)",
+      title: "TUI App(Planning)",
       image:go.src,
       body: "",
       stack: [

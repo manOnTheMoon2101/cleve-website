@@ -35,7 +35,7 @@ export default function WebCareerTimeline() {
       date: "2019",
       company: " Isipani Construction (Pty) Ltd",
       title: "General Worker",
-      fallBack:'ISI',
+      fallBack: "ISI",
       image: isipani.src,
       description:
         "Assisted in daily site operations including material handling, site clean-up, and basic carpentry tasks ",
@@ -47,7 +47,7 @@ export default function WebCareerTimeline() {
       date: "2022",
       company: "Splitline Manufacturing",
       image: splitline.src,
-      fallBack:'SLM',
+      fallBack: "SLM",
       title: "General Worker",
       description:
         "Managed a warehouse for packaged plastic goods and developed a basic Point of Sale (POS) system to maintain product inventory records.",
@@ -59,7 +59,7 @@ export default function WebCareerTimeline() {
       date: "2023",
       title: "It Intern",
       company: "The Cutting Edge Group",
-      fallBack:'TCE',
+      fallBack: "TCE",
       image: edge.src,
       description:
         "Assisted with customer computer hardware failures including network monitoring etc... ",
@@ -71,7 +71,7 @@ export default function WebCareerTimeline() {
       date: "2024",
       image: match.src,
       title: "Frontend Developer",
-      fallBack:'MXE',
+      fallBack: "MXE",
       company: "The Match Exchange",
       description:
         "Contributed in improving the UI/UX of the organisation's web app.",
@@ -83,7 +83,7 @@ export default function WebCareerTimeline() {
       date: "2024 (Present)",
       image: meta.src,
       title: "Full Stack Developer",
-      fallBack:'MET',
+      fallBack: "MET",
       company: "Metaship",
       description:
         "Contributing to the improvement of both the frontend and backend of the organization's web application by enhancing user experience, optimizing performance, and implementing new features.",
@@ -98,11 +98,11 @@ export default function WebCareerTimeline() {
 
   return (
     <div className="mx-auto p-6">
-   <h2
-  className={`${spline.className} text-4xl md:text-8xl font-bold mb-8 flex flex-row justify-start items-center gap-2`}
->
-  My Adventures!
-</h2>
+      <h2
+        className={`${spline.className} text-4xl md:text-8xl font-bold mb-8 flex flex-row justify-start items-center gap-2`}
+      >
+        My Adventures!
+      </h2>
 
       <div className="relative">
         <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-background to-accent"></div>
@@ -126,22 +126,31 @@ export default function WebCareerTimeline() {
                   onClick={() => toggleExpand(milestone.id)}
                 >
                   <div>
-                  <h3 className="text-xl font-semibold text-gray-800">
-                      {milestone.title}
-                    </h3>
-                    <span className="text-sm font-bold text-accent mb-1 block">
-                      {milestone.date}
-                    </span>
                     <div className="flex flex-row items-center">
                       <Avatar>
                         <AvatarImage src={`${milestone.image}`} />
                         <AvatarFallback>{milestone.fallBack}</AvatarFallback>
                       </Avatar>
-                      <h4 className="text-xl font-semibold text-gray-400 mx-2">
+                      <h2 className="text-xl font-semibold text-black mx-2">
                         {milestone.company}
-                      </h4>
+                      </h2>
                     </div>
-                   
+                    <h3 className="text-xl  text-accent">{milestone.title}</h3>
+                    {/* <span className="text-sm font-bold text-accent mb-1 block">
+                      {milestone.date}
+                    </span> */}
+
+                    {expanded === milestone.id ? (
+                      ""
+                    ) : (
+                      <div className="flex flex-wrap gap-2 mt-3">
+                        {milestone.skills.map((skill, index) => (
+                          <Badge className="bg-primary" key={index}>
+                            {skill}
+                          </Badge>
+                        ))}
+                      </div>
+                    )}
                   </div>
                   <div className="text-gray-500">
                     {expanded === milestone.id ? (

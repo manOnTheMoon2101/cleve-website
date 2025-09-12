@@ -340,7 +340,7 @@ const ProjectsContent = () => {
         <span
           className={`${spline.className}  font-italic text-accent  flex items-center gap-2 p-6`}
         >
-          Some Projects I've been working on(always for the lookout and testing
+          Some Side Projects I've been working on(always for the lookout and testing
           new stacks)
         </span>
       </InView>

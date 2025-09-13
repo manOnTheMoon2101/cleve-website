@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://cleveclayton.me",
+    url: "https://cleveclayton-only.fans",
     title: "Cleve Clayton | Software Developer",
     description: "@cleveclayton is a Software Developer specializing in creating robust, user-friendly web applications with modern technologies",
     siteName: "Cleve Clayton",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     creator: "@CJohn217",
   },
   verification: {
-    google: "google-site-verification=9MlTTSsheThcuKJDD3be3CSjko0PWdm0eGvtLcW13xs",
+    google: "google-site-verification=eTkxS9_bO5zUbHbX2zVWl1F5L93vamUMWTuz85v7e28",
   },
 };
 export default function RootLayout({

@@ -23,8 +23,6 @@ import { SiPrisma } from "react-icons/si";
 import { SiCheerio } from "react-icons/si";
 import { RiSvelteFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
-import { link } from "fs";
-import { Globe, Laptop } from "lucide-react";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",

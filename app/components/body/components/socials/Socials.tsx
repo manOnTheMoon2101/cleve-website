@@ -14,11 +14,9 @@ import {
 } from "@/components/ui/tooltip";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import Image from "next/image";
-import linkedin from "@/public/icons/linkedin.svg";
 import github from "@/public/icons/github.svg";
 import email from "@/public/icons/email.svg";
 import { MessageCircle } from "lucide-react";
-import { IoShareSocialSharp } from "react-icons/io5";
 import { Prompt } from "next/font/google";
 import { Spline_Sans_Mono } from "next/font/google";
 import { Button } from "@/components/ui/button";

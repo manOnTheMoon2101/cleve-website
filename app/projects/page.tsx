@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { motion, useScroll } from "framer-motion";
 import ProjectsContent from "./components/Projects";
-import { InfiniteSliderBasic } from "./components/Slider/slider";
 
 interface SectionProps {
   children: React.ReactNode;

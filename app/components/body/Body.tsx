@@ -1,18 +1,7 @@
 import React from "react";
 import { Prompt } from "next/font/google";
 import "animate.css";
-import { TextRoll } from "@/components/ui/text-roll";
-import github from "@/public/icons/github.svg";
-import linkedin from "@/public/icons/linkedin.svg";
-import email from "@/public/icons/email.svg";
-import Image from "next/image";
 import { toast } from "sonner";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",

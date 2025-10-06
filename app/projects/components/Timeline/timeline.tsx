@@ -1,18 +1,12 @@
 import { useState } from "react";
 import {
-  Code,
   Database,
-  Layout,
-  Globe,
-  Briefcase,
-  Award,
   ChevronDown,
   ChevronUp,
   Shovel,
   Milk,
   Monitor,
   Brush,
-  Sword,
 } from "lucide-react";
 import edge from "@/public/images/organisations/edge.png";
 import isipani from "@/public/images/organisations/isipani.png";
@@ -20,7 +14,6 @@ import splitline from "@/public/images/organisations/splitline.png";
 import match from "@/public/images/organisations/match.svg";
 import meta from "@/public/images/organisations/meta.png";
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Spline_Sans_Mono } from "next/font/google";
 const spline = Spline_Sans_Mono({

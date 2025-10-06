@@ -7,8 +7,6 @@ import {
 } from "@/app/components/body/components/dock/Dock";
 import { HomeIcon, UserIcon, FolderKanban } from "lucide-react";
 import { useEffect, useState } from "react";
-import { ModeToggle } from "../../provider/Button";
-import { Socials } from "../../socials/Socials";
 import { Sword } from "lucide-react";
 
 export function DockExample() {

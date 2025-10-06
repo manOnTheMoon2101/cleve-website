@@ -13,7 +13,7 @@ import { FaGolang } from "react-icons/fa6";
 import WebCareerTimeline from "./Timeline/timeline";
 import weather from "@/public/images/weatherNew.png";
 import go from "@/public/images/go.png";
-import weightV2 from "@/public/images/light-weight.png";
+import weightV2 from "@/public/images/fred.png";
 import { RiNextjsFill } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
@@ -23,8 +23,6 @@ import { SiPrisma } from "react-icons/si";
 import { SiCheerio } from "react-icons/si";
 import { RiSvelteFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
-import { link } from "fs";
-import { Globe, Laptop } from "lucide-react";
 const prompt = Prompt({
   subsets: ["latin"],
   weight: "800",

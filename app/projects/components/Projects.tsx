@@ -213,7 +213,7 @@ const ProjectsContent = () => {
       image: food.src,
     },
     cli: {
-      title: "TUI App(Planning)",
+      title: "Golang Project...(Soon)",
       image:go.src,
       body: "",
       stack: [

@@ -212,26 +212,26 @@ const ProjectsContent = () => {
       link: "https://recipe-finder-alpha-one.vercel.app/",
       image: food.src,
     },
-    cli: {
-      title: "Golang Project...(Soon)",
-      image:go.src,
-      body: "",
-      stack: [
-        {
-          icon: <FaGolang color="#007c9c" />,
-          tooltip: "Golang",
-        },
-      ],
-      devices: (
-        <div className="flex flex-row">
-          {<CiMobile1 />}
-          {<CiLaptop />}
-        </div>
-      ),
-      description: "Demo",
-      link: "",
-      // image: demo.src,
-    },
+    // cli: {
+    //   title: "Golang Project...(Soon)",
+    //   image:go.src,
+    //   body: "",
+    //   stack: [
+    //     {
+    //       icon: <FaGolang color="#007c9c" />,
+    //       tooltip: "Golang",
+    //     },
+    //   ],
+    //   devices: (
+    //     <div className="flex flex-row">
+    //       {<CiMobile1 />}
+    //       {<CiLaptop />}
+    //     </div>
+    //   ),
+    //   description: "Demo",
+    //   link: "",
+    //   // image: demo.src,
+    // },
   };
   const contributed: any = {
     match: {

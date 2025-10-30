@@ -6,7 +6,7 @@ import AboutContent from "./components/About";
 interface SectionProps {
   children: React.ReactNode;
 }
-
+//test
 const Section: React.FC<SectionProps> = ({ children }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });

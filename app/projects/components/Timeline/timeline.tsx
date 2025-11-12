@@ -23,30 +23,30 @@ export default function WebCareerTimeline() {
   const [expanded, setExpanded] = useState(null);
 
   const careerMilestones = [
-    {
-      id: 1,
-      date: "2019",
-      company: " Isipani Construction (Pty) Ltd",
-      title: "General Worker",
-      fallBack: "ISI",
-      image: isipani.src,
-      description:
-        "Assisted in daily site operations including material handling, site clean-up, and basic carpentry tasks ",
-      skills: ["Basic Construction Knowledge", "Manual Labor"],
-      icon: <Shovel className="text-white" />,
-    },
-    {
-      id: 2,
-      date: "2022",
-      company: "Splitline Manufacturing",
-      image: splitline.src,
-      fallBack: "SLM",
-      title: "General Worker",
-      description:
-        "Managed a warehouse for packaged plastic goods and developed a basic Point of Sale (POS) system to maintain product inventory records.",
-      skills: ["Python", "Microsoft Excel", "Windows 10"],
-      icon: <Milk className="text-white" />,
-    },
+    // {
+    //   id: 1,
+    //   date: "2019",
+    //   company: " Isipani Construction (Pty) Ltd",
+    //   title: "General Worker",
+    //   fallBack: "ISI",
+    //   image: isipani.src,
+    //   description:
+    //     "Assisted in daily site operations including material handling, site clean-up, and basic carpentry tasks ",
+    //   skills: ["Basic Construction Knowledge", "Manual Labor"],
+    //   icon: <Shovel className="text-white" />,
+    // },
+    // {
+    //   id: 2,
+    //   date: "2022",
+    //   company: "Splitline Manufacturing",
+    //   image: splitline.src,
+    //   fallBack: "SLM",
+    //   title: "General Worker",
+    //   description:
+    //     "Managed a warehouse for packaged plastic goods and developed a basic Point of Sale (POS) system to maintain product inventory records.",
+    //   skills: ["Python", "Microsoft Excel", "Windows 10"],
+    //   icon: <Milk className="text-white" />,
+    // },
     {
       id: 3,
       date: "2023",

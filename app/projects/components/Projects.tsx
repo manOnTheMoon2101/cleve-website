@@ -4,6 +4,7 @@ import animal from "@/public/images/animal-updated.png";
 import food from "@/public/images/recipeNew.png";
 
 import "animate.css";
+import { GitHubCalendar } from 'react-github-calendar';
 import { InView } from "@/components/ui/in-view";
 import { Spline_Sans_Mono } from "next/font/google";
 import { MorphingDialogBasicOne } from "./Dialog/Dialog";
@@ -341,6 +342,12 @@ const ProjectsContent = () => {
           Some Side Projects I've been working on(always for the lookout and testing
           new stacks)
         </span>
+
+                     <div className="flex flex-row justify-center my-8">
+              <GitHubCalendar username="manOnTheMoon2101"   theme={{
+            dark: ['#f4c725', '#fa802e'],
+          }} />
+                </div>
       </InView>
       <InView
         variants={{

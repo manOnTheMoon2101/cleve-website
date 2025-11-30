@@ -55,6 +55,8 @@ export default function Home() {
           <InViewBasic />
         </div>
 
+       
+
         <div className="my-96" id="projects">
           <Section>
             <ProjectsContent />
